@@ -51,7 +51,7 @@ Qloo asks fewer questions in this programme. The LLM arm moves fewer sessions an
 
 Independent review found no unresolved critical defect within the exercised scope after the runtime fix. Internal judge simulation remains **15/20**: technology4/5, design4/5, potential impact3/5, idea4/5. An actual organizer study and broader programmes remain future validation; no perfect score or prize prediction is claimed.
 
-Devpost project1518014 is **published**; Qloo submission1272444 still has no submitted timestamp before the final submission step: https://devpost.com/software/crosscue. The description, verified links, four real product gallery screenshots and thumbnail are prepared. Required custom-field answers are in `docs/SUBMISSION.md`, including the creator-confirmed October28,2026 start date. The creator subsequently confirmed eligibility/rules and authorized submission after checks pass. Final submission is pending the final reconciliation.
+Devpost project1518014 is **published** and Qloo submission1272444 is **Submitted**: https://devpost.com/software/crosscue. Submitted October30,2026 at **11:23:56.572UTC**. The submit response and separate project readback agree. The accepted answers include the creator-confirmed October28 start date and public app/repository URLs. Four real gallery screenshots and a thumbnail are attached. The creator explicitly confirmed eligibility/rules and authorized submission after all checks passed. See `devpost-submitted.json`.
 
 ## Hosting allowance and remaining limits
 

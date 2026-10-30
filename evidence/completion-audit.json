@@ -12,6 +12,6 @@
   "scope": "Inspected sanitized authenticated dashboard observations; did not independently operate provider account. Relied on recorded public runtime proof for unchanged source.",
   "handoffFindings": [
     "Completion proof was pending at first review; now populated with actual verifier and guard results.",
-    "Distinguish published project from submitted hackathon entry; current portal state reconciled, final submission pending."
+    "Distinguish published project from submitted hackathon entry; now reconciled with actual Submitted receipt and separate project readback. This post-review fact was recorded by the primary agent, not represented as an independent portal interaction."
   ]
 }

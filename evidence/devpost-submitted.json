@@ -1,0 +1,36 @@
+{
+  "submission_id": 1272444,
+  "status": "Submitted",
+  "hackathon_subdomain": "qloo",
+  "project_slug": "crosscue",
+  "submitted_at": "2026-10-30T07:23:56.572-04:00",
+  "url": "https://devpost.com/software/crosscue",
+  "project_id": 1518014,
+  "project_state": "published",
+  "published_at": "2026-10-30T07:21:31.616-04:00",
+  "readback_submitted_at": "2026-10-30T07:23:56.572-04:00",
+  "readback_verified": true,
+  "application_commit": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "pre_submission_evidence_commit": "4f98d29",
+  "user_confirmed_eligibility_and_rules": true,
+  "submission_authorization": "Creator explicitly authorized submission after all checks pass;60/60 verified before submission.",
+  "initial_attempt": "Rejected because optional existing-project description exceeded255characters; shortened truthfully and retried.",
+  "custom_answers": [
+    {
+      "submission_field_id": 28597,
+      "value": "October 28, 2026. Planning began then; this CrossCue implementation began October 30, 2026."
+    },
+    {
+      "submission_field_id": 28598,
+      "value": "https://crosscue.tbud.workers.dev"
+    },
+    {
+      "submission_field_id": 28599,
+      "value": "https://github.com/himanshu748/crosscue"
+    },
+    {
+      "submission_field_id": 28701,
+      "value": "New CrossCue implementation. Earlier Second Feature was inspected for Qloo adapter patterns and preserved. Added festival consequence testing, exact repair, isolated approval, contextual evidence and reproducible comparison."
+    }
+  ]
+}

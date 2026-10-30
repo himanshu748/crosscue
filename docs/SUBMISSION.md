@@ -1,9 +1,9 @@
-# CrossCue — Devpost preparation
+# CrossCue — submitted Devpost content
 
 **Title:** CrossCue
 **Tagline:** Ask fewer audience questions. Make smarter festival schedules.
 
-The description below reflects tested application revision `aca964bf85ee718c9b5676a209e8cda99389c660`. [Try the public application](https://crosscue.tbud.workers.dev) or [inspect the public MIT-licensed source](https://github.com/himanshu748/crosscue). This file records submission content, not a submission receipt. The signed-in Cloudflare dashboard confirms Workers Free and D1 usage within its hard limits; no upgrade or billing change was made.
+The description below reflects tested application revision `aca964bf85ee718c9b5676a209e8cda99389c660`. [Try the public application](https://crosscue.tbud.workers.dev) or [inspect the public MIT-licensed source](https://github.com/himanshu748/crosscue). Submitted to Qloo on October 30, 2026 at11:23:56UTC; the provider receipt and independent readback are in `evidence/devpost-submitted.json`. The signed-in Cloudflare dashboard confirms Workers Free and D1 usage within its hard limits; no upgrade or billing change was made.
 
 ## Project description
 
@@ -73,11 +73,11 @@ Current form inspected through Devpost on October 30, 2026. [Official event and 
 | 28597 | When did you begin your project? | October 28, 2026. Planning began then; this CrossCue implementation began October 30, 2026. |
 | 28598 | The public URL to your project | https://crosscue.tbud.workers.dev |
 | 28599 | Link to your PUBLIC code repo | https://github.com/himanshu748/crosscue |
-| 28701 | Existing project improvements (optional) | CrossCue is a separate new implementation for this hackathon. An earlier related project, Second Feature, was inspected for Qloo adapter patterns and preserved. CrossCue adds cross-domain festival consequence testing, exact finite-domain repair, isolated organizer approval, contextual evidence inspection and reproducible comparison. |
+| 28701 | Existing project improvements (optional) | New CrossCue implementation. Earlier Second Feature was inspected for Qloo adapter patterns and preserved. Added festival consequence testing, exact repair, isolated approval, contextual evidence and reproducible comparison. |
 
 Suggested built-with tags: Qloo, TypeScript, React, Cloudflare Workers, Cloudflare D1, SQLite.
 
-No video is required. Use real screenshots of the question, Protect preview, approved changes and mobile view; each should correspond to the tested release. The public repository includes the MIT license and setup instructions. Do not use this preparation document as evidence that hosting, repository visibility, eligibility agreement or final submission has occurred.
+No video is required. Use real screenshots of the question, Protect preview, approved changes and mobile view; each should correspond to the tested release. The public repository includes the MIT license and setup instructions. Hosting, repository visibility and submission each have separate provider evidence; the creator explicitly confirmed eligibility and rule agreement.
 
 ## Release metadata
 
@@ -88,4 +88,4 @@ No video is required. Use real screenshots of the question, Protect preview, app
 - Public MIT repository: https://github.com/himanshu748/crosscue
 - Public proof: `evidence/browser-public.json`, `evidence/tool-client-public.json`, `evidence/hosted-security-review.json`.
 - Hosting allowance: Workers Free and available D1 capacity verified in the authenticated dashboard on October 30 at 11:19 UTC; see `evidence/hosting-allowance.json`. No paid upgrade or billing change was made.
-- Submission status before final submit: Devpost project published after the description update; Qloo entry has no submitted timestamp. Project: https://devpost.com/software/crosscue (project1518014, submission1272444). Four real gallery screenshots and a thumbnail uploaded; all media URLs returned HTTP200. Required custom-field answers remain prepared below for the final submit operation; the creator subsequently confirmed eligibility/rules and authorized submission after all checks pass. Final submission remains pending.
+- Submission status: **Submitted** to Qloo at `2026-10-30T11:23:56.572Z`, confirmed by submit response and separate project readback. Public project: https://devpost.com/software/crosscue (project1518014, submission1272444). All required custom-field answers and the optional existing-project disclosure were accepted. Four actual gallery screenshots and a thumbnail remain attached. See `evidence/devpost-submitted.json`.

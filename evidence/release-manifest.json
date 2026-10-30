@@ -56,9 +56,17 @@
     "evidence/hosted-security-review.json",
     "evidence/hosted-provider-budget.json",
     "evidence/hosting-allowance.json",
-    "evidence/tool-client-pre-submit.json"
+    "evidence/tool-client-pre-submit.json",
+    "evidence/devpost-submitted.json"
   ],
   "provenanceNote": "A later documentation/evidence commit records these results. Runtime source paths are byte-identical to the tested/deployed application commit. Proof scripts may receive additional assertions after that source commit.",
   "remainingReleaseGates": [],
-  "hostingAllowanceVerifiedAt": "2026-10-30T11:19:17Z"
+  "hostingAllowanceVerifiedAt": "2026-10-30T11:19:17Z",
+  "submission": {
+    "projectUrl": "https://devpost.com/software/crosscue",
+    "submissionId": 1272444,
+    "status": "Submitted",
+    "submittedAt": "2026-10-30T11:23:56.572Z",
+    "separateReadbackVerified": true
+  }
 }

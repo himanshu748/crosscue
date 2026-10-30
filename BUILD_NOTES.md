@@ -34,9 +34,9 @@ The live application is [crosscue.tbud.workers.dev](https://crosscue.tbud.worker
 
 The current Devpost required fields were inspected on October 30: start date (28597), public project URL (28598), public repository URL (28599), and optional existing-project improvements (28701). No video is required. The creator supplied October 28 as the actual project start date.
 
-`docs/SUBMISSION.md` contains the prepared description, actual start date, verified public URLs and tested/deployed revision. [The Devpost draft](https://devpost.com/software/crosscue) was created and read back: project1518014, Qloo submission1272444, state `draft`, `publishedAt=null`, `submittedAt=null`. Four actual release screenshots were uploaded. The project description was subsequently updated and published state was read back at11:21:42UTC; the Qloo event entry still had no submitted timestamp. The required custom-field answers are prepared for the final submit operation. The creator subsequently confirmed eligibility/rules and authorized submission after checks pass. `evidence/devpost-draft.json` preserves the historical draft receipt; the current final submission status is recorded separately.
+`docs/SUBMISSION.md` records the actual submitted description and accepted answers. The historical draft receipt remains in `evidence/devpost-draft.json`. After60/60 checks passed and the creator confirmed eligibility/rules, the final submission succeeded: project1518014 published, Qloo entry1272444 **Submitted** at2026-10-30T11:23:56.572Z. A separate `get_project` readback confirms the same timestamp. `evidence/devpost-submitted.json` records the receipt. The first submit attempt rejected an optional answer exceeding255characters; the truthful shortened224-character answer was accepted on retry. Four actual release screenshots and a thumbnail remain attached.
 
-## Remaining release work
+## Completion boundary
 
 The software, public journey, mobile exports, error recovery, hosted isolation/limits, secret/history/export review, release manifest and draft readback now have proof. An independent reviewer also completed sixteen fresh public spot-checks and two additional axe audits without changing the application; no critical finding remained. The final internal judge score remains15/20, with actual organizer validation still absent.
 

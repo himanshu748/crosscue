@@ -503,9 +503,9 @@ Reconstructed from user mission on 2026-10-30; no CrossCue ledger present in cur
 
 - Acceptance: Complete release-matching form answers prepared; actual Devpost status explicitly verified, submission only within authorization.
 - Implementation: docs/SUBMISSION.md, BUILD_NOTES.md
-- Verification: Create Devpost project/Qloo submission draft, upload four actual release screenshots, and read back project state/description; compare prepared custom-field answers with release manifest.
-- Observed: Devpost project1518014 is published at https://devpost.com/software/crosscue; Qloo entry1272444 still has submitted_at=null before final submission. Updated description read back, actual media and URLs retained. Creator confirmed eligibility/rules and authorized submission after checks pass.
-- Evidence: evidence/devpost-draft.json, docs/SUBMISSION.md, evidence/release-manifest.json, evidence/pre-submit-check.json
+- Verification: Devpost get_submission_requirements, update_project, get_project, submit_project; separate post-submit get_project readback.
+- Observed: Devpost project1518014 is published and Qloo entry1272444 is Submitted. Actual submission timestamp2026-10-30T11:23:56.572Z was returned by submit_project and independently read back with get_project. Required answers include creator-confirmed October28 start and public app/repository URLs. Four actual screenshots and thumbnail retained. Creator confirmed eligibility/rules and explicitly authorized submission after60/60 checks passed.
+- Evidence: evidence/devpost-draft.json, docs/SUBMISSION.md, evidence/release-manifest.json, evidence/pre-submit-check.json, evidence/devpost-submitted.json
 - Tested revision: aca964bf85ee718c9b5676a209e8cda99389c660
 
 ## Phase 10: Judge simulation and final release
@@ -560,6 +560,6 @@ Reconstructed from user mission on 2026-10-30; no CrossCue ledger present in cur
 - Acceptance: Substantive defects fixed/retested; no unresolved critical review defect; final report contains exact checks, URLs, commits, evidence, tests, benchmark and actual submission state.
 - Implementation: BUILD_STATUS.json, BUILD_NOTES.md, docs/ACCEPTANCE.md
 - Verification: Read and reconcile evidence/FINAL_REPORT.md against release manifest, actual public browser/tool exports, independent final reviewer, clean public clone, Devpost draft readback and sole60-check ledger; run verifier and six guard controls.
-- Observed: Final report contains every requested field. Exact count60/60; tested/deployed application commitaca964bf85ee718c9b5676a209e8cda99389c660. Runtime/UI defects fixed and retested; no unresolved critical finding in independent exercised scope. Signed-in hosting allowance proof closes CC-043 and CC-042; ready=true. Submission status remains explicitly recorded separately.
-- Evidence: evidence/FINAL_REPORT.md, evidence/release-manifest.json, evidence/reviewer-d-public.json, evidence/browser-public.json, evidence/clean-clone.json, evidence/devpost-draft.json, evidence/ledger-guards.json, evidence/hosting-allowance.json
+- Observed: Final report contains every requested field. Exact count60/60; tested/deployed application commitaca964bf85ee718c9b5676a209e8cda99389c660. Runtime/UI defects fixed and retested; no unresolved critical finding in independent exercised scope. Signed-in hosting allowance proof closes CC-043 and CC-042; ready=true. Submission status remains explicitly recorded separately. Qloo submission1272444 is Submitted with a separately verified timestamp; receipt recorded.
+- Evidence: evidence/FINAL_REPORT.md, evidence/release-manifest.json, evidence/reviewer-d-public.json, evidence/browser-public.json, evidence/clean-clone.json, evidence/devpost-draft.json, evidence/ledger-guards.json, evidence/hosting-allowance.json, evidence/devpost-submitted.json
 - Tested revision: aca964bf85ee718c9b5676a209e8cda99389c660
