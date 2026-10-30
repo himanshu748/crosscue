@@ -1,0 +1,50 @@
+{
+  "kind": "submitted-project-editorial-update",
+  "checkedAt": "2026-10-30T15:21:59Z",
+  "projectId": 1518014,
+  "url": "https://devpost.com/software/crosscue",
+  "projectState": "published",
+  "submittedAt": "2026-10-30T07:23:56.572-04:00",
+  "updatedAt": "2026-10-30T11:21:48.621-04:00",
+  "checks": {
+    "fictionalFestival": true,
+    "realQlooEvidence": true,
+    "productOpening": true,
+    "noAuditMetrics": true,
+    "stillSubmitted": true
+  },
+  "version": 3,
+  "applicationCommit": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "changes": [
+    "Replaced public audit chronology with organizer problem, concrete Bjork/Moonlight choice, workflow, essential architecture, challenges, accomplishments, learning and next step.",
+    "Explicitly labelled Fieldnotes and its hypothetical bookings/timing/constraints fictional; retained accurate real Qloo entity/API provenance.",
+    "Moved supporting verification detail to linked repository rather than main narrative."
+  ],
+  "references": [
+    {
+      "url": "https://devpost.com/software/dasha",
+      "awardObserved": "AnimalHack2026 Grand Prize",
+      "use": "Problem and user journey before implementation; structural reference only."
+    },
+    {
+      "url": "https://devpost.com/software/living-room-dreaming-objects",
+      "awardObserved": "HARDMODE Grand Prize (E14 Fund)",
+      "use": "Explain a concrete working interaction; structural reference only."
+    },
+    {
+      "url": "https://devpost.com/software/agentic",
+      "awardObserved": "SB Hacks X Grand Prize",
+      "use": "Separate product function, essential build details and genuine challenge; structural reference only."
+    }
+  ],
+  "factsPreserved": {
+    "questionBudget": 2,
+    "exactnessDomain": 256,
+    "organizerApproval": true,
+    "internalLlm": false,
+    "benchmarkLimitsRetained": true,
+    "noInventedUsersOrOutcomes": true
+  },
+  "runtimeChanged": false,
+  "submissionStillConfirmed": true
+}

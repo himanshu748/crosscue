@@ -1075,13 +1075,14 @@
         "docs/SUBMISSION.md",
         "docs/ORIGINALITY.md"
       ],
-      "verification": "Independent judge/benchmark review of description against actual implementation and metrics.",
+      "verification": "Independent judge/benchmark review of description against actual implementation and metrics. User-requested editorial revision checked against implementation and source evidence, then published through update_project and read back with get_project.",
       "expected": "Description covers problem, distinctive mechanism, Qloo, agent, guarantees, evidence, limitations and impact without unsupported claims.",
-      "observed": "Description explains organizer problem, Qloo contribution, deterministic tool/repair authority, exact-domain limit, comparison and unvalidated impact without claiming internalLLM or measured attendance benefit.",
+      "observed": "Description explains organizer problem, Qloo contribution, deterministic tool/repair authority, exact-domain limit, comparison and unvalidated impact without claiming internalLLM or measured attendance benefit. The public story now leads with the concrete organizer decision, uses creator-facing Devpost sections and keeps detailed verification in linked repository evidence. It explicitly distinguishes the fictional Fieldnotes event from real Qloo entity/API data.",
       "evidencePaths": [
         "docs/SUBMISSION.md",
         "docs/JUDGE_REVIEW.md",
-        "evidence/benchmark.json"
+        "evidence/benchmark.json",
+        "evidence/devpost-story-update.json"
       ],
       "testedRevision": "aca964bf85ee718c9b5676a209e8cda99389c660"
     },
@@ -1141,13 +1142,14 @@
       ],
       "verification": "Devpost get_submission_requirements, update_project, get_project, submit_project; separate post-submit get_project readback.",
       "expected": "Complete release-matching form answers prepared; actual Devpost status explicitly verified, submission only within authorization.",
-      "observed": "Devpost project1518014 is published and Qloo entry1272444 is Submitted. Actual submission timestamp2026-10-30T11:23:56.572Z was returned by submit_project and independently read back with get_project. Required answers include creator-confirmed October28 start and public app/repository URLs. Four actual screenshots and thumbnail retained. Creator confirmed eligibility/rules and explicitly authorized submission after60/60 checks passed.",
+      "observed": "Devpost project1518014 is published and Qloo entry1272444 is Submitted. Actual submission timestamp2026-10-30T11:23:56.572Z was returned by submit_project and independently read back with get_project. Required answers include creator-confirmed October28 start and public app/repository URLs. Four actual screenshots and thumbnail retained. Creator confirmed eligibility/rules and explicitly authorized submission after60/60 checks passed. Subsequent authorized description update returned version3; published state and original submitted timestamp were read back unchanged.",
       "evidencePaths": [
         "evidence/devpost-draft.json",
         "docs/SUBMISSION.md",
         "evidence/release-manifest.json",
         "evidence/pre-submit-check.json",
-        "evidence/devpost-submitted.json"
+        "evidence/devpost-submitted.json",
+        "evidence/devpost-story-update.json"
       ],
       "testedRevision": "aca964bf85ee718c9b5676a209e8cda99389c660"
     },

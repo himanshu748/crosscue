@@ -36,6 +36,8 @@ The current Devpost required fields were inspected on October 30: start date (28
 
 `docs/SUBMISSION.md` records the actual submitted description and accepted answers. The historical draft receipt remains in `evidence/devpost-draft.json`. After60/60 checks passed and the creator confirmed eligibility/rules, the final submission succeeded: project1518014 published, Qloo entry1272444 **Submitted** at2026-10-30T11:23:56.572Z. A separate `get_project` readback confirms the same timestamp. `evidence/devpost-submitted.json` records the receipt. The first submit attempt rejected an optional answer exceeding255characters; the truthful shortened224-character answer was accepted on retry. Four actual release screenshots and a thumbnail remain attached.
 
+The creator requested a product-story rewrite after submission. Devpost description version3 was saved and read back at15:21:59UTC. The public story now uses a concrete scheduling choice, essential architecture and genuine challenges, with an explicit fictional-event/real-Qloo distinction. Test totals and release chronology remain in repository evidence. The entry retains its original Submitted timestamp. `evidence/devpost-story-update.json` records this editorial update; no application source or deployment changed.
+
 ## Completion boundary
 
 The software, public journey, mobile exports, error recovery, hosted isolation/limits, secret/history/export review, release manifest and draft readback now have proof. An independent reviewer also completed sixteen fresh public spot-checks and two additional axe audits without changing the application; no critical finding remained. The final internal judge score remains15/20, with actual organizer validation still absent.

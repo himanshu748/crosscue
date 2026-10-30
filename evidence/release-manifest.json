@@ -59,7 +59,8 @@
     "evidence/tool-client-pre-submit.json",
     "evidence/devpost-submitted.json",
     "evidence/post-submission-check.json",
-    "evidence/post-submission-tool-client.json"
+    "evidence/post-submission-tool-client.json",
+    "evidence/devpost-story-update.json"
   ],
   "provenanceNote": "A later documentation/evidence commit records these results. Runtime source paths are byte-identical to the tested/deployed application commit. Proof scripts may receive additional assertions after that source commit.",
   "remainingReleaseGates": [],
@@ -69,7 +70,9 @@
     "submissionId": 1272444,
     "status": "Submitted",
     "submittedAt": "2026-10-30T11:23:56.572Z",
-    "separateReadbackVerified": true
+    "separateReadbackVerified": true,
+    "descriptionVersion": 3,
+    "descriptionReadBackAt": "2026-10-30T15:21:59Z"
   },
   "latestOperationalCheck": {
     "checkedAt": "2026-10-30T14:59:26.960Z",

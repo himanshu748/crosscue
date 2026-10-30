@@ -55,6 +55,8 @@ Independent review found no unresolved critical defect within the exercised scop
 
 Devpost project1518014 is **published** and Qloo submission1272444 is **Submitted**: https://devpost.com/software/crosscue. Submitted October30,2026 at **11:23:56.572UTC**. The submit response and separate project readback agree. The accepted answers include the creator-confirmed October28 start date and public app/repository URLs. Four real gallery screenshots and a thumbnail are attached. The creator explicitly confirmed eligibility/rules and authorized submission after all checks passed. See `devpost-submitted.json`.
 
+The creator subsequently requested a product-story rewrite. Description version3 was published and read back at15:21:59UTC; the entry remains Submitted with its original timestamp. The live description explicitly labels Fieldnotes fictional and the Qloo entities/API evidence real. Detailed verification remains in this repository. See `devpost-story-update.json`.
+
 ## Hosting allowance and remaining limits
 
 No remaining mandatory implementation or deployment blocker. At 11:19 UTC on October 30, the authenticated provider dashboard showed Workers Free ($0), 233/100,000 daily Worker requests, and D1 usage of 657/5,000,000 reads, 441/100,000 writes and 1.44MB/5GB storage. D1 quotas are hard limits. No plan upgrade, purchase or billing change occurred. `hosting-allowance.json` records the sanitized observation and its scope.
