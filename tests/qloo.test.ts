@@ -7,6 +7,14 @@ const artist:Identity={id:'00000000-0000-4000-8000-000000000005',name:'Artist',t
 const row=(i:number)=>({entity_id:ids[i],name:films[i].name,type:'urn:entity',subtype:'urn:entity:movie',properties:{release_year:2000+i},query:{affinity:.9-i*.1}});
 const payload=(rows:unknown[])=>({success:true,results:{entities:rows}});
 const reply=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status});
+test('default fetch preserves the global receiver required by Worker runtimes',async()=>{
+ const original=globalThis.fetch;
+ try{
+  globalThis.fetch=async function(this:unknown){assert.equal(this,globalThis,'native fetch must not receive the adapter as this');return reply(payload(films.map((_f,i)=>row(i))));};
+  const evidence=await new QlooAdapter({apiKey:'fixture'}).rank(artist,films);
+  assert.equal(evidence.returnedIds.length,4);
+ }finally{globalThis.fetch=original;}
+});
 test('Insights subtype and search types both parse; ranks preserve response context',()=>{
  assert.equal(parseQloo(payload([row(1),row(0)]),'movie')[0].id,ids[1]);
  assert.equal(parseQloo({results:[{...row(0),types:['urn:entity:movie']}]},'movie')[0].year,2000);

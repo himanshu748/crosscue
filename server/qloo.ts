@@ -47,7 +47,9 @@ export class QlooAdapter {
     this.base=options.baseUrl??'https://hackathon.api.qloo.com';
     if(!['https://hackathon.api.qloo.com','https://api.qloo.com'].includes(this.base))
       throw new QlooError('invalid_configuration','Qloo endpoint must be an official HTTPS origin.',503);
-    this.fetcher=options.fetcher??fetch;
+    // Workers' native fetch requires the global receiver; a stored method call
+    // would otherwise pass this adapter as `this` and fail before any HTTP call.
+    this.fetcher=options.fetcher??((input,init)=>globalThis.fetch(input,init));
   }
   private async request(path:string, parameters:Record<string,string>,type:CulturalType,requestedIds:string[]=[]):Promise<QueryEvidence> {
     if(!this.options.apiKey.trim()) throw new QlooError('not_configured','QLOO_API_KEY is not configured on the server.',503);
