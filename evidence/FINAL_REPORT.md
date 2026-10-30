@@ -14,6 +14,8 @@ The public application completes the genuine Qloo-powered organizer journey. The
 
 The public Worker performed eight real Qloo identity searches and eight directional fixed-shortlist ranking queries. Public provenance was captured October30,2026 at10:35:56UTC. No judge-supplied credential or login is required. The three-hour cache retains its original acquisition timestamp.
 
+A post-submission check at14:59UTC reacquired Qloo evidence after the original cache expired:16 fresh authenticated calls,8 identities and8 directional rankings. All three public read-only tools passed, both branches remained feasible and different, and the saved schedule was unchanged. The submitted Devpost entry was also read back again. See `post-submission-check.json`.
+
 The selected Björk/Moonlight pair has feasible different branches: Protect moves three sessions by90minutes each, Allow preserves the baseline. The organizer previews, explicitly approves, reloads the saved state and downloads a validated schedule. Allow, Defer, the two-question cap, a fully locked zero-question case and a natural one-question stop also work. Both desktop and mobile actual downloads independently validate.
 
 Initial hosted failures are retained, not erased from the record. Node's redirect:error mode was unsupported by Workers. Actual workerd reproduction confirmed the exception before any upstream request. Manual redirect mode with explicit3xx rejection fixes compatibility while preventing credential forwarding; the corrected public journey passed.

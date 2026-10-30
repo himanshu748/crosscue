@@ -57,7 +57,9 @@
     "evidence/hosted-provider-budget.json",
     "evidence/hosting-allowance.json",
     "evidence/tool-client-pre-submit.json",
-    "evidence/devpost-submitted.json"
+    "evidence/devpost-submitted.json",
+    "evidence/post-submission-check.json",
+    "evidence/post-submission-tool-client.json"
   ],
   "provenanceNote": "A later documentation/evidence commit records these results. Runtime source paths are byte-identical to the tested/deployed application commit. Proof scripts may receive additional assertions after that source commit.",
   "remainingReleaseGates": [],
@@ -68,5 +70,11 @@
     "status": "Submitted",
     "submittedAt": "2026-10-30T11:23:56.572Z",
     "separateReadbackVerified": true
+  },
+  "latestOperationalCheck": {
+    "checkedAt": "2026-10-30T14:59:26.960Z",
+    "qlooCapturedAt": "2026-10-30T14:59:03.314Z",
+    "result": "PASS",
+    "applicationCommit": "aca964bf85ee718c9b5676a209e8cda99389c660"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-30T15:00:34.974798+00:00",
+  "applicationCommit": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "qlooReacquiredAt": "2026-10-30T14:59:03.314Z",
+  "successfulAuthenticatedCalls": 16,
+  "identities": 8,
+  "directionalRankings": 8,
+  "publicToolsPassed": 3,
+  "bothBranchesFeasibleAndDifferent": true,
+  "readOnlyToolsPreserveSchedule": true,
+  "rejectedUnauthorizedMutationStatus": 400,
+  "projectState": "published",
+  "qlooSubmissionStatus": "Submitted",
+  "submissionTimestampReadBack": "2026-10-30T11:23:56.572Z",
+  "providerCacheExpiredSinceOriginalProof": true,
+  "changedApplicationCode": false,
+  "result": "PASS",
+  "evidence": "evidence/post-submission-tool-client.json"
+}

@@ -16,11 +16,12 @@
       ],
       "verification": "Authenticated server adapter: 8 searches + 8 Insights requests; inspect evidence/qloo-live.json. Fresh public Worker acquisition and browser journey on source aca964bf85ee718c9b5676a209e8cda99389c660.",
       "expected": "Live adapter resolves four artists and four exact movie versions; IDs recorded.",
-      "observed": "Four exact artist identities and four movie identities with release years resolved. Sixteen actual authenticated calls succeeded; IDs retained. Public release reacquired 8 identities/8 directional queries at 2026-10-30T10:35:56.280Z with original provenance preserved.",
+      "observed": "Four exact artist identities and four movie identities with release years resolved. Sixteen actual authenticated calls succeeded; IDs retained. Public release reacquired 8 identities/8 directional queries at 2026-10-30T10:35:56.280Z with original provenance preserved. Post-submission cache-expiry check at2026-10-30T14:59:03.314Z completed16 fresh authenticated calls and the public read-only tools; all8 identities and8 directional rankings remain usable, with different feasible branch outcomes.",
       "evidencePaths": [
         "evidence/qloo-live.json",
         "evidence/browser-public.json",
-        "evidence/browser-public-export.json"
+        "evidence/browser-public-export.json",
+        "evidence/post-submission-tool-client.json"
       ],
       "testedRevision": "aca964bf85ee718c9b5676a209e8cda99389c660"
     },
@@ -36,11 +37,12 @@
       ],
       "verification": "Authenticated scripts/live-feasibility.ts run; inspect eight directional Insights provenance records. Fresh public Worker acquisition and browser journey on source aca964bf85ee718c9b5676a209e8cda99389c660.",
       "expected": "Live artist\u2192movie and movie\u2192artist queries use current supported parameters.",
-      "observed": "Four artist\u2192movie and four movie\u2192artist queries succeeded using filter.results.entities and concrete subtype validation. Public release reacquired 8 identities/8 directional queries at 2026-10-30T10:35:56.280Z with original provenance preserved.",
+      "observed": "Four artist\u2192movie and four movie\u2192artist queries succeeded using filter.results.entities and concrete subtype validation. Public release reacquired 8 identities/8 directional queries at 2026-10-30T10:35:56.280Z with original provenance preserved. Post-submission cache-expiry check at2026-10-30T14:59:03.314Z completed16 fresh authenticated calls and the public read-only tools; all8 identities and8 directional rankings remain usable, with different feasible branch outcomes.",
       "evidencePaths": [
         "evidence/qloo-live.json",
         "evidence/browser-public.json",
-        "evidence/browser-public-export.json"
+        "evidence/browser-public-export.json",
+        "evidence/post-submission-tool-client.json"
       ],
       "testedRevision": "aca964bf85ee718c9b5676a209e8cda99389c660"
     },
@@ -922,11 +924,12 @@
       ],
       "verification": "CROSSCUE_URL=https://crosscue.tbud.workers.dev CROSSCUE_EVIDENCE_LABEL=public node node_modules/tsx/dist/cli.mjs scripts/browser-journey.ts",
       "expected": "Fresh anonymous browser resolves/loads real Qloo evidence and completes core journey with no judge API key.",
-      "observed": "Fresh anonymous public Chromium session reacquired real8-identity/8-direction evidence at10:35:56.280Z, selected consequential Bj\u00f6rk/Moonlight, previewed and explicitly applied3-move repair, reloaded and exported. No login or judge-supplied API key used. Earlier Worker failures retained and fixed.",
+      "observed": "Fresh anonymous public Chromium session reacquired real8-identity/8-direction evidence at10:35:56.280Z, selected consequential Bj\u00f6rk/Moonlight, previewed and explicitly applied3-move repair, reloaded and exported. No login or judge-supplied API key used. Earlier Worker failures retained and fixed. Post-submission cache-expiry check at2026-10-30T14:59:03.314Z completed16 fresh authenticated calls and the public read-only tools; all8 identities and8 directional rankings remain usable, with different feasible branch outcomes.",
       "evidencePaths": [
         "evidence/browser-public.json",
         "evidence/browser-public-export.json",
-        "evidence/tool-client-public.json"
+        "evidence/tool-client-public.json",
+        "evidence/post-submission-tool-client.json"
       ],
       "testedRevision": "aca964bf85ee718c9b5676a209e8cda99389c660"
     },

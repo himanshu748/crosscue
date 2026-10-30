@@ -11,8 +11,8 @@ Reconstructed from user mission on 2026-10-30; no CrossCue ledger present in cur
 - Acceptance: Live adapter resolves four artists and four exact movie versions; IDs recorded.
 - Implementation: server/qloo.ts, scripts/live-feasibility.ts
 - Verification: Authenticated server adapter: 8 searches + 8 Insights requests; inspect evidence/qloo-live.json. Fresh public Worker acquisition and browser journey on source aca964bf85ee718c9b5676a209e8cda99389c660.
-- Observed: Four exact artist identities and four movie identities with release years resolved. Sixteen actual authenticated calls succeeded; IDs retained. Public release reacquired 8 identities/8 directional queries at 2026-10-30T10:35:56.280Z with original provenance preserved.
-- Evidence: evidence/qloo-live.json, evidence/browser-public.json, evidence/browser-public-export.json
+- Observed: Four exact artist identities and four movie identities with release years resolved. Sixteen actual authenticated calls succeeded; IDs retained. Public release reacquired 8 identities/8 directional queries at 2026-10-30T10:35:56.280Z with original provenance preserved. Post-submission cache-expiry check at2026-10-30T14:59:03.314Z completed16 fresh authenticated calls and the public read-only tools; all8 identities and8 directional rankings remain usable, with different feasible branch outcomes.
+- Evidence: evidence/qloo-live.json, evidence/browser-public.json, evidence/browser-public-export.json, evidence/post-submission-tool-client.json
 - Tested revision: aca964bf85ee718c9b5676a209e8cda99389c660
 
 ### CC-002 — Validate both directional Insights queries [VERIFIED]
@@ -20,8 +20,8 @@ Reconstructed from user mission on 2026-10-30; no CrossCue ledger present in cur
 - Acceptance: Live artist→movie and movie→artist queries use current supported parameters.
 - Implementation: server/qloo.ts, scripts/live-feasibility.ts
 - Verification: Authenticated scripts/live-feasibility.ts run; inspect eight directional Insights provenance records. Fresh public Worker acquisition and browser journey on source aca964bf85ee718c9b5676a209e8cda99389c660.
-- Observed: Four artist→movie and four movie→artist queries succeeded using filter.results.entities and concrete subtype validation. Public release reacquired 8 identities/8 directional queries at 2026-10-30T10:35:56.280Z with original provenance preserved.
-- Evidence: evidence/qloo-live.json, evidence/browser-public.json, evidence/browser-public-export.json
+- Observed: Four artist→movie and four movie→artist queries succeeded using filter.results.entities and concrete subtype validation. Public release reacquired 8 identities/8 directional queries at 2026-10-30T10:35:56.280Z with original provenance preserved. Post-submission cache-expiry check at2026-10-30T14:59:03.314Z completed16 fresh authenticated calls and the public read-only tools; all8 identities and8 directional rankings remain usable, with different feasible branch outcomes.
+- Evidence: evidence/qloo-live.json, evidence/browser-public.json, evidence/browser-public-export.json, evidence/post-submission-tool-client.json
 - Tested revision: aca964bf85ee718c9b5676a209e8cda99389c660
 
 ### CC-003 — Enforce fixed-shortlist coverage [VERIFIED]
@@ -412,8 +412,8 @@ Reconstructed from user mission on 2026-10-30; no CrossCue ledger present in cur
 - Acceptance: Fresh anonymous browser resolves/loads real Qloo evidence and completes core journey with no judge API key.
 - Implementation: server/worker.ts, server/qloo.ts, src/App.tsx, scripts/browser-journey.ts
 - Verification: CROSSCUE_URL=https://crosscue.tbud.workers.dev CROSSCUE_EVIDENCE_LABEL=public node node_modules/tsx/dist/cli.mjs scripts/browser-journey.ts
-- Observed: Fresh anonymous public Chromium session reacquired real8-identity/8-direction evidence at10:35:56.280Z, selected consequential Björk/Moonlight, previewed and explicitly applied3-move repair, reloaded and exported. No login or judge-supplied API key used. Earlier Worker failures retained and fixed.
-- Evidence: evidence/browser-public.json, evidence/browser-public-export.json, evidence/tool-client-public.json
+- Observed: Fresh anonymous public Chromium session reacquired real8-identity/8-direction evidence at10:35:56.280Z, selected consequential Björk/Moonlight, previewed and explicitly applied3-move repair, reloaded and exported. No login or judge-supplied API key used. Earlier Worker failures retained and fixed. Post-submission cache-expiry check at2026-10-30T14:59:03.314Z completed16 fresh authenticated calls and the public read-only tools; all8 identities and8 directional rankings remain usable, with different feasible branch outcomes.
+- Evidence: evidence/browser-public.json, evidence/browser-public-export.json, evidence/tool-client-public.json, evidence/post-submission-tool-client.json
 - Tested revision: aca964bf85ee718c9b5676a209e8cda99389c660
 
 ### CC-045 — Durable budget and rate limits [VERIFIED]
