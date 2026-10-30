@@ -38,6 +38,8 @@ The current Devpost required fields were inspected on October 30: start date (28
 
 The creator requested a product-story rewrite after submission. Devpost description version3 was saved and read back at15:21:59UTC. The public story now uses a concrete scheduling choice, essential architecture and genuine challenges, with an explicit fictional-event/real-Qloo distinction. Test totals and release chronology remain in repository evidence. The entry retains its original Submitted timestamp. `evidence/devpost-story-update.json` records this editorial update; no application source or deployment changed.
 
+Description version4 responds to the creator's Qloo-positioning concern. The public copy makes real Qloo rankings central to cultural candidate selection, explains question effort as the measured comparison, and links the unchanged full results including movement/displacement tradeoffs. Version4 and the original Submitted timestamp were read back. `evidence/devpost-qloo-positioning.json` records this copy-only change.
+
 ## Completion boundary
 
 The software, public journey, mobile exports, error recovery, hosted isolation/limits, secret/history/export review, release manifest and draft readback now have proof. An independent reviewer also completed sixteen fresh public spot-checks and two additional axe audits without changing the application; no critical finding remained. The final internal judge score remains15/20, with actual organizer validation still absent.

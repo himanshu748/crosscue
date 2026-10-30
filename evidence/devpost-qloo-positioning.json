@@ -1,0 +1,21 @@
+{
+  "kind": "qloo-contribution-copy-clarification",
+  "projectId": 1518014,
+  "url": "https://devpost.com/software/crosscue",
+  "descriptionVersion": 4,
+  "updatedAt": "2026-10-30T11:26:52.876-04:00",
+  "projectState": "published",
+  "submittedAt": "2026-10-30T07:23:56.572-04:00",
+  "readbackChecks": {
+    "qlooCentral": true,
+    "candidateSelection": true,
+    "benchmarkScoped": true,
+    "detailedComparisonLinked": true,
+    "noUniversalSuperiorityClaim": true,
+    "stillSubmitted": true
+  },
+  "applicationCommit": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "change": "Foreground real Qloo rankings as the source of cultural candidates; distinguish question effort and disruption from unmeasured cultural quality. Full unfavorable benchmark results remain in linked repository.",
+  "benchmarkValuesChanged": false,
+  "runtimeChanged": false
+}

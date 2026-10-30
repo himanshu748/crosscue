@@ -13,11 +13,11 @@ Putting Björk and Moonlight in the same time slot is easy. Deciding whether sep
 
 A mixed music-and-film festival gives an organizer plenty of decisions already. Rooms, timings and artist availability set the boundaries. Cultural connections add another question: which sessions might deserve separate moments in the programme?
 
-I built CrossCue to make that decision easier. It brings together Qloo's cultural intelligence and the practical cost of changing a timetable, then asks the organizer only when their answer would change the result.
+I built CrossCue around Qloo's ability to connect music and film through cultural taste. Those relationships give the organizer a reason to investigate an overlap. CrossCue makes the cost of acting on that insight clear before asking for a decision.
 
 ## What it does
 
-CrossCue is a scheduling decision tool for festival organizers. It finds music–film relationships through Qloo, compares two possible decisions, and shows what each would mean for the programme.
+Qloo is the cultural intelligence at the heart of CrossCue. Its directional rankings determine which music–film pairs qualify for investigation and the order CrossCue considers them. The organizer sees a question when that Qloo-supported relationship leads to two feasible, different scheduling outcomes.
 
 The demo uses **Fieldnotes Festival, a fictional event** with eight sessions, four music showcases, four film blocks and two rooms. Its bookings, timetable and operational constraints are invented for the demonstration. **The artists, films and Qloo API evidence are real.** These are hypothetical bookings, not an announcement of performances or screenings.
 
@@ -32,15 +32,15 @@ CrossCue asks at most two questions in a run. If protecting a pair is impossible
 
 ## How I built it
 
-The interface is a React and TypeScript festival operations desk, with two room lanes, cultural evidence, side-by-side decisions and a schedule preview. A Cloudflare Worker handles Qloo requests and keeps the API key on the server. D1 stores each visitor's programme separately.
+Qloo drives entity resolution and cultural candidate selection. The server resolves the artists and films, requests artist-to-film and film-to-artist rankings within the programme's shortlists, and uses those returned ranks to choose which pairs to test. The Björk/Moonlight question comes from that live evidence. Each rank retains its query context; it is not an attendee-overlap probability.
 
-Qloo resolves the real artists and films, then ranks each session's opposite-domain shortlist in both directions. Each ranking keeps its query context; it is not a prediction of attendee overlap.
+The React and TypeScript interface turns that evidence into a festival operations desk: two room lanes, side-by-side decisions and a schedule preview. A Cloudflare Worker keeps Qloo requests and credentials on the server. D1 stores each visitor's programme separately.
 
 The scheduling engine checks all 256 assignments in the demo's allowed placement domain. It first satisfies the hard constraints, then minimizes moved sessions, then time displacement. A separate validator checks the result before the approved schedule is saved. Three typed, read-only tools let an external agent inspect the programme, compare a pair and explain approved changes. The live workflow uses deterministic orchestration with organizer approval; it has no internal LLM.
 
 ## Challenges I ran into
 
-The hardest design problem was deciding when to interrupt the organizer. A strong cultural relationship can still produce a useless question if separating the sessions changes nothing. Testing both schedules before asking became the central mechanism.
+The hardest design problem was turning a Qloo-supported relationship into a useful organizer decision. The workflow needed to show two valid choices and make their scheduling consequences visible. Testing both schedules before asking became the central mechanism.
 
 Keeping the repair small was another challenge. Moving one showcase can force its neighbours to move because of room-turnover constraints. The preview needed to show that whole cascade before the organizer committed to it.
 
@@ -48,11 +48,11 @@ Keeping the repair small was another challenge. Moving one showcase can force it
 
 The full journey works in the public demo: load the programme, investigate a Qloo-supported pair, compare the choices, approve a repair and download the result. A locked timetable also produces a useful answer: no feasible question to ask.
 
-In the controlled demo comparison, Qloo selection needed one question; metadata-only and blind LLM selection needed two each. The LLM arm moved fewer sessions and left one further actionable pair after its question budget, so the tradeoff matters. The [reproducible comparison](https://github.com/himanshu748/crosscue#controlled-comparison) includes those results and the limits of this single fictional programme.
+In the controlled demo, the Qloo-assisted flow finished with one consequential question; metadata-only and blind LLM selection each used both available questions. All three ran with the same timetable, constraints, solver and simulated organizer policy. This measures question effort in one programme. The [full comparison](https://github.com/himanshu748/crosscue#controlled-comparison) reports schedule disruption and the baseline limitations alongside it; cultural relevance and attendee benefit need organizer validation.
 
 ## What I learned
 
-Cultural evidence becomes useful to an organizer when it comes with the cost of acting on it. Showing the two outcomes made the question clearer than a recommendation alone.
+Qloo gave this workflow its cultural starting point: a relationship across music and film that the timetable alone cannot supply. Connecting that evidence to two concrete schedules made it possible to ask the organizer a focused question.
 
 ## What's next for CrossCue
 

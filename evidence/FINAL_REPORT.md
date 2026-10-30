@@ -57,6 +57,8 @@ Devpost project1518014 is **published** and Qloo submission1272444 is **Submitte
 
 The creator subsequently requested a product-story rewrite. Description version3 was published and read back at15:21:59UTC; the entry remains Submitted with its original timestamp. The live description explicitly labels Fieldnotes fictional and the Qloo entities/API evidence real. Detailed verification remains in this repository. See `devpost-story-update.json`.
 
+The latest description is version4, verified by live project readback. It foregrounds Qloo's role in selecting cultural candidates and distinguishes measured question effort from cultural relevance or attendee benefit. Detailed benchmark values remain unchanged and linked; the entry remains Submitted. See `devpost-qloo-positioning.json`.
+
 ## Hosting allowance and remaining limits
 
 No remaining mandatory implementation or deployment blocker. At 11:19 UTC on October 30, the authenticated provider dashboard showed Workers Free ($0), 233/100,000 daily Worker requests, and D1 usage of 657/5,000,000 reads, 441/100,000 writes and 1.44MB/5GB storage. D1 quotas are hard limits. No plan upgrade, purchase or billing change occurred. `hosting-allowance.json` records the sanitized observation and its scope.
