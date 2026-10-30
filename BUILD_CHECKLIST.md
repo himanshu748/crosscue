@@ -2,7 +2,7 @@
 
 Reconstructed from user mission on 2026-10-30; no CrossCue ledger present in current workspace, searched local project roots or related second-feature repository. Existing Second Feature preserved.
 
-**58/60 VERIFIED. Ready: false.** IMPLEMENTED is not VERIFIED.
+**60/60 VERIFIED. Ready: true.** IMPLEMENTED is not VERIFIED.
 
 ## Phase 1: Qloo feasibility
 
@@ -387,25 +387,25 @@ Reconstructed from user mission on 2026-10-30; no CrossCue ledger present in cur
 - Evidence: evidence/reviewer-final.md, evidence/browser-public-provider-failure.json, evidence/browser-public.json, evidence/browser-public-export.json, evidence/browser-public-mobile-export.json
 - Tested revision: aca964bf85ee718c9b5676a209e8cda99389c660
 
-### CC-042 — Final acceptance reconciliation [BLOCKED]
+### CC-042 — Final acceptance reconciliation [VERIFIED]
 
 - Acceptance: All twelve final acceptance conditions map to passing mandatory checks; unresolved gaps remain explicit.
 - Implementation: docs/ACCEPTANCE.md, BUILD_STATUS.json
 - Verification: Inspect docs/ACCEPTANCE.md and sole60-check status; rerun completion verifier with --require-complete.
-- Observed: All twelve user conditions are mapped. Functionality/public/source gates now have proof, but CC-043 free/included hosting capacity remains unverified; therefore the condition requiring all mandatory gates to pass is not satisfied. This reconciliation cannot be marked VERIFIED.
-- Evidence: docs/ACCEPTANCE.md, BUILD_NOTES.md
+- Observed: All twelve user conditions map to exercised mandatory checks. Signed-in provider proof closes CC-043; all60 checks have implementation, exercised acceptance, evidence and tested revision. Final verifier and independent reconciliation establish readiness. Submission is separately conditional on this reconciliation and retains its actual status.
+- Evidence: docs/ACCEPTANCE.md, BUILD_NOTES.md, evidence/hosting-allowance.json, evidence/completion-verification.json
 - Tested revision: aca964bf85ee718c9b5676a209e8cda99389c660
 
 ## Phase 8: Public deployment
 
-### CC-043 — Free authorized external hosting [BLOCKED]
+### CC-043 — Free authorized external hosting [VERIFIED]
 
 - Acceptance: Public external app runs backend; existing free access verified and no paid upgrades/overage added.
 - Implementation: wrangler.jsonc, server/worker.ts, server/schema.sql
-- Verification: Cloudflare dedicated D1 provision and deployment authorization checked; account billing-read request denied.
-- Observed: User explicitly authorized existing hosting allowance only, with no upgrade or paid overage. Account free/included allowance is not independently visible because billing read is denied; do not claim verified free plan or zero billed usage.
-- Evidence: evidence/d1-schema.json, BUILD_NOTES.md
-- Tested revision: 01a54ee656fa44ecfce65302417e7e99bce7df0c
+- Verification: Authenticated Cloudflare dashboard: Workers & Pages daily usage, Workers plans current selection, and D1 Database daily usage; read-only browser observation on 2026-10-30 at 11:19 UTC.
+- Observed: Workers Free is the current $0 plan. Account usage:233/100000 daily Worker requests; D1:657/5000000 reads,441/100000 writes,1.44MB/5GB storage,2/10 databases. Dashboard labels D1 quotas hard limits. Existing free capacity verified; no upgrade, purchase or billing change performed. Point-in-time proof, not future availability guarantee.
+- Evidence: evidence/d1-schema.json, BUILD_NOTES.md, evidence/hosting-allowance.json
+- Tested revision: aca964bf85ee718c9b5676a209e8cda99389c660
 
 ### CC-044 — Public live Qloo path [VERIFIED]
 
@@ -504,8 +504,8 @@ Reconstructed from user mission on 2026-10-30; no CrossCue ledger present in cur
 - Acceptance: Complete release-matching form answers prepared; actual Devpost status explicitly verified, submission only within authorization.
 - Implementation: docs/SUBMISSION.md, BUILD_NOTES.md
 - Verification: Create Devpost project/Qloo submission draft, upload four actual release screenshots, and read back project state/description; compare prepared custom-field answers with release manifest.
-- Observed: Project1518014/submission1272444 is a draft at https://devpost.com/software/crosscue. Description read back; four real screenshots uploaded. Public URLs, October28 start and required custom answers are prepared. publishedAt/submittedAt are null: no final submission or eligibility attestation claimed.
-- Evidence: evidence/devpost-draft.json, docs/SUBMISSION.md, evidence/release-manifest.json
+- Observed: Devpost project1518014 is published at https://devpost.com/software/crosscue; Qloo entry1272444 still has submitted_at=null before final submission. Updated description read back, actual media and URLs retained. Creator confirmed eligibility/rules and authorized submission after checks pass.
+- Evidence: evidence/devpost-draft.json, docs/SUBMISSION.md, evidence/release-manifest.json, evidence/pre-submit-check.json
 - Tested revision: aca964bf85ee718c9b5676a209e8cda99389c660
 
 ## Phase 10: Judge simulation and final release
@@ -524,7 +524,7 @@ Reconstructed from user mission on 2026-10-30; no CrossCue ledger present in cur
 - Acceptance: Evidence-based /5 score and strongest deadline-feasible fix; no unwarranted perfect score.
 - Implementation: docs/JUDGE_REVIEW.md
 - Verification: Independent skeptical category scoring against live evidence, exact solver and actual tests.
-- Observed: Technology4/5: final publicQloo/tool/D1/browserproof closes software demonstrability gaps; small finite domain and missing allowance visibility remainlimits. Most useful remaining release fix is actual account allowance proof.
+- Observed: Technology4/5: final publicQloo/tool/D1/browserproof closes software demonstrability gaps; small finite domain and missing allowance visibility remainlimits. Most useful remaining release fix is actual account allowance proof. Subsequent signed-in dashboard proof closes the account allowance limitation; the historical4/5 score is preserved.
 - Evidence: docs/JUDGE_REVIEW.md, evidence/reviewer-final.md, evidence/reviewer-d-public.json
 - Tested revision: aca964bf85ee718c9b5676a209e8cda99389c660
 
@@ -560,6 +560,6 @@ Reconstructed from user mission on 2026-10-30; no CrossCue ledger present in cur
 - Acceptance: Substantive defects fixed/retested; no unresolved critical review defect; final report contains exact checks, URLs, commits, evidence, tests, benchmark and actual submission state.
 - Implementation: BUILD_STATUS.json, BUILD_NOTES.md, docs/ACCEPTANCE.md
 - Verification: Read and reconcile evidence/FINAL_REPORT.md against release manifest, actual public browser/tool exports, independent final reviewer, clean public clone, Devpost draft readback and sole60-check ledger; run verifier and six guard controls.
-- Observed: Final report contains all requested fields and distinguishes functional verified public software from full readiness. Exact count58/60; tested/deployed application commitaca964bf85ee718c9b5676a209e8cda99389c660. Substantive runtime/UI defects fixed and retested; no unresolved critical finding in independent exercised scope. CC-042/043 remain BLOCKED and ready=false; Devpost remains an unsubmitted draft.
-- Evidence: evidence/FINAL_REPORT.md, evidence/release-manifest.json, evidence/reviewer-d-public.json, evidence/browser-public.json, evidence/clean-clone.json, evidence/devpost-draft.json, evidence/ledger-guards.json
+- Observed: Final report contains every requested field. Exact count60/60; tested/deployed application commitaca964bf85ee718c9b5676a209e8cda99389c660. Runtime/UI defects fixed and retested; no unresolved critical finding in independent exercised scope. Signed-in hosting allowance proof closes CC-043 and CC-042; ready=true. Submission status remains explicitly recorded separately.
+- Evidence: evidence/FINAL_REPORT.md, evidence/release-manifest.json, evidence/reviewer-d-public.json, evidence/browser-public.json, evidence/clean-clone.json, evidence/devpost-draft.json, evidence/ledger-guards.json, evidence/hosting-allowance.json
 - Tested revision: aca964bf85ee718c9b5676a209e8cda99389c660

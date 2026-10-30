@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-30T11:22:13.588120+00:00",
+  "applicationCommit": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "original60AcceptanceTextsUnchanged": true,
+  "runtimeFilesMatched": 21,
+  "runtimeFilesUnchanged": true,
+  "completionCommand": "python3 scripts/verify_completion.py --require-complete",
+  "completion": {
+    "verified": 60,
+    "total": 60,
+    "ready": true,
+    "errors": []
+  },
+  "guardCommand": "python3 scripts/check-ledger-guards.py",
+  "guardResult": {
+    "kind": "synthetic-verifier-control-tests",
+    "realLedgerModified": false,
+    "passed": 6,
+    "results": [
+      {
+        "case": "synchronized valid structure",
+        "result": "PASS"
+      },
+      {
+        "case": "Markdown mismatch rejected",
+        "result": "PASS"
+      },
+      {
+        "case": "missing mandatory ID rejected",
+        "result": "PASS"
+      },
+      {
+        "case": "unsupported VERIFIED assertion rejected",
+        "result": "PASS"
+      },
+      {
+        "case": "absent proof file rejected",
+        "result": "PASS"
+      },
+      {
+        "case": "premature readiness and incomplete release rejected",
+        "result": "PASS"
+      }
+    ]
+  },
+  "hostingAllowanceEvidence": "evidence/hosting-allowance.json",
+  "publicToolEvidence": "evidence/tool-client-pre-submit.json",
+  "unitBrowserBenchmarkEvidenceRetainedFromTestedUnchangedRuntime": true
+}

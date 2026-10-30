@@ -1,8 +1,8 @@
 # CrossCue release report
 
-The public application completes the genuine Qloo-powered organizer journey. Full readiness is **not claimed**: independent hosting-allowance verification remains blocked, which also prevents closing the all-mandatory-gates reconciliation.
+The public application completes the genuine Qloo-powered organizer journey. The signed-in provider dashboard has resolved the final hosting-allowance blocker; all original mandatory checks now have exercised proof.
 
-- Verification ledger: **58/60 VERIFIED**. CC-060 final-report acceptance was exercised against the recorded evidence. CC-042 and CC-043 remain blocked; `ready=false`. The synchronized machine ledger is authoritative.
+- Verification ledger: **60/60 VERIFIED; `ready=true`**. CC-043 has authenticated provider allowance proof, and CC-042 reconciles all twelve final conditions. The synchronized machine ledger is authoritative.
 - Public application: https://crosscue.tbud.workers.dev
 - Public MIT repository: https://github.com/himanshu748/crosscue
 - Tested application commit: `aca964bf85ee718c9b5676a209e8cda99389c660`.
@@ -51,11 +51,10 @@ Qloo asks fewer questions in this programme. The LLM arm moves fewer sessions an
 
 Independent review found no unresolved critical defect within the exercised scope after the runtime fix. Internal judge simulation remains **15/20**: technology4/5, design4/5, potential impact3/5, idea4/5. An actual organizer study and broader programmes remain future validation; no perfect score or prize prediction is claimed.
 
-Devpost project1518014 and Qloo submission1272444 exist as a **draft**, read back from Devpost with no submitted timestamp: https://devpost.com/software/crosscue. The description, verified links, four real product gallery screenshots and thumbnail are prepared. Required custom-field answers are in `docs/SUBMISSION.md`, including the creator-confirmed October28,2026 start date. No final submission or eligibility/rule attestation was performed.
+Devpost project1518014 is **published**; Qloo submission1272444 still has no submitted timestamp before the final submission step: https://devpost.com/software/crosscue. The description, verified links, four real product gallery screenshots and thumbnail are prepared. Required custom-field answers are in `docs/SUBMISSION.md`, including the creator-confirmed October28,2026 start date. The creator subsequently confirmed eligibility/rules and authorized submission after checks pass. Final submission is pending the final reconciliation.
 
-## Remaining blockers
+## Hosting allowance and remaining limits
 
-- **CC-043:** Cloudflare billing-read access is denied. The creator authorized existing allowance only; no plan upgrade or purchase was made. Remaining free/included capacity could not be independently established. Closing this check needs billing-read access or current allowance evidence.
-- **CC-042:** Its literal acceptance requires all mandatory checks to pass, so it remains blocked while CC-043 is open.
+No remaining mandatory implementation or deployment blocker. At 11:19 UTC on October 30, the authenticated provider dashboard showed Workers Free ($0), 233/100,000 daily Worker requests, and D1 usage of 657/5,000,000 reads, 441/100,000 writes and 1.44MB/5GB storage. D1 quotas are hard limits. No plan upgrade, purchase or billing change occurred. `hosting-allowance.json` records the sanitized observation and its scope.
 
-The public workflow is functional; the release is not labeled fully ready while these mandatory gates remain open.
+This is point-in-time capacity evidence, not a future uptime guarantee. The benchmark remains one fictional festival; no organizer study, attendee benefit or prize result is claimed. The internal judge score remains15/20.

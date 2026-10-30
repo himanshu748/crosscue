@@ -54,11 +54,11 @@
     "evidence/reviewer-b-oracle.json",
     "evidence/ledger-guards.json",
     "evidence/hosted-security-review.json",
-    "evidence/hosted-provider-budget.json"
+    "evidence/hosted-provider-budget.json",
+    "evidence/hosting-allowance.json",
+    "evidence/tool-client-pre-submit.json"
   ],
   "provenanceNote": "A later documentation/evidence commit records these results. Runtime source paths are byte-identical to the tested/deployed application commit. Proof scripts may receive additional assertions after that source commit.",
-  "remainingReleaseGates": [
-    "Independent verification of available free/included Cloudflare allowance: billing read access is denied. User authorizes existing allowance only; no upgrade or purchase was made.",
-    "Final all-mandatory-check reconciliation remains open while the allowance gate is blocked."
-  ]
+  "remainingReleaseGates": [],
+  "hostingAllowanceVerifiedAt": "2026-10-30T11:19:17Z"
 }

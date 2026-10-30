@@ -1,0 +1,41 @@
+{
+  "kind": "authenticated-provider-dashboard-observation",
+  "observedAt": "2026-10-30T11:19:17Z",
+  "applicationCommit": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "applicationUrl": "https://crosscue.tbud.workers.dev",
+  "interaction": "Creator signed into the account owning CrossCue. Read Workers & Pages daily usage, Workers plans, and D1 Database daily usage using the in-app browser accessibility tree. No billing or plan controls were changed.",
+  "accountMatch": "The dashboard lists crosscue.tbud.workers.dev and crosscue-state; the database UUID matches the deployed binding.",
+  "plan": {
+    "name": "Workers Free",
+    "priceUsd": 0,
+    "observedSelection": "Current plan (disabled) under Free; Paid has an Upgrade button",
+    "dashboardPath": "workers/plans"
+  },
+  "workers": {
+    "usageDate": "2026-10-30",
+    "dashboardPath": "workers-and-pages",
+    "requestsToday": 233,
+    "requestsDailyLimit": 100000,
+    "observabilityEventsToday": 0,
+    "observabilityEventsDailyLimit": 200000
+  },
+  "d1": {
+    "usageDate": "2026-10-30",
+    "dashboardPath": "workers/d1",
+    "databases": 2,
+    "databaseLimit": 10,
+    "rowsReadToday": 657,
+    "rowsReadDailyLimit": 5000000,
+    "rowsWrittenToday": 441,
+    "rowsWrittenDailyLimit": 100000,
+    "displayedTotalStorage": "1.44 MB / 5 GB",
+    "displayedCrossCueDatabaseSize": "1.35 MB",
+    "observedLimitBehavior": "Hard limit. Usage cannot exceed this amount."
+  },
+  "primaryDocumentation": "https://developers.cloudflare.com/d1/platform/pricing/",
+  "documentedFreeLimitBehavior": "D1 rejects queries at daily free limits; extra paid usage requires a plan upgrade.",
+  "upgradesPurchasesOrBillingChangesPerformed": false,
+  "authorization": "Creator authorized existing hosting allowance only, with no upgrade or paid overage.",
+  "result": "PASS",
+  "limitations": "Point-in-time account usage, not a guarantee of future availability. Dashboard metrics can lag. No invoice audit or claim about unrelated services. Account identity, unrelated project names, credentials and billing details omitted from this public proof."
+}

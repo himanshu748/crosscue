@@ -1,5 +1,7 @@
 # Skeptical judge review — tested public release
 
+Completion addendum, October 30 at11:19UTC: authenticated provider-dashboard evidence in `evidence/hosting-allowance.json` resolves the allowance blocker mentioned below. All60 gates now have proof. The original independent assessment and15/20 score are preserved; resolving hosting visibility does not establish organizer impact. Portal submission status is recorded separately in the final report.
+
 Reviewer D context, October 30, 2026, updated after the public release proof and an independent fresh-browser review at 10:43 UTC. Tested application revision: `aca964bf85ee718c9b5676a209e8cda99389c660`. This assessment inspected the implementation, recorded Qloo evidence, scheduling proof, actual public product screenshots, benchmark protocol, an executed benchmark/ablation, the public 54-assertion browser report and the external tool-client trace. It then exercised a separate public browser spot-check. It is not an official judge score or a prediction of prize placement.
 
 Current [Devpost criteria](https://qloo.devpost.com/) were retrieved through the official connector on October 30, 2026: four categories, each out of five. The official build requirement permits an application that functions as an agentic tool. CrossCue has no internal LLM; its claim remains an agent-callable deterministic workflow. Public deployment and browser proof establish functioning software, not real-world attendee impact.

@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-30T11:06:05Z",
+  "projectId": 1518014,
+  "projectSlug": "crosscue",
+  "state": "draft",
+  "submittedAt": null,
+  "applicationCommit": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "requiredFields": [
+    {
+      "id": 28597,
+      "label": "When did you begin your project?"
+    },
+    {
+      "id": 28598,
+      "label": "The public URL to your project:"
+    },
+    {
+      "id": 28599,
+      "label": "Link to your PUBLIC code repo:"
+    }
+  ],
+  "videoRequired": false,
+  "userConfirmedEligibilityAndRules": true,
+  "userAuthorizedSubmissionAfterChecksPass": true,
+  "customAnswersPrepared": [
+    {
+      "submission_field_id": 28597,
+      "value": "October 28, 2026. Planning began then; this implementation began October 30, 2026."
+    },
+    {
+      "submission_field_id": 28598,
+      "value": "https://crosscue.tbud.workers.dev"
+    },
+    {
+      "submission_field_id": 28599,
+      "value": "https://github.com/himanshu748/crosscue"
+    }
+  ],
+  "publicToolClient": "evidence/tool-client-pre-submit.json",
+  "blockingCondition": null,
+  "finalCheckAt": "2026-10-30T11:22:13.588120+00:00",
+  "hostingAllowanceEvidence": "evidence/hosting-allowance.json",
+  "descriptionUpdatedAndReadBack": true,
+  "actualSubmissionStatus": "Hackathon submission pending; project description updated and published state read back",
+  "projectState": "published"
+}

@@ -2,7 +2,7 @@
 
 Updated October 30, 2026. This document records current boundaries; the sole acceptance ledger remains `BUILD_STATUS.json`, rendered into `BUILD_CHECKLIST.md`. No second checklist replaces it.
 
-**Final recorded status: 58/60 VERIFIED; `ready=false`.** CC-042 and CC-043 remain BLOCKED. The final report is `evidence/FINAL_REPORT.md`. The normal verifier passes; `--require-complete` intentionally exits1 with “2 mandatory gates remain unverified.” All six isolated verifier guard controls pass.
+**Final recorded status: 60/60 VERIFIED; `ready=true`.** Signed-in provider proof closes CC-043 and the final reconciliation closes CC-042. The final report is `evidence/FINAL_REPORT.md`. The completion verifier and all six isolated rejection controls pass; original acceptance wording is preserved.
 
 ## Contract and provenance
 
@@ -24,22 +24,22 @@ The first hosted Qloo analyses failed with actual 502/network errors. The UI rep
 
 ## Hosting and publication boundary
 
-The user explicitly authorized using the existing Cloudflare hosting allowance only, with no upgrade or paid overage. The dedicated D1 schema was applied successfully. Billing-read access is denied; account plan, remaining allowance and actual billed usage have **not** been independently verified. Do not translate deployment success into a verified-free-plan claim. CC-043 remains open until its acceptance is substantiated.
+The user explicitly authorized using the existing Cloudflare hosting allowance only, with no upgrade or paid overage. The dedicated D1 schema was applied successfully. The API token lacks billing-read access; the creator signed into the dashboard instead. At11:19UTC, it showed Workers Free as current,233/100000 daily requests, D1 reads657/5000000, writes441/100000 and storage1.44MB/5GB, with hard limits. `evidence/hosting-allowance.json` closes CC-043 through actual provider observation. No upgrade, purchase or billing change occurred. This is a current capacity observation, not an invoice audit or future uptime guarantee.
 
 The public repository is [himanshu748/crosscue](https://github.com/himanshu748/crosscue), with MIT-licensed complete source. Independent anonymous API readback confirmed public visibility and MIT licensing. The release manifest records the tested/deployed application commit separately from later proof/documentation changes.
 
-The live application is [crosscue.tbud.workers.dev](https://crosscue.tbud.workers.dev). Fresh hosted Qloo acquisition completed on October 30 at **10:35:56 UTC**, resolving eight identities and retrieving eight directional rankings. Actual D1 readback records 19 upstream-attempt reservations, including failed attempts, and durable cache expiry. Independent hosted security checks preserve their original source revisions; unchanged state/limiter code and final public runtime proof are linked by the manifest. Functionality is verified; the unresolved allowance gate still prevents full readiness.
+The live application is [crosscue.tbud.workers.dev](https://crosscue.tbud.workers.dev). Fresh hosted Qloo acquisition completed on October 30 at **10:35:56 UTC**, resolving eight identities and retrieving eight directional rankings. Actual D1 readback records 19 upstream-attempt reservations, including failed attempts, and durable cache expiry. Independent hosted security checks preserve their original source revisions; unchanged state/limiter code and final public runtime proof are linked by the manifest. Functionality and existing free allowance are verified; the application source remains unchanged.
 
 ## Submission boundary
 
 The current Devpost required fields were inspected on October 30: start date (28597), public project URL (28598), public repository URL (28599), and optional existing-project improvements (28701). No video is required. The creator supplied October 28 as the actual project start date.
 
-`docs/SUBMISSION.md` contains the prepared description, actual start date, verified public URLs and tested/deployed revision. [The Devpost draft](https://devpost.com/software/crosscue) was created and read back: project1518014, Qloo submission1272444, state `draft`, `publishedAt=null`, `submittedAt=null`. Four actual release screenshots were uploaded. The required custom-field answers are prepared for the final submit operation. No final submission or eligibility/rule attestation occurred. `evidence/devpost-draft.json` records this boundary.
+`docs/SUBMISSION.md` contains the prepared description, actual start date, verified public URLs and tested/deployed revision. [The Devpost draft](https://devpost.com/software/crosscue) was created and read back: project1518014, Qloo submission1272444, state `draft`, `publishedAt=null`, `submittedAt=null`. Four actual release screenshots were uploaded. The project description was subsequently updated and published state was read back at11:21:42UTC; the Qloo event entry still had no submitted timestamp. The required custom-field answers are prepared for the final submit operation. The creator subsequently confirmed eligibility/rules and authorized submission after checks pass. `evidence/devpost-draft.json` preserves the historical draft receipt; the current final submission status is recorded separately.
 
 ## Remaining release work
 
 The software, public journey, mobile exports, error recovery, hosted isolation/limits, secret/history/export review, release manifest and draft readback now have proof. An independent reviewer also completed sixteen fresh public spot-checks and two additional axe audits without changing the application; no critical finding remained. The final internal judge score remains15/20, with actual organizer validation still absent.
 
-The remaining substantive blocker is independent verification of the available free/included Cloudflare allowance. CC-042 also stays open because its literal acceptance requires all mandatory conditions to pass. The final report was reconciled against the manifest, actual public browser and independent reviewer, clean public clone, benchmark, draft readback and ledger. It records the exact count, URLs, application revision, actual test results, comparison and unsubmitted draft status. Do not mark `ready=true` while CC-043 or CC-042 is open.
+Authenticated dashboard evidence resolves the previous free-allowance blocker. The final report reconciles the manifest, public browser proof, independent review, clean public clone, benchmark, portal readback and sole ledger. All60 mandatory gates have exercised proof. No runtime or visual redesign was introduced during this completion pass; the tested/deployed application revision remains unchanged.
 
 The ledger guard harness uses temporary synthetic copies only. It must reject a missing mandatory ID, Markdown mismatch, an unsupported VERIFIED assertion, an absent proof file, and premature readiness. Those control fixtures are never product or Qloo evidence.

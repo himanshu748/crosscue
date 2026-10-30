@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "project": "CrossCue",
   "contractOrigin": "Reconstructed from user mission on 2026-10-30; no CrossCue ledger present in current workspace, searched local project roots or related second-feature repository. Existing Second Feature preserved.",
-  "ready": false,
+  "ready": true,
   "checks": [
     {
       "id": "CC-001",
@@ -35,8 +35,8 @@
         "scripts/live-feasibility.ts"
       ],
       "verification": "Authenticated scripts/live-feasibility.ts run; inspect eight directional Insights provenance records. Fresh public Worker acquisition and browser journey on source aca964bf85ee718c9b5676a209e8cda99389c660.",
-      "expected": "Live artist→movie and movie→artist queries use current supported parameters.",
-      "observed": "Four artist→movie and four movie→artist queries succeeded using filter.results.entities and concrete subtype validation. Public release reacquired 8 identities/8 directional queries at 2026-10-30T10:35:56.280Z with original provenance preserved.",
+      "expected": "Live artist\u2192movie and movie\u2192artist queries use current supported parameters.",
+      "observed": "Four artist\u2192movie and four movie\u2192artist queries succeeded using filter.results.entities and concrete subtype validation. Public release reacquired 8 identities/8 directional queries at 2026-10-30T10:35:56.280Z with original provenance preserved.",
       "evidencePaths": [
         "evidence/qloo-live.json",
         "evidence/browser-public.json",
@@ -122,7 +122,7 @@
       ],
       "verification": "npm run test:consequence; replay separately captured real Qloo responses through actual engine and validator. Fresh public Worker acquisition and browser journey on source aca964bf85ee718c9b5676a209e8cda99389c660.",
       "expected": "Real Qloo-supported pair yields two feasible different optimal schedules through actual adapter and engine.",
-      "observed": "Björk/Moonlight ranks 1/4 and 2/4; Protect and Allow are feasible and differ: 3 moved/270 minutes versus 0/0. Public release reacquired 8 identities/8 directional queries at 2026-10-30T10:35:56.280Z with original provenance preserved.",
+      "observed": "Bj\u00f6rk/Moonlight ranks 1/4 and 2/4; Protect and Allow are feasible and differ: 3 moved/270 minutes versus 0/0. Public release reacquired 8 identities/8 directional queries at 2026-10-30T10:35:56.280Z with original provenance preserved.",
       "evidencePaths": [
         "evidence/qloo-live.json",
         "evidence/consequence-proof.json",
@@ -269,7 +269,7 @@
       ],
       "verification": "CROSSCUE_URL=https://crosscue.tbud.workers.dev CROSSCUE_EVIDENCE_LABEL=public node node_modules/tsx/dist/cli.mjs scripts/browser-journey.ts",
       "expected": "Real desktop journey shows time-positioned two-room timetable, type distinctions and clear primary task.",
-      "observed": "Fresh public desktop 1440×1000 loads complete8-session/two-room time-positioned programme; main action and consequential branch costs work. Approval preview now activates step04.",
+      "observed": "Fresh public desktop 1440\u00d71000 loads complete8-session/two-room time-positioned programme; main action and consequential branch costs work. Approval preview now activates step04.",
       "evidencePaths": [
         "evidence/browser-public.json",
         "evidence/screenshots/public-initial.png",
@@ -355,7 +355,7 @@
       ],
       "verification": "CROSSCUE_URL=https://crosscue.tbud.workers.dev CROSSCUE_EVIDENCE_LABEL=public node node_modules/tsx/dist/cli.mjs scripts/browser-journey.ts; separate independent browser reviewer checks.",
       "expected": "Keyboard journey, names/focus, semantic controls, contrast, reduced motion and automated accessibility checks pass.",
-      "observed": "Public desktop/mobile journey passes11 axe WCAG A/AA states with zero violations; skip link, evidence tabs, Escape, preview focus and reduced-motion preference pass. Independent targeted 1366×768/320×740 review supplements54 full-journey assertions. This is not a complete assistive-technology conformance claim.",
+      "observed": "Public desktop/mobile journey passes11 axe WCAG A/AA states with zero violations; skip link, evidence tabs, Escape, preview focus and reduced-motion preference pass. Independent targeted 1366\u00d7768/320\u00d7740 review supplements54 full-journey assertions. This is not a complete assistive-technology conformance claim.",
       "evidencePaths": [
         "evidence/browser-public.json",
         "evidence/reviewer-final.md",
@@ -376,7 +376,7 @@
       ],
       "verification": "CROSSCUE_URL=https://crosscue.tbud.workers.dev CROSSCUE_EVIDENCE_LABEL=public node node_modules/tsx/dist/cli.mjs scripts/browser-journey.ts",
       "expected": "Real mobile browser completes analyze, decide, preview, apply and export without clipping or inaccessible controls.",
-      "observed": "Fresh 390×844 public mobile context completes analyze, Allow preview/confirmation, next question, Defer and budget stop with no horizontal overflow. Actual mobile JSON download independently validates8 unchanged placements and both decisions; reduced motion honored.",
+      "observed": "Fresh 390\u00d7844 public mobile context completes analyze, Allow preview/confirmation, next question, Defer and budget stop with no horizontal overflow. Actual mobile JSON download independently validates8 unchanged placements and both decisions; reduced motion honored.",
       "evidencePaths": [
         "evidence/browser-public.json",
         "evidence/browser-public-mobile-export.json",
@@ -418,7 +418,7 @@
       ],
       "verification": "npm run benchmark; inspect actual Qloo rank ordering and selected pair versus isolated baseline ordering.",
       "expected": "Real contextual ranks causally change candidate ordering/selection, with reproducible evidence.",
-      "observed": "Real directional ranks produce supported set/order selecting Björk/Moonlight; metadata first asks Kendrick/Whiplash and blind LLM first asks Daft Punk/Blade Runner. Different evidence causally enters selection, not solver constraints.",
+      "observed": "Real directional ranks produce supported set/order selecting Bj\u00f6rk/Moonlight; metadata first asks Kendrick/Whiplash and blind LLM first asks Daft Punk/Blade Runner. Different evidence causally enters selection, not solver constraints.",
       "evidencePaths": [
         "evidence/qloo-live.json",
         "evidence/consequence-proof.json",
@@ -438,7 +438,7 @@
       ],
       "verification": "CROSSCUE_URL=https://crosscue.tbud.workers.dev CROSSCUE_EVIDENCE_LABEL=public node node_modules/tsx/dist/cli.mjs scripts/browser-journey.ts; inspect actual rendered question/evidence inspector and candidate-review component.",
       "expected": "Working explanation shows prioritization policy, evidence limits and concrete branch differences.",
-      "observed": "Public question screen exposes contextual ranks, ordinal priority, evidence limits and exact3-vs0 consequences. Why-this-question explanation and candidate reasons accompany the actual selected Björk/Moonlight question.",
+      "observed": "Public question screen exposes contextual ranks, ordinal priority, evidence limits and exact3-vs0 consequences. Why-this-question explanation and candidate reasons accompany the actual selected Bj\u00f6rk/Moonlight question.",
       "evidencePaths": [
         "evidence/browser-public.json",
         "evidence/screenshots/public-question.png",
@@ -479,7 +479,7 @@
         "server/app.ts",
         "tests/state.test.ts"
       ],
-      "verification": "npm test; actual local mobile Allow→Defer→stop interaction. Fresh public browser journey on exact deployed release.",
+      "verification": "npm test; actual local mobile Allow\u2192Defer\u2192stop interaction. Fresh public browser journey on exact deployed release.",
       "expected": "At most two presented questions per run; Defer consumes budget and repeated/reload requests do not bypass it.",
       "observed": "At most two presented questions; Defer consumes budget, repeated analysis/reloads do not increment or bypass the cap.",
       "evidencePaths": [
@@ -856,7 +856,7 @@
       ],
       "verification": "Independent empty-Insights gate control; actual public failures and successful fresh public journey.",
       "expected": "Live gates reject fixture evidence; UI screenshots cannot satisfy complete workflow gates.",
-      "observed": "Live-provider failure is retained and never replaced with a fixture. Final public Worker acquisition supplies8 identities and8 actual directional queries; full desktop/mobile actions and downloaded exports—not screenshots alone—establish journey. Synthetic failure controls remain explicitly separate.",
+      "observed": "Live-provider failure is retained and never replaced with a fixture. Final public Worker acquisition supplies8 identities and8 actual directional queries; full desktop/mobile actions and downloaded exports\u2014not screenshots alone\u2014establish journey. Synthetic failure controls remain explicitly separate.",
       "evidencePaths": [
         "evidence/reviewer-final.md",
         "evidence/browser-public-provider-failure.json",
@@ -871,17 +871,19 @@
       "phase": 7,
       "phaseName": "Verification contract",
       "title": "Final acceptance reconciliation",
-      "status": "BLOCKED",
+      "status": "VERIFIED",
       "implementationPaths": [
         "docs/ACCEPTANCE.md",
         "BUILD_STATUS.json"
       ],
       "verification": "Inspect docs/ACCEPTANCE.md and sole60-check status; rerun completion verifier with --require-complete.",
       "expected": "All twelve final acceptance conditions map to passing mandatory checks; unresolved gaps remain explicit.",
-      "observed": "All twelve user conditions are mapped. Functionality/public/source gates now have proof, but CC-043 free/included hosting capacity remains unverified; therefore the condition requiring all mandatory gates to pass is not satisfied. This reconciliation cannot be marked VERIFIED.",
+      "observed": "All twelve user conditions map to exercised mandatory checks. Signed-in provider proof closes CC-043; all60 checks have implementation, exercised acceptance, evidence and tested revision. Final verifier and independent reconciliation establish readiness. Submission is separately conditional on this reconciliation and retains its actual status.",
       "evidencePaths": [
         "docs/ACCEPTANCE.md",
-        "BUILD_NOTES.md"
+        "BUILD_NOTES.md",
+        "evidence/hosting-allowance.json",
+        "evidence/completion-verification.json"
       ],
       "testedRevision": "aca964bf85ee718c9b5676a209e8cda99389c660"
     },
@@ -890,20 +892,21 @@
       "phase": 8,
       "phaseName": "Public deployment",
       "title": "Free authorized external hosting",
-      "status": "BLOCKED",
+      "status": "VERIFIED",
       "implementationPaths": [
         "wrangler.jsonc",
         "server/worker.ts",
         "server/schema.sql"
       ],
-      "verification": "Cloudflare dedicated D1 provision and deployment authorization checked; account billing-read request denied.",
+      "verification": "Authenticated Cloudflare dashboard: Workers & Pages daily usage, Workers plans current selection, and D1 Database daily usage; read-only browser observation on 2026-10-30 at 11:19 UTC.",
       "expected": "Public external app runs backend; existing free access verified and no paid upgrades/overage added.",
-      "observed": "User explicitly authorized existing hosting allowance only, with no upgrade or paid overage. Account free/included allowance is not independently visible because billing read is denied; do not claim verified free plan or zero billed usage.",
+      "observed": "Workers Free is the current $0 plan. Account usage:233/100000 daily Worker requests; D1:657/5000000 reads,441/100000 writes,1.44MB/5GB storage,2/10 databases. Dashboard labels D1 quotas hard limits. Existing free capacity verified; no upgrade, purchase or billing change performed. Point-in-time proof, not future availability guarantee.",
       "evidencePaths": [
         "evidence/d1-schema.json",
-        "BUILD_NOTES.md"
+        "BUILD_NOTES.md",
+        "evidence/hosting-allowance.json"
       ],
-      "testedRevision": "01a54ee656fa44ecfce65302417e7e99bce7df0c"
+      "testedRevision": "aca964bf85ee718c9b5676a209e8cda99389c660"
     },
     {
       "id": "CC-044",
@@ -919,7 +922,7 @@
       ],
       "verification": "CROSSCUE_URL=https://crosscue.tbud.workers.dev CROSSCUE_EVIDENCE_LABEL=public node node_modules/tsx/dist/cli.mjs scripts/browser-journey.ts",
       "expected": "Fresh anonymous browser resolves/loads real Qloo evidence and completes core journey with no judge API key.",
-      "observed": "Fresh anonymous public Chromium session reacquired real8-identity/8-direction evidence at10:35:56.280Z, selected consequential Björk/Moonlight, previewed and explicitly applied3-move repair, reloaded and exported. No login or judge-supplied API key used. Earlier Worker failures retained and fixed.",
+      "observed": "Fresh anonymous public Chromium session reacquired real8-identity/8-direction evidence at10:35:56.280Z, selected consequential Bj\u00f6rk/Moonlight, previewed and explicitly applied3-move repair, reloaded and exported. No login or judge-supplied API key used. Earlier Worker failures retained and fixed.",
       "evidencePaths": [
         "evidence/browser-public.json",
         "evidence/browser-public-export.json",
@@ -1135,11 +1138,12 @@
       ],
       "verification": "Create Devpost project/Qloo submission draft, upload four actual release screenshots, and read back project state/description; compare prepared custom-field answers with release manifest.",
       "expected": "Complete release-matching form answers prepared; actual Devpost status explicitly verified, submission only within authorization.",
-      "observed": "Project1518014/submission1272444 is a draft at https://devpost.com/software/crosscue. Description read back; four real screenshots uploaded. Public URLs, October28 start and required custom answers are prepared. publishedAt/submittedAt are null: no final submission or eligibility attestation claimed.",
+      "observed": "Devpost project1518014 is published at https://devpost.com/software/crosscue; Qloo entry1272444 still has submitted_at=null before final submission. Updated description read back, actual media and URLs retained. Creator confirmed eligibility/rules and authorized submission after checks pass.",
       "evidencePaths": [
         "evidence/devpost-draft.json",
         "docs/SUBMISSION.md",
-        "evidence/release-manifest.json"
+        "evidence/release-manifest.json",
+        "evidence/pre-submit-check.json"
       ],
       "testedRevision": "aca964bf85ee718c9b5676a209e8cda99389c660"
     },
@@ -1174,7 +1178,7 @@
       ],
       "verification": "Independent skeptical category scoring against live evidence, exact solver and actual tests.",
       "expected": "Evidence-based /5 score and strongest deadline-feasible fix; no unwarranted perfect score.",
-      "observed": "Technology4/5: final publicQloo/tool/D1/browserproof closes software demonstrability gaps; small finite domain and missing allowance visibility remainlimits. Most useful remaining release fix is actual account allowance proof.",
+      "observed": "Technology4/5: final publicQloo/tool/D1/browserproof closes software demonstrability gaps; small finite domain and missing allowance visibility remainlimits. Most useful remaining release fix is actual account allowance proof. Subsequent signed-in dashboard proof closes the account allowance limitation; the historical4/5 score is preserved.",
       "evidencePaths": [
         "docs/JUDGE_REVIEW.md",
         "evidence/reviewer-final.md",
@@ -1253,7 +1257,7 @@
       ],
       "verification": "Read and reconcile evidence/FINAL_REPORT.md against release manifest, actual public browser/tool exports, independent final reviewer, clean public clone, Devpost draft readback and sole60-check ledger; run verifier and six guard controls.",
       "expected": "Substantive defects fixed/retested; no unresolved critical review defect; final report contains exact checks, URLs, commits, evidence, tests, benchmark and actual submission state.",
-      "observed": "Final report contains all requested fields and distinguishes functional verified public software from full readiness. Exact count58/60; tested/deployed application commitaca964bf85ee718c9b5676a209e8cda99389c660. Substantive runtime/UI defects fixed and retested; no unresolved critical finding in independent exercised scope. CC-042/043 remain BLOCKED and ready=false; Devpost remains an unsubmitted draft.",
+      "observed": "Final report contains every requested field. Exact count60/60; tested/deployed application commitaca964bf85ee718c9b5676a209e8cda99389c660. Runtime/UI defects fixed and retested; no unresolved critical finding in independent exercised scope. Signed-in hosting allowance proof closes CC-043 and CC-042; ready=true. Submission status remains explicitly recorded separately.",
       "evidencePaths": [
         "evidence/FINAL_REPORT.md",
         "evidence/release-manifest.json",
@@ -1261,7 +1265,8 @@
         "evidence/browser-public.json",
         "evidence/clean-clone.json",
         "evidence/devpost-draft.json",
-        "evidence/ledger-guards.json"
+        "evidence/ledger-guards.json",
+        "evidence/hosting-allowance.json"
       ],
       "testedRevision": "aca964bf85ee718c9b5676a209e8cda99389c660"
     }

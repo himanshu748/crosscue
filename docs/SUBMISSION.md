@@ -3,7 +3,7 @@
 **Title:** CrossCue
 **Tagline:** Ask fewer audience questions. Make smarter festival schedules.
 
-The description below reflects tested application revision `aca964bf85ee718c9b5676a209e8cda99389c660`. [Try the public application](https://crosscue.tbud.workers.dev) or [inspect the public MIT-licensed source](https://github.com/himanshu748/crosscue). This file is preparation, not a submission receipt. The hosting-allowance verification gate remains open; do not equate a functional release with every acceptance gate being satisfied.
+The description below reflects tested application revision `aca964bf85ee718c9b5676a209e8cda99389c660`. [Try the public application](https://crosscue.tbud.workers.dev) or [inspect the public MIT-licensed source](https://github.com/himanshu748/crosscue). This file records submission content, not a submission receipt. The signed-in Cloudflare dashboard confirms Workers Free and D1 usage within its hard limits; no upgrade or billing change was made.
 
 ## Project description
 
@@ -60,7 +60,7 @@ A separate mechanism ablation asks the top two Qloo-ranked pairs without consequ
 
 The public release was exercised in fresh desktop and mobile browser contexts. The journey passed 54 assertions, including nonmutating preview, explicit Protect and Allow approval, Defer, reload, stale-version recovery, the two-question cap, zero-question stopping and actual downloaded exports checked by the independent validator. Eleven exercised states had no automated axe WCAG A/AA violations. A real external client invoked all three read-only tools using captured live Qloo evidence; no model was used or implied in that protocol test.
 
-Recorded verification also includes 42 passing unit/API tests, a separate exhaustive oracle over 250 generated finite domains, six ledger-verifier control tests and actual hosted state-isolation, atomic-write and rate-limit checks. Fresh hosted Qloo evidence was captured on October 30, 2026 at 10:35:56 UTC. The repository's single 60-check ledger distinguishes implementation, exercised acceptance and public-release verification; it is the source of truth for remaining limitations. In particular, account billing visibility did not establish the remaining free/included hosting allowance, so that gate is not claimed verified.
+Recorded verification also includes 42 passing unit/API tests, a separate exhaustive oracle over 250 generated finite domains, six ledger-verifier control tests and actual hosted state-isolation, atomic-write and rate-limit checks. Fresh hosted Qloo evidence was captured on October 30, 2026 at 10:35:56 UTC. The repository's single 60-check ledger distinguishes implementation, exercised acceptance and public-release verification; it is the source of truth for remaining limitations. The signed-in provider dashboard confirms the current Workers Free plan and D1 usage within free hard limits. No paid upgrade or billing change was made.
 
 CrossCue does not claim measured gains in attendance, revenue or satisfaction. The next useful validation is an organizer evaluating the relevance and cost of these questions with an actual programme, followed by a consent-based attendee study. A larger solver domain and operational integrations should follow that evidence. The current product demonstrates the decision mechanism clearly, without hiding uncertainty behind a chatbot.
 
@@ -87,5 +87,5 @@ No video is required. Use real screenshots of the question, Protect preview, app
 - Public demo: https://crosscue.tbud.workers.dev
 - Public MIT repository: https://github.com/himanshu748/crosscue
 - Public proof: `evidence/browser-public.json`, `evidence/tool-client-public.json`, `evidence/hosted-security-review.json`.
-- Remaining mandatory gate: CC-043, independent verification of the existing free/included hosting allowance. No paid upgrade or overage authorization is inferred.
-- Submission status: Devpost project and Qloo submission draft created and read back; not submitted. Draft: https://devpost.com/software/crosscue (project1518014, submission1272444). Four real gallery screenshots and a thumbnail uploaded; all media URLs returned HTTP200. Required custom-field answers remain prepared below for the final submit operation; no eligibility/rule attestation was made.
+- Hosting allowance: Workers Free and available D1 capacity verified in the authenticated dashboard on October 30 at 11:19 UTC; see `evidence/hosting-allowance.json`. No paid upgrade or billing change was made.
+- Submission status before final submit: Devpost project published after the description update; Qloo entry has no submitted timestamp. Project: https://devpost.com/software/crosscue (project1518014, submission1272444). Four real gallery screenshots and a thumbnail uploaded; all media URLs returned HTTP200. Required custom-field answers remain prepared below for the final submit operation; the creator subsequently confirmed eligibility/rules and authorized submission after all checks pass. Final submission remains pending.
