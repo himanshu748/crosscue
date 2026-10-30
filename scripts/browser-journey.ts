@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {validateSchedule} from '../src/core/validator';
+import type {Placement} from '../src/core/types';
 
 const base=process.env.CROSSCUE_URL??'http://localhost:3008';
 const label=process.env.CROSSCUE_EVIDENCE_LABEL??'local';
@@ -11,17 +12,18 @@ if(!/^[a-z0-9-]+$/.test(label))throw new Error('Use a simple evidence label.');
 const executablePath=process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE;
 const browser=await chromium.launch({headless:true,...(executablePath?{executablePath}:{})});
 const assertions:string[]=[],consoleErrors:string[]=[],violations:unknown[]=[];
-const screenshots:string[]=[],responses:Array<{url:string;status:number}>=[];
+const screenshots:string[]=[],responses:Array<{url:string;status:number}>=[],expectedFailureResponses:Array<{url:string;status:number}>=[],expectedFailureConsole:string[]=[];
 const artifact=`evidence/browser-${label}.json`;
 await mkdir('evidence/screenshots',{recursive:true});
+const placementSignature=(placements:Placement[])=>JSON.stringify([...placements].sort((a,b)=>a.sessionId.localeCompare(b.sessionId)).map(p=>[p.sessionId,p.roomId,p.start]));
 const check=(condition:unknown,message:string)=>{assert(condition,message);assertions.push(message);};
-const snap=async(page:Page,name:string)=>{const file=`evidence/screenshots/${label}-${name}.png`;await page.screenshot({path:file,fullPage:true});screenshots.push(file);};
-async function make(viewport={width:1440,height:1000},reducedMotion:'reduce'|'no-preference'='no-preference'){
+const snap=async(page:Page,name:string)=>{await page.evaluate(()=>window.scrollTo({top:0,left:0,behavior:'instant'}));const file=`evidence/screenshots/${label}-${name}.png`;await page.screenshot({path:file,fullPage:true});screenshots.push(file);};
+async function make(viewport={width:1440,height:1000},reducedMotion:'reduce'|'no-preference'='no-preference',expectStaleFailure=false){
  const context=await browser.newContext({viewport,reducedMotion,acceptDownloads:true});
  const page=await context.newPage();
  page.on('pageerror',error=>consoleErrors.push(error.message));
- page.on('console',message=>{if(message.type()==='error')consoleErrors.push(message.text());});
- page.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)responses.push({url:r.url(),status:r.status()});});
+ page.on('console',message=>{if(message.type()==='error'){if(expectStaleFailure&&/409/.test(message.text()))expectedFailureConsole.push(message.text());else consoleErrors.push(message.text());}});
+ page.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400){const record={url:r.url(),status:r.status()};if(expectStaleFailure&&r.status()===409&&new URL(r.url()).pathname==='/api/analyze')expectedFailureResponses.push(record);else responses.push(record);}});
  await page.goto(base,{waitUntil:'networkidle'});
  await expect(page.getByRole('heading',{name:'Fieldnotes Festival'})).toBeVisible();
  await expect(page.getByRole('button',{name:'Analyze cultural conflicts'})).toBeEnabled();
@@ -30,13 +32,13 @@ async function make(viewport={width:1440,height:1000},reducedMotion:'reduce'|'no
  return {context,page};
 }
 async function state(context:BrowserContext){const r=await context.request.get(`${base}/api/session`);assert.equal(r.status(),200);return r.json();}
-async function analyze(page:Page){await page.getByRole('button',{name:'Analyze cultural conflicts'}).click();await expect(page.getByRole('button',{name:'Preview Protect decision'})).toBeVisible({timeout:90000});}
+async function analyze(page:Page){await page.getByRole('button',{name:'Analyze cultural conflicts'}).click();await expect.poll(async()=>await page.getByRole('button',{name:'Preview Protect decision'}).isVisible()?'ready':await page.getByRole('alert').isVisible()?'error':'waiting',{timeout:90000}).not.toBe('waiting');if(await page.getByRole('alert').isVisible())throw new Error(await page.getByRole('alert').innerText());await expect(page.getByRole('button',{name:'Preview Protect decision'})).toBeVisible();}
 async function axe(page:Page,stage:string){await page.evaluate(()=>Promise.all(document.getAnimations().filter(a=>a.effect?.getTiming().iterations!==Infinity).map(a=>a.finished.catch(()=>{}))));const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();violations.push({stage,violations:result.violations.map(v=>({id:v.id,impact:v.impact,description:v.description,nodes:v.nodes.map(n=>({target:n.target,failureSummary:n.failureSummary}))}))});if(result.violations.length===0)assertions.push(`${stage}: no axe WCAG A/AA violations`);}
-let report:Record<string,unknown>={};
+let report:Record<string,unknown>={};let observedSourceRevision:string|null=null;
 try{
  const desktop=await make();const {page,context}=desktop;
  await snap(page,'initial');await axe(page,'desktop initial');
- const initial=await state(context);
+ const initial=await state(context);observedSourceRevision=initial.status.sourceRevision;
  check(initial.programme.sessions.length===8&&initial.programme.rooms.length===2,'Complete eight-session two-room programme loaded');
  await page.keyboard.press('Tab');check(await page.getByRole('link',{name:'Skip to programme desk'}).evaluate(e=>e===document.activeElement),'Keyboard starts at visible skip link');
  await page.keyboard.press('Enter');
@@ -75,11 +77,19 @@ try{
  await mobile.page.getByRole('button',{name:'Check for the next useful question'}).click();await expect(mobile.page.getByRole('button',{name:'Defer question'})).toBeVisible();const beforeDefer=await state(mobile.context);await mobile.page.getByRole('button',{name:'Defer question'}).click();await expect(mobile.page.getByText('Question deferred.',{exact:false})).toBeVisible();const deferred=await state(mobile.context);check(deferred.state.decisions[1].choice==='defer'&&JSON.stringify(deferred.state.placements)===JSON.stringify(beforeDefer.state.placements),'Defer records decision without modifying placements');
  await mobile.page.getByRole('button',{name:'Check for the next useful question'}).click();await expect(mobile.page.getByRole('heading',{name:'Two questions. A clear stopping point.'})).toBeVisible();check((await state(mobile.context)).state.questionsAsked===2,'Allow plus Defer stops at the two-question budget');await snap(mobile.page,'mobile-budget');
  check(await mobile.page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Mobile final state has no horizontal overflow');await axe(mobile.page,'mobile budget');
- check(violations.every(v=>(v as {violations:unknown[]}).violations.length===0),'All tested states have no axe WCAG A/AA violations');check(consoleErrors.length===0,'No browser console or page errors');check(responses.length===0,'No failed application HTTP responses');
- report={pass:true,sourceRevision:applied.status.sourceRevision,evidenceCapturedAt:analyzed.evidence.capturedAt,provenanceQueries:analyzed.evidence.queries.length,exportPath};
+ const mobileDownloadPromise=mobile.page.waitForEvent('download');await mobile.page.getByRole('button',{name:'Export schedule',exact:true}).click();const mobileDownload=await mobileDownloadPromise;const mobileExportPath=`evidence/browser-${label}-mobile-export.json`;await mobileDownload.saveAs(mobileExportPath);const mobileExport=JSON.parse(await readFile(mobileExportPath,'utf8'));
+ check(mobileExport.validation.valid&&mobileExport.placements.length===8&&mobileExport.decisions.length===2&&mobileExport.decisions[0].choice==='allow'&&mobileExport.decisions[1].choice==='defer'&&mobileExport.changes.length===0&&validateSchedule(mobileExport.programme,mobileExport.placements,mobileExport.protectedPairs).valid,'Actual mobile download independently validates eight unchanged placements and both Allow/Defer decisions');
+ check(placementSignature(mobileExport.placements)===placementSignature(secondInitial.state.placements),'Mobile export matches the unchanged baseline after Allow and Defer');
+ const stale=await make({width:1440,height:1000},'reduce',true);const staleInitial=await state(stale.context);const changed=await stale.context.request.post(`${base}/api/reset`,{headers:{Origin:new URL(base).origin},data:{version:staleInitial.state.version,scenario:'locked'}});check(changed.status()===200,'Concurrent same-visitor action changes server version behind the visible UI');const changedPayload=await changed.json();
+ await stale.page.getByRole('button',{name:'Analyze cultural conflicts'}).click();await expect(stale.page.getByRole('alert')).toContainText('This programme has a newer version.');check(expectedFailureResponses.length===1,'Stale UI request is rejected with an actual HTTP409');await axe(stale.page,'desktop stale error');await snap(stale.page,'stale-error');
+ const staleCurrent=await state(stale.context);check(staleCurrent.state.version===changedPayload.state.version&&staleCurrent.state.questionsAsked===0,'Stale rejected request leaves current schedule and question count intact');
+ await stale.page.getByRole('button',{name:'Refresh workspace'}).click();await expect(stale.page.getByRole('alert')).not.toBeVisible();await expect(stale.page.getByText('All session start times locked',{exact:true})).toBeVisible();assertions.push('Refresh workspace clears the error and loads the current server state');
+ await stale.page.getByRole('button',{name:'Analyze cultural conflicts'}).click();await expect(stale.page.getByRole('heading',{name:'No more questions worth asking.'})).toBeVisible();check((await state(stale.context)).state.questionsAsked===0,'Recovered UI completes a fresh valid zero-question analysis');await snap(stale.page,'stale-recovered');await stale.context.close();
+ check(violations.every(v=>(v as {violations:unknown[]}).violations.length===0),'All tested states have no axe WCAG A/AA violations');check(consoleErrors.length===0,'No unexpected browser console or page errors');check(responses.length===0,'No unexpected failed application HTTP responses');
+ report={pass:true,sourceRevision:applied.status.sourceRevision,evidenceCapturedAt:analyzed.evidence.capturedAt,provenanceQueries:analyzed.evidence.queries.length,exportPath,mobileExportPath};
  await context.close();await mobile.context.close();
-}catch(error){report={pass:false,error:error instanceof Error?error.stack:String(error)};process.exitCode=1;}
+}catch(error){const failurePages=[];for(const [i,ctx]of browser.contexts().entries())for(const [j,page]of ctx.pages().entries()){failurePages.push({url:page.url(),alert:await page.getByRole('alert').allTextContents()});await snap(page,`failure-${i}-${j}`);}report={pass:false,error:error instanceof Error?error.stack:String(error),failurePages};process.exitCode=1;}
 finally{
  const files=['src/App.tsx','src/styles.css','src/core/analysis.ts','src/core/solver.ts','src/core/validator.ts','server/app.ts','server/qloo.ts'];const sourceHashes=Object.fromEntries(await Promise.all(files.map(async file=>[file,createHash('sha256').update(await readFile(file)).digest('hex')])));
- await writeFile(artifact,JSON.stringify({...report,testedAt:new Date().toISOString(),url:base,browser:'Playwright Chromium',browserVersion:browser.version(),browserRouting:'Browser plugin/browser skill not available; regular Playwright with existing installed Chromium',viewports:[{width:1440,height:1000},{width:390,height:844}],sourceHashes,assertions,violations,consoleErrors,responses,screenshots},null,2)+'\n');await browser.close();console.log(JSON.stringify({artifact,...report,assertionCount:assertions.length},null,2));
+ await writeFile(artifact,JSON.stringify({...report,observedSourceRevision,testedAt:new Date().toISOString(),url:base,browser:'Playwright Chromium',browserVersion:browser.version(),browserRouting:'Browser plugin/browser skill not available; regular Playwright with existing installed Chromium',viewports:[{width:1440,height:1000},{width:390,height:844}],sourceHashes,assertions,violations,consoleErrors,responses,expectedFailureResponses,expectedFailureConsole,screenshots},null,2)+'\n');await browser.close();console.log(JSON.stringify({artifact,...report,assertionCount:assertions.length},null,2));
 }

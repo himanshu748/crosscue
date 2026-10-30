@@ -1,0 +1,58 @@
+{
+  "reviewer": "independent read-only final_backend_review",
+  "testedAt": "2026-10-30T10:25:57Z",
+  "url": "https://crosscue.tbud.workers.dev",
+  "sourceRevision": "01a54ee656fa44ecfce65302417e7e99bce7df0c",
+  "criticalFindings": [],
+  "checks": {
+    "publicHtmlAndJavaScript": 200,
+    "staticCsp": "self scripts and connections; frame-ancestors none",
+    "staticNoSniff": true,
+    "referrerPolicy": "no-referrer",
+    "apiCacheControl": "no-store",
+    "cookieSecureHttpOnlySameSiteStrict": true,
+    "actualD1IsolatedVisitors": true,
+    "concurrentCompareAndSwapStatuses": [
+      200,
+      409
+    ],
+    "persistedWinningVersion": 2,
+    "otherVisitorVersion": 0,
+    "foreignOriginStatus": 403,
+    "unexpectedInputFieldsStatus": 400,
+    "anonymousExportStatus": 401,
+    "ownExportValidEightPlacements": true,
+    "tokenAbsentFromExport": true
+  },
+  "qlooCalls": 0,
+  "publicRepository": {
+    "url": "https://github.com/himanshu748/crosscue",
+    "anonymousApiStatus": 200,
+    "private": false,
+    "license": "MIT",
+    "mainCommit": "01a54ee656fa44ecfce65302417e7e99bce7df0c",
+    "checkedAt": "2026-10-30T10:26:24Z"
+  },
+  "rateLimitFollowup": {
+    "sourceRevision": "b6fed3cecc08fbb19144a702868bd1f202c62855",
+    "testedAt": "2026-10-30T10:31:22Z",
+    "freshVisitors": 1,
+    "initialRequestStatus": 200,
+    "concurrentGetSuccesses": 29,
+    "concurrentGet429s": 1,
+    "repeatStatus": 429,
+    "errorCode": "visitor_rate_limit",
+    "retryAfterSeconds": 60,
+    "qlooCalls": 0
+  },
+  "redirectBoundaryReview": {
+    "sourceRevision": "aca964bf85ee718c9b5676a209e8cda99389c660",
+    "qlooTestsPassed": 11,
+    "nativeFetchExperiment": "Two local servers; synthetic credential; source302 response",
+    "sourceRequests": 1,
+    "redirectDestinationRequests": 0,
+    "externalRequests": 0,
+    "result": "redirect_rejected",
+    "verdict": "Approved; successful public Qloo acquisition still required."
+  }
+}

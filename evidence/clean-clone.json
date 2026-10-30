@@ -1,0 +1,45 @@
+{
+  "kind": "clean-public-clone-reproduction",
+  "sourceRevision": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "commands": [
+    "git clone --depth 1 https://github.com/himanshu748/crosscue.git",
+    "npm ci --legacy-peer-deps --no-audit --no-fund",
+    "npm test",
+    "npm run build",
+    "npm run benchmark"
+  ],
+  "node": "24.22.1",
+  "installExit": 0,
+  "testExit": 0,
+  "testsPassed": 42,
+  "buildExit": 0,
+  "benchmarkExit": 0,
+  "assetsByteIdenticalToDeployedBuild": true,
+  "assetSha256": {
+    "index.html": "bc8495b886b9b75721918382a93ca079ab38f573fdf8c09a21f7fdcb32ab3ac4",
+    "assets/index-BEOs8ES-.js": "f24fc7add0b7733ccec8877f72a15df466d5b7f55ede13aa5f949042bfe31308",
+    "assets/index-CwtAKjRv.css": "33e0871d7bdf889edd16ff032535708d909c4036ecc4efe3223a47412355c683"
+  },
+  "metrics": [
+    {
+      "selector": "Qloo-assisted",
+      "questionsAsked": 1,
+      "distinctSessionsMoved": 3,
+      "totalFinalDisplacementMinutes": 270
+    },
+    {
+      "selector": "Metadata-only",
+      "questionsAsked": 2,
+      "distinctSessionsMoved": 3,
+      "totalFinalDisplacementMinutes": 270
+    },
+    {
+      "selector": "Blind LLM-only",
+      "questionsAsked": 2,
+      "distinctSessionsMoved": 2,
+      "totalFinalDisplacementMinutes": 180
+    }
+  ],
+  "qlooCalls": 0,
+  "evidenceMode": "Replay of separately captured real evidence; no secret configured in clean clone."
+}

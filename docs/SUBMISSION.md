@@ -3,7 +3,7 @@
 **Title:** CrossCue
 **Tagline:** Ask fewer audience questions. Make smarter festival schedules.
 
-The description below reflects the implementation and recorded results. Release links and final verification metadata must be filled from the tested public release before pasting. This file is preparation, not a submission receipt.
+The description below reflects tested application revision `aca964bf85ee718c9b5676a209e8cda99389c660`. [Try the public application](https://crosscue.tbud.workers.dev) or [inspect the public MIT-licensed source](https://github.com/himanshu748/crosscue). This file is preparation, not a submission receipt. The hosting-allowance verification gate remains open; do not equate a functional release with every acceptance gate being satisfied.
 
 ## Project description
 
@@ -58,7 +58,9 @@ A separate mechanism ablation asks the top two Qloo-ranked pairs without consequ
 
 ### Verification and the next useful step
 
-Recorded evidence covers authenticated Qloo resolution and both directional ranking queries, exact optimization, an independent scheduling oracle, versioned approval, provider-failure handling and a reproducible comparison. The repository's single 60-check ledger distinguishes implementation, exercised acceptance and public-release verification; it is the source of truth for the final tested revision and any remaining limitations.
+The public release was exercised in fresh desktop and mobile browser contexts. The journey passed 54 assertions, including nonmutating preview, explicit Protect and Allow approval, Defer, reload, stale-version recovery, the two-question cap, zero-question stopping and actual downloaded exports checked by the independent validator. Eleven exercised states had no automated axe WCAG A/AA violations. A real external client invoked all three read-only tools using captured live Qloo evidence; no model was used or implied in that protocol test.
+
+Recorded verification also includes 42 passing unit/API tests, a separate exhaustive oracle over 250 generated finite domains, six ledger-verifier control tests and actual hosted state-isolation, atomic-write and rate-limit checks. Fresh hosted Qloo evidence was captured on October 30, 2026 at 10:35:56 UTC. The repository's single 60-check ledger distinguishes implementation, exercised acceptance and public-release verification; it is the source of truth for remaining limitations. In particular, account billing visibility did not establish the remaining free/included hosting allowance, so that gate is not claimed verified.
 
 CrossCue does not claim measured gains in attendance, revenue or satisfaction. The next useful validation is an organizer evaluating the relevance and cost of these questions with an actual programme, followed by a consent-based attendee study. A larger solver domain and operational integrations should follow that evidence. The current product demonstrates the decision mechanism clearly, without hiding uncertainty behind a chatbot.
 
@@ -69,8 +71,8 @@ Current form inspected through Devpost on October 30, 2026. [Official event and 
 | Field ID | Field | Answer |
 |---|---|---|
 | 28597 | When did you begin your project? | October 28, 2026. Planning began then; this CrossCue implementation began October 30, 2026. |
-| 28598 | The public URL to your project | PENDING — insert the verified public application URL. |
-| 28599 | Link to your PUBLIC code repo | PENDING — insert the verified public repository URL. |
+| 28598 | The public URL to your project | https://crosscue.tbud.workers.dev |
+| 28599 | Link to your PUBLIC code repo | https://github.com/himanshu748/crosscue |
 | 28701 | Existing project improvements (optional) | CrossCue is a separate new implementation for this hackathon. An earlier related project, Second Feature, was inspected for Qloo adapter patterns and preserved. CrossCue adds cross-domain festival consequence testing, exact finite-domain repair, isolated organizer approval, contextual evidence inspection and reproducible comparison. |
 
 Suggested built-with tags: Qloo, TypeScript, React, Cloudflare Workers, Cloudflare D1, SQLite.
@@ -80,7 +82,10 @@ No video is required. Use real screenshots of the question, Protect preview, app
 ## Release metadata
 
 - Project start: October 28, 2026, confirmed by the creator.
-- Tested commit: pending final release verification.
-- Deployed commit: pending public release verification.
-- Public demo/repository: pending verification.
-- Submission status: prepared locally; no submission performed by this document.
+- Tested application commit: `aca964bf85ee718c9b5676a209e8cda99389c660`.
+- Deployed application commit: `aca964bf85ee718c9b5676a209e8cda99389c660`; observed from the public API in the browser and external tool-client proofs.
+- Public demo: https://crosscue.tbud.workers.dev
+- Public MIT repository: https://github.com/himanshu748/crosscue
+- Public proof: `evidence/browser-public.json`, `evidence/tool-client-public.json`, `evidence/hosted-security-review.json`.
+- Remaining mandatory gate: CC-043, independent verification of the existing free/included hosting allowance. No paid upgrade or overage authorization is inferred.
+- Submission status: Devpost project and Qloo submission draft created and read back; not submitted. Draft: https://devpost.com/software/crosscue (project1518014, submission1272444). Four real gallery screenshots and a thumbnail uploaded; all media URLs returned HTTP200. Required custom-field answers remain prepared below for the final submit operation; no eligibility/rule attestation was made.

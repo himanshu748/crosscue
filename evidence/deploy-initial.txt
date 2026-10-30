@@ -1,0 +1,29 @@
+
+ ⛅️ wrangler 4.156.0
+────────────────────
+🌀 Building list of assets...
+✨ Read 4 files from the assets directory /Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/dist
+🌀 Starting asset upload...
+🌀 Found 3 new or modified static assets to upload. Proceeding with upload...
++ /index.html
++ /assets/index-CwtAKjRv.css
++ /assets/index-BEOs8ES-.js
+Uploaded 1 of 3 assets
+Uploaded 2 of 3 assets
+Uploaded 3 of 3 assets
+✨ Success! Uploaded 3 files (2.52 sec)
+
+Total Upload: 821.00 KiB / gzip: 133.14 KiB
+Worker Startup Time: 14 ms
+Your Worker has access to the following bindings:
+Binding                                                     Resource
+env.DB (crosscue-state)                                     D1 Database
+env.ASSETS                                                  Assets
+env.QLOO_BASE_URL ("https://hackathon.api.qloo.com")        Environment Variable
+env.SOURCE_REVISION ("(hidden)")                            Environment Variable
+
+Uploaded crosscue (10.91 sec)
+Deployed crosscue triggers (3.69 sec)
+  https://crosscue.tbud.workers.dev
+  schedule: 17 * * * *
+Current Version ID: 66e8b675-b76e-4e60-b102-d5bc806f0d58

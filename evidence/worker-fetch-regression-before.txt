@@ -1,0 +1,31 @@
+✖ default fetch preserves the global receiver required by Worker runtimes (3.573708ms)
+✔ Insights subtype and search types both parse; ranks preserve response context (0.364042ms)
+✔ wrong identity category, duplicate ids and injected malformed affinity fail closed (0.345292ms)
+✔ untrusted names remain inert strings; ambiguous film versions are not selected (20.213417ms)
+✔ shortlist parameters and server-only authentication are explicit (1.560167ms)
+✔ missing shortlist results stay missing, never receive zero scores (1.337167ms)
+✔ off-shortlist result rejected (0.343125ms)
+✔ auth, rate limit, missing search, malformed response and missing config are distinct (1.09075ms)
+✔ concurrent adapter calls cannot exceed 20-call budget (3.112667ms)
+✔ timeout aborts rather than replacing missing evidence (5.674167ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 9
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 264.949209
+
+✖ failing tests:
+
+test at tests/qloo.test.ts:10:1
+✖ default fetch preserves the global receiver required by Worker runtimes (3.573708ms)
+  Error: Qloo could not be reached. No substitute evidence was used.
+      at QlooAdapter.request (/Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/server/qloo.ts:80:13)
+      at async TestContext.<anonymous> (/Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/tests/qloo.test.ts:14:18)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    code: 'network_error',
+    status: 502
+  }

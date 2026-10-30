@@ -1,0 +1,51 @@
+{
+  "pass": true,
+  "url": "https://crosscue.tbud.workers.dev",
+  "testedAt": "2026-10-30T10:43:31.863Z",
+  "sourceRevision": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "reviewer": "independent benchmark_submission context; did not implement runtime/UI",
+  "scope": "Fresh public first screen, cached evidence, question, nonmutating preview, keyboard focus, 320px mobile preview, accessibility",
+  "cacheCapturedAt": "2026-10-30T10:35:56.280Z",
+  "newProviderAcquisition": false,
+  "checks": [
+    "First screen identifies the festival",
+    "Analyze is above the 768px desktop fold",
+    "Skip link is first keyboard focus",
+    "Hosted Analyze returns 200",
+    "Observed source revision matches reviewed release",
+    "Existing authenticated evidence cache reused",
+    "Qloo selects Björk/Moonlight",
+    "Branch costs are 3 moves versus 0",
+    "Desktop question has zero axe WCAG A/AA violations",
+    "Preview preserves saved state/version",
+    "Preview heading receives keyboard focus",
+    "Preview independently validates",
+    "320px preview has no horizontal overflow",
+    "Reduced-motion preference is active",
+    "320px preview has zero axe WCAG A/AA violations",
+    "No browser page errors"
+  ],
+  "criticalFindings": [],
+  "browser": "156.0.8078.4",
+  "viewports": [
+    {
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "width": 320,
+      "height": 740
+    }
+  ],
+  "fullJourneyEvidenceReviewed": "evidence/browser-public.json",
+  "toolClientEvidenceReviewed": "evidence/tool-client-public.json",
+  "priorHarnessIssues": [
+    "First attempt used nonexistent #preview-title selector; corrected to actual accessible heading.",
+    "Second attempt read validation from outer payload instead of payload.preview.validation."
+  ],
+  "priorHarnessEvidence": [
+    "evidence/reviewer-d-harness-failure.json",
+    "evidence/reviewer-d-harness-shape-failure.json"
+  ],
+  "applicationChangesForReview": "None"
+}

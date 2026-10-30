@@ -1,0 +1,11 @@
+{
+  "scan": "Known-pattern current text+Git history; exact Qloo credential bytes allcurrentfiles/history/bundle includingbinary",
+  "sourceCommit": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "currentFiles": 128,
+  "historyBlobs": 79,
+  "binaryFilesOmittedFromPatternScan": 33,
+  "binaryFilesIncludedInExactCredentialScan": true,
+  "findings": [],
+  "credentialValueRecorded": false,
+  "limits": "Known patterns and exact currently configured credential only; not a guarantee against unknown secrets. Screenshot content independently visually reviewed."
+}

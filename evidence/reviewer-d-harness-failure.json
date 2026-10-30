@@ -1,0 +1,17 @@
+{
+  "pass": false,
+  "error": "TimeoutError: locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#preview-title')\u001b[22m\n",
+  "checks": [
+    "First screen identifies the fictional festival",
+    "First screen exposes Analyze cultural conflicts",
+    "Analyze control is visible above the 768px desktop fold",
+    "Visible keyboard skip link receives first focus",
+    "Real hosted analyze returns200",
+    "Hosted revision matches independently reviewed release",
+    "Fresh visitor uses existing authenticated evidence cache, not new acquisition",
+    "Qloo evidence selects the consequential Björk/Moonlight pair",
+    "Protect and Allow show different feasible costs",
+    "Independent desktop question axe scan has zero WCAG A/AA violations",
+    "Preview preserves saved placements and version"
+  ]
+}

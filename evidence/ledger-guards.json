@@ -1,0 +1,31 @@
+{
+  "kind": "synthetic-verifier-control-tests",
+  "realLedgerModified": false,
+  "passed": 6,
+  "results": [
+    {
+      "case": "synchronized valid structure",
+      "result": "PASS"
+    },
+    {
+      "case": "Markdown mismatch rejected",
+      "result": "PASS"
+    },
+    {
+      "case": "missing mandatory ID rejected",
+      "result": "PASS"
+    },
+    {
+      "case": "unsupported VERIFIED assertion rejected",
+      "result": "PASS"
+    },
+    {
+      "case": "absent proof file rejected",
+      "result": "PASS"
+    },
+    {
+      "case": "premature readiness and incomplete release rejected",
+      "result": "PASS"
+    }
+  ]
+}

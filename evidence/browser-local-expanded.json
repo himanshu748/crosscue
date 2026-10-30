@@ -1,0 +1,158 @@
+{
+  "pass": true,
+  "sourceRevision": "working-tree",
+  "evidenceCapturedAt": "2026-10-30T09:56:35.825Z",
+  "provenanceQueries": 16,
+  "exportPath": "evidence/browser-local-expanded-export.json",
+  "mobileExportPath": "evidence/browser-local-expanded-mobile-export.json",
+  "observedSourceRevision": "working-tree",
+  "testedAt": "2026-10-30T10:32:08.872Z",
+  "url": "http://localhost:3008",
+  "browser": "Playwright Chromium",
+  "browserVersion": "156.0.8078.4",
+  "browserRouting": "Browser plugin/browser skill not available; regular Playwright with existing installed Chromium",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "sourceHashes": {
+    "src/App.tsx": "1f64689b37ae92b3936f61029d8535ac7bb33b5b7d2d17587fd1476971055e36",
+    "src/styles.css": "48cfcfe7d27586beb48ba7b48178b9033246d2db98ef968a510c1952ea258db3",
+    "src/core/analysis.ts": "a9c7bfffdf78fde4943f81845567c5eead2d9330a02813109029410900859239",
+    "src/core/solver.ts": "65c18ec9a5fc8a3de7e3a0cfd620ad0cdadd7e0a3c1059183bab0f77e621e602",
+    "src/core/validator.ts": "24d694b06978baae46e88e2a232539de046e662ef68dd5d764422d66b9bbeab5",
+    "server/app.ts": "da52eaf6a6dc704f6a5dbd41b25114c63626d451fdff3c3e9bff06eb34dd55ea",
+    "server/qloo.ts": "9252fa588157486d55ff236978ab30fb7445f9c21ba28c9439d0053d97bc32ff"
+  },
+  "assertions": [
+    "Page title identifies CrossCue",
+    "No framework error overlay",
+    "desktop initial: no axe WCAG A/AA violations",
+    "Complete eight-session two-room programme loaded",
+    "Keyboard starts at visible skip link",
+    "desktop constraints dialog: no axe WCAG A/AA violations",
+    "Scheduling constraints dialog opens and Escape closes",
+    "desktop session dialog: no axe WCAG A/AA violations",
+    "Real provider provenance has eight resolved identities and eight directional queries",
+    "Captured Qloo evidence selects consequential Björk / Moonlight question",
+    "Both decision branches are feasible",
+    "Allow keeps baseline; Protect moves three sessions",
+    "desktop question: no axe WCAG A/AA violations",
+    "Keyboard tab navigation exposes real Qloo query provenance",
+    "Preview transfers keyboard focus to its review heading",
+    "Protect preview does not mutate saved placements or version",
+    "Before and After timetable controls switch preview state",
+    "Preview correctly activates approval step",
+    "desktop preview: no axe WCAG A/AA violations",
+    "Explicit confirmation saves three-move repair and organizer decision",
+    "Applied repair passes independent validator",
+    "Reload preserves full organizer state",
+    "Actual downloaded JSON contains validated eight-session repair, changes and protections",
+    "Downloaded schedule matches the applied saved state",
+    "Main journey naturally stops after one useful question",
+    "desktop saved: no axe WCAG A/AA violations",
+    "desktop reset dialog: no axe WCAG A/AA violations",
+    "Completely locked programme stops with zero questions",
+    "Page title identifies CrossCue",
+    "No framework error overlay",
+    "390px mobile layout has no horizontal overflow",
+    "Mobile browser honors reduced-motion preference",
+    "mobile initial: no axe WCAG A/AA violations",
+    "Fresh browser context has isolated original state",
+    "mobile question: no axe WCAG A/AA violations",
+    "Allow preview is nonmutating and permits unchanged baseline",
+    "Explicit Allow confirmation records decision without forcing overlap or changes",
+    "Defer records decision without modifying placements",
+    "Allow plus Defer stops at the two-question budget",
+    "Mobile final state has no horizontal overflow",
+    "mobile budget: no axe WCAG A/AA violations",
+    "Actual mobile download independently validates eight unchanged placements and both Allow/Defer decisions",
+    "Mobile export matches the unchanged baseline after Allow and Defer",
+    "Page title identifies CrossCue",
+    "No framework error overlay",
+    "Concurrent same-visitor action changes server version behind the visible UI",
+    "Stale UI request is rejected with an actual HTTP409",
+    "desktop stale error: no axe WCAG A/AA violations",
+    "Stale rejected request leaves current schedule and question count intact",
+    "Refresh workspace clears the error and loads the current server state",
+    "Recovered UI completes a fresh valid zero-question analysis",
+    "All tested states have no axe WCAG A/AA violations",
+    "No unexpected browser console or page errors",
+    "No unexpected failed application HTTP responses"
+  ],
+  "violations": [
+    {
+      "stage": "desktop initial",
+      "violations": []
+    },
+    {
+      "stage": "desktop constraints dialog",
+      "violations": []
+    },
+    {
+      "stage": "desktop session dialog",
+      "violations": []
+    },
+    {
+      "stage": "desktop question",
+      "violations": []
+    },
+    {
+      "stage": "desktop preview",
+      "violations": []
+    },
+    {
+      "stage": "desktop saved",
+      "violations": []
+    },
+    {
+      "stage": "desktop reset dialog",
+      "violations": []
+    },
+    {
+      "stage": "mobile initial",
+      "violations": []
+    },
+    {
+      "stage": "mobile question",
+      "violations": []
+    },
+    {
+      "stage": "mobile budget",
+      "violations": []
+    },
+    {
+      "stage": "desktop stale error",
+      "violations": []
+    }
+  ],
+  "consoleErrors": [],
+  "responses": [],
+  "expectedFailureResponses": [
+    {
+      "url": "http://localhost:3008/api/analyze",
+      "status": 409
+    }
+  ],
+  "expectedFailureConsole": [
+    "Failed to load resource: the server responded with a status of 409 (Conflict)"
+  ],
+  "screenshots": [
+    "evidence/screenshots/local-expanded-initial.png",
+    "evidence/screenshots/local-expanded-question.png",
+    "evidence/screenshots/local-expanded-preview.png",
+    "evidence/screenshots/local-expanded-saved.png",
+    "evidence/screenshots/local-expanded-locked.png",
+    "evidence/screenshots/local-expanded-mobile-initial.png",
+    "evidence/screenshots/local-expanded-mobile-question.png",
+    "evidence/screenshots/local-expanded-mobile-budget.png",
+    "evidence/screenshots/local-expanded-stale-error.png",
+    "evidence/screenshots/local-expanded-stale-recovered.png"
+  ]
+}

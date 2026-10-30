@@ -1,0 +1,17 @@
+{
+  "pass": false,
+  "error": "TypeError: Cannot read properties of undefined (reading 'valid')",
+  "checks": [
+    "First screen identifies the festival",
+    "Analyze is above the768px desktop fold",
+    "Skip link is first keyboard focus",
+    "Hosted Analyze returns200",
+    "Observed source revision matches reviewed release",
+    "Existing authenticated evidence cache reused",
+    "Qloo selects Björk/Moonlight",
+    "Branchcosts are3moves versus0",
+    "Desktop question has zero axe WCAG A/AA violations",
+    "Preview preserves saved state/version",
+    "Preview heading receives keyboard focus"
+  ]
+}

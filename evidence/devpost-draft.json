@@ -1,0 +1,87 @@
+{
+  "projectId": 1518014,
+  "projectSlug": "crosscue",
+  "url": "https://devpost.com/software/crosscue",
+  "state": "draft",
+  "publishedAt": null,
+  "submittedAt": null,
+  "submissionId": 1272444,
+  "descriptionReadBack": true,
+  "linksPrepared": [
+    "https://crosscue.tbud.workers.dev",
+    "https://github.com/himanshu748/crosscue"
+  ],
+  "startDate": "2026-10-28",
+  "startDateSource": "Creator's explicit answer",
+  "requiredAnswers": "docs/SUBMISSION.md",
+  "gallery": [
+    {
+      "file": "public-question.png",
+      "project_id": 1518014,
+      "project_slug": "crosscue",
+      "url": "https://devpost.com/software/crosscue",
+      "processing": true,
+      "version": 1,
+      "photo_id": 5746241,
+      "gallery_image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/746/241/datas/gallery.jpg",
+      "caption": "Real Qloo ranks nominate Bj\u00f6rk/Moonlight. Protect moves three sessions; Allow keeps the timetable.",
+      "position": 1,
+      "photo_count": 1
+    },
+    {
+      "file": "public-preview.png",
+      "project_id": 1518014,
+      "project_slug": "crosscue",
+      "url": "https://devpost.com/software/crosscue",
+      "processing": true,
+      "version": 1,
+      "photo_id": 5746247,
+      "gallery_image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/746/247/datas/gallery.jpg",
+      "caption": "Before/after preview: exact changes, independent validation and explicit organizer approval.",
+      "position": 4,
+      "photo_count": 4
+    },
+    {
+      "file": "public-saved.png",
+      "project_id": 1518014,
+      "project_slug": "crosscue",
+      "url": "https://devpost.com/software/crosscue",
+      "processing": true,
+      "version": 1,
+      "photo_id": 5746243,
+      "gallery_image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/746/243/datas/gallery.jpg",
+      "caption": "Approved repair saved. No useful further question remains.",
+      "position": 2,
+      "photo_count": 2
+    },
+    {
+      "file": "public-mobile-question.png",
+      "project_id": 1518014,
+      "project_slug": "crosscue",
+      "url": "https://devpost.com/software/crosscue",
+      "processing": true,
+      "version": 1,
+      "photo_id": 5746245,
+      "gallery_image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/746/245/datas/gallery.jpg",
+      "caption": "The same consequential decision on a mobile viewport.",
+      "position": 3,
+      "photo_count": 3
+    }
+  ],
+  "scope": "Draft preparation only; no final submission or eligibility attestation performed.",
+  "galleryMediaHttpStatus": [
+    200,
+    200,
+    200,
+    200
+  ],
+  "thumbnail": {
+    "url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/005/746/253/datas/medium.png",
+    "httpStatus": 200
+  },
+  "finalReadback": {
+    "state": "draft",
+    "publishedAt": null,
+    "submittedAt": null
+  }
+}

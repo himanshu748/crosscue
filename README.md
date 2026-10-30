@@ -4,7 +4,7 @@
 
 CrossCue helps a cultural festival organizer decide which music–film overlaps are worth changing. Real Qloo directional rankings nominate pairs. An exact scheduler tests **Protect** (avoid overlap) and **Allow** (overlap is permitted). A question appears only when both branches are feasible and their optimal schedules differ. The organizer previews the cost, explicitly approves, and exports the validated result.
 
-Public demo and repository URLs will be recorded here after deployment verification. Current readiness is in [BUILD_CHECKLIST.md](BUILD_CHECKLIST.md); implemented does not mean verified.
+[Public application](https://crosscue.tbud.workers.dev) · [Public source](https://github.com/himanshu748/crosscue). Current readiness and any unresolved release gates are in [BUILD_CHECKLIST.md](BUILD_CHECKLIST.md); implemented does not mean verified.
 
 ## Try the main journey
 

@@ -1,0 +1,75 @@
+{
+  "pass": false,
+  "error": "Error: That step didn’t finish.\n\nQloo could not be reached. No substitute evidence was used.\n\nRefresh workspace\n    at analyze (/Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/scripts/browser-journey.ts:33:370)\n    at async <anonymous> (/Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/scripts/browser-journey.ts:44:2)",
+  "failurePages": [
+    {
+      "url": "https://crosscue.tbud.workers.dev/#main",
+      "alert": [
+        "That step didn’t finish.Qloo could not be reached. No substitute evidence was used.Refresh workspace "
+      ]
+    }
+  ],
+  "testedAt": "2026-10-30T10:27:52.066Z",
+  "url": "https://crosscue.tbud.workers.dev",
+  "browser": "Playwright Chromium",
+  "browserVersion": "156.0.8078.4",
+  "browserRouting": "Browser plugin/browser skill not available; regular Playwright with existing installed Chromium",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "sourceHashes": {
+    "src/App.tsx": "1f64689b37ae92b3936f61029d8535ac7bb33b5b7d2d17587fd1476971055e36",
+    "src/styles.css": "48cfcfe7d27586beb48ba7b48178b9033246d2db98ef968a510c1952ea258db3",
+    "src/core/analysis.ts": "a9c7bfffdf78fde4943f81845567c5eead2d9330a02813109029410900859239",
+    "src/core/solver.ts": "65c18ec9a5fc8a3de7e3a0cfd620ad0cdadd7e0a3c1059183bab0f77e621e602",
+    "src/core/validator.ts": "24d694b06978baae46e88e2a232539de046e662ef68dd5d764422d66b9bbeab5",
+    "server/app.ts": "da52eaf6a6dc704f6a5dbd41b25114c63626d451fdff3c3e9bff06eb34dd55ea",
+    "server/qloo.ts": "6fd082fef315210ab7f69b3aee4cc4a192d630dbc635a6109e73da21162b9bac"
+  },
+  "assertions": [
+    "Page title identifies CrossCue",
+    "No framework error overlay",
+    "desktop initial: no axe WCAG A/AA violations",
+    "Complete eight-session two-room programme loaded",
+    "Keyboard starts at visible skip link",
+    "desktop constraints dialog: no axe WCAG A/AA violations",
+    "Scheduling constraints dialog opens and Escape closes",
+    "desktop session dialog: no axe WCAG A/AA violations"
+  ],
+  "violations": [
+    {
+      "stage": "desktop initial",
+      "violations": []
+    },
+    {
+      "stage": "desktop constraints dialog",
+      "violations": []
+    },
+    {
+      "stage": "desktop session dialog",
+      "violations": []
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 502 ()"
+  ],
+  "responses": [
+    {
+      "url": "https://crosscue.tbud.workers.dev/api/analyze",
+      "status": 502
+    }
+  ],
+  "expectedFailureResponses": [],
+  "expectedFailureConsole": [],
+  "screenshots": [
+    "evidence/screenshots/public-initial.png",
+    "evidence/screenshots/public-failure-0-0.png"
+  ]
+}

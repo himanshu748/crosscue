@@ -1,0 +1,44 @@
+✔ default fetch preserves the global receiver required by Worker runtimes (38.666ms)
+✔ Insights subtype and search types both parse; ranks preserve response context (0.308958ms)
+✔ wrong identity category, duplicate ids and injected malformed affinity fail closed (0.468458ms)
+✔ untrusted names remain inert strings; ambiguous film versions are not selected (3.071083ms)
+✔ shortlist parameters and server-only authentication are explicit (1.336916ms)
+✔ missing shortlist results stay missing, never receive zero scores (1.708541ms)
+✔ off-shortlist result rejected (0.424583ms)
+✔ auth, rate limit, missing search, malformed response and missing config are distinct (1.511416ms)
+✔ concurrent adapter calls cannot exceed 20-call budget (3.624959ms)
+✔ timeout aborts rather than replacing missing evidence (5.680083ms)
+✖ redirects are rejected without forwarding credentials; manual mode is Worker-compatible (2.718709ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 10
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 473.993041
+
+✖ failing tests:
+
+test at tests/qloo.test.ts:57:1
+✖ redirects are rejected without forwarding credentials; manual mode is Worker-compatible (2.718709ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+
+  Caught error:
+
+  Error: Qloo could not be reached. No substitute evidence was used.
+      at async TestContext.<anonymous> (/Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/tests/qloo.test.ts:60:2)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Qloo could not be reached. No substitute evidence was used.
+        at QlooAdapter.request (/Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/server/qloo.ts:82:13)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (/Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/tests/qloo.test.ts:60:2)
+        at async Test.run (node:internal/test_runner/test:1409:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:974:7),
+    operator: 'rejects',
+    diff: 'simple'
+  }

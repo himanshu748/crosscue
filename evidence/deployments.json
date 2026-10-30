@@ -1,0 +1,48 @@
+[
+  {
+    "id": "15f10bbf-b4c9-4cdb-bde1-3cc180cd4b25",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/message": "Automatic deployment on upload.",
+      "workers/triggered_by": "upload"
+    },
+    "versions": [
+      {
+        "version_id": "66e8b675-b76e-4e60-b102-d5bc806f0d58",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-10-30T10:22:07.680236Z"
+  },
+  {
+    "id": "969340a8-0a4d-4e70-9618-acc954fbc2fc",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/triggered_by": "secret"
+    },
+    "versions": [
+      {
+        "version_id": "0e1fd957-7a55-48b5-8ce3-fe2ca0fca873",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-10-30T10:23:15.916692Z"
+  },
+  {
+    "id": "f92e3f04-8d3f-4273-bd0a-11135b131398",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "90f1f77b-6bd2-4d31-9548-c799c47a24db",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-10-30T10:24:09.568757Z"
+  }
+]

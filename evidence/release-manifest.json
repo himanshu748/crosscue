@@ -1,0 +1,64 @@
+{
+  "sourceCommit": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "testedApplicationCommit": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "deployedApplicationCommit": "aca964bf85ee718c9b5676a209e8cda99389c660",
+  "deploymentVersion": "2407b568-699c-41fd-a6df-85be336ecace",
+  "applicationUrl": "https://crosscue.tbud.workers.dev",
+  "repositoryUrl": "https://github.com/himanshu748/crosscue",
+  "runtimeFilesUnchangedSinceCommit": true,
+  "runtimeFileSha256": {
+    "index.html": "6ca290c43b2e1e5182149b818831770ceaa92e3332fb9eddb5201c33b4225523",
+    "package-lock.json": "c4dcd8d434ec372d15e18c4f94b2aed9b934a0491d75d22955d83a339bbc8b4d",
+    "package.json": "56a8cc089d34da91ea4d0e7625c24b3fe9d879df05d631db29a3d32eeadaf58f",
+    "server/app.ts": "da52eaf6a6dc704f6a5dbd41b25114c63626d451fdff3c3e9bff06eb34dd55ea",
+    "server/evidence.ts": "ba1876b29346984afd7991511eeab76cffbd6cd6af13b8a8b072654e9f42ff96",
+    "server/http.ts": "30ea5574f846a2cfb12ccdc117a8827bcd39c0fef1a5ed7c18b73b02a4d83a20",
+    "server/qloo.ts": "95c22d557434cd423cc0cc82402de8e2e786f30ab1b5b3821e45619ee0b02578",
+    "server/schema.sql": "594dc7f4059959f8d1c02b8fa56b3bc955e29af2c19a8b558b762164708ad554",
+    "server/store.ts": "68758ad329046c8c188874978a5aea920b0d75e3d08f387c7951808c995e3945",
+    "server/worker.ts": "e6bcd9a911f630f5975e82fe6c8621afd640f1d1602123125bb9ed84c77780e5",
+    "src/App.tsx": "1f64689b37ae92b3936f61029d8535ac7bb33b5b7d2d17587fd1476971055e36",
+    "src/core/analysis.ts": "a9c7bfffdf78fde4943f81845567c5eead2d9330a02813109029410900859239",
+    "src/core/programme.ts": "a16d99f1ad0cc3393007a74a4bf78cc13a8c10f1773a47a25d7eeafe9c51123a",
+    "src/core/solver.ts": "65c18ec9a5fc8a3de7e3a0cfd620ad0cdadd7e0a3c1059183bab0f77e621e602",
+    "src/core/types.ts": "5191d5e0f0d47aee056366fb797c802603c096cd61acf021d3055787c58bb5cf",
+    "src/core/validator.ts": "24d694b06978baae46e88e2a232539de046e662ef68dd5d764422d66b9bbeab5",
+    "src/main.tsx": "a0ba9b62c22c27a9343ee3ba0ef7c49479ef7f4864673fcac8f80255951b168f",
+    "src/styles.css": "48cfcfe7d27586beb48ba7b48178b9033246d2db98ef968a510c1952ea258db3",
+    "tsconfig.json": "85625a68d0c1712a2b95b836d54649a68d3e6cc36ba83e70a757765e702a875b",
+    "vite.config.ts": "cf116892e4ab6464c7244150ce059f383077f9df8048c91a982384231e099fd5",
+    "wrangler.jsonc": "3fcb603b6faf926d6ef62b33a4f4fbc4a729be70d1280fa49dd704a31b3f7037"
+  },
+  "verification": {
+    "unitTests": 42,
+    "independentOracleCases": 250,
+    "browserAssertions": 54,
+    "axeAudits": 11,
+    "externalReadOnlyTools": 3,
+    "ledgerGuardCases": 6
+  },
+  "liveProvider": {
+    "source": "Actual public Worker acquisition",
+    "capturedAt": "2026-10-30T10:35:56.280Z",
+    "queries": 16,
+    "resolvedIdentities": 8,
+    "directionalRankings": 8
+  },
+  "evidenceFiles": [
+    "evidence/browser-public.json",
+    "evidence/browser-public-export.json",
+    "evidence/browser-public-mobile-export.json",
+    "evidence/tool-client-public.json",
+    "evidence/unit-tests.txt",
+    "evidence/build.txt",
+    "evidence/reviewer-b-oracle.json",
+    "evidence/ledger-guards.json",
+    "evidence/hosted-security-review.json",
+    "evidence/hosted-provider-budget.json"
+  ],
+  "provenanceNote": "A later documentation/evidence commit records these results. Runtime source paths are byte-identical to the tested/deployed application commit. Proof scripts may receive additional assertions after that source commit.",
+  "remainingReleaseGates": [
+    "Independent verification of available free/included Cloudflare allowance: billing read access is denied. User authorizes existing allowance only; no upgrade or purchase was made.",
+    "Final all-mandatory-check reconciliation remains open while the allowance gate is blocked."
+  ]
+}
