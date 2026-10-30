@@ -54,3 +54,9 @@ test('timeout aborts rather than replacing missing evidence',async()=>{
  const c=new QlooAdapter({apiKey:'test-only',timeoutMs:5,fetcher:async(_u,init)=>new Promise((_resolve,reject)=>init?.signal?.addEventListener('abort',()=>reject(new Error('aborted'))))});
  await assert.rejects(c.rank(artist,films),(e:unknown)=>e instanceof QlooError&&e.code==='timeout');
 });
+test('redirects are rejected without forwarding credentials; manual mode is Worker-compatible',async()=>{
+ let calls=0;
+ const c=new QlooAdapter({apiKey:'fixture',fetcher:async(_url,init)=>{calls++;assert.equal(init?.redirect,'manual');return new Response(null,{status:302,headers:{Location:'https://attacker.example/'}});}});
+ await assert.rejects(c.rank(artist,films),(e:unknown)=>e instanceof QlooError&&e.code==='redirect_rejected');
+ assert.equal(calls,1);
+});

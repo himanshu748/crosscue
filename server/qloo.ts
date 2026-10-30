@@ -61,9 +61,12 @@ export class QlooAdapter {
     for(const [k,v] of Object.entries(parameters))url.searchParams.set(k,v);
     const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),this.options.timeoutMs??12000);
     try {
-      const response=await this.fetcher(url,{headers:{'X-Api-Key':this.options.apiKey,Accept:'application/json'},signal:abort.signal,redirect:'error'});
+      // Workers does not implement redirect:'error'. Manual mode prevents any
+      // credential forwarding; reject redirect responses explicitly below.
+      const response=await this.fetcher(url,{headers:{'X-Api-Key':this.options.apiKey,Accept:'application/json'},signal:abort.signal,redirect:'manual'});
       if(!response.ok) {
         await response.body?.cancel();
+        if(response.status>=300&&response.status<400)throw new QlooError('redirect_rejected','Qloo redirected the request. Credentials were not forwarded.');
         if(path==='/search'&&response.status===404)throw new QlooError('unresolved_entity','No Qloo search results matched this entity.',422);
         const code=response.status===429?'rate_limited':response.status===401||response.status===403?'authentication_failed':'upstream_error';
         throw new QlooError(code,`Qloo returned HTTP ${response.status}. No substitute evidence was used.`,response.status===429?429:502);
