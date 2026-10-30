@@ -1,0 +1,14 @@
+
+> crosscue@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 2029 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.90 kB │ gzip:  0.59 kB
+dist/assets/index-CwtAKjRv.css   39.49 kB │ gzip:  8.80 kB
+dist/assets/index-BEOs8ES-.js   266.70 kB │ gzip: 82.30 kB
+
+✓ built in 295ms

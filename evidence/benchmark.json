@@ -1,0 +1,448 @@
+{
+  "kind": "single-festival-controlled-replay",
+  "capturedAt": "2026-10-30T10:10:30.154Z",
+  "protocol": "benchmark/PROTOCOL.md",
+  "blindInputSha256": "6d13dac372eabc595d22105d532810d84d5bb94c8dc0f8f7e6fb77f88750f569",
+  "programmeSha256": "9c7edb9ece673b427f709c7e4fa335269ffb5580f5ecc5dd57e149fe9652b5bf",
+  "results": [
+    {
+      "selector": "Qloo-assisted",
+      "stopReason": "no_actionable_candidates",
+      "protectedPairs": [
+        {
+          "musicId": "bjork",
+          "filmId": "moonlight"
+        }
+      ],
+      "remainingActionablePairsAcrossAll16": [],
+      "remainingActionableCount": 0,
+      "questionsAsked": 1,
+      "actionableQuestions": 1,
+      "differentFeasibleBranchOutcomes": 1,
+      "validRepairs": 1,
+      "distinctSessionsMoved": 3,
+      "totalFinalDisplacementMinutes": 270,
+      "cumulativeMoved": 3,
+      "cumulativeDisplacementMinutes": 270,
+      "replayRuntimeMs": 8.1,
+      "preparationQlooCalls": 16,
+      "modelInvocations": 0,
+      "questions": [
+        {
+          "pair": {
+            "musicId": "bjork",
+            "filmId": "moonlight"
+          },
+          "choice": "protect",
+          "protect": {
+            "movedSessions": 3,
+            "displacementMinutes": 270,
+            "canonical": "bjork:stage:000270|blade-runner:screen:000450|daft-punk:stage:000570|kendrick:stage:000420|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          },
+          "allow": {
+            "movedSessions": 0,
+            "displacementMinutes": 0,
+            "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000480|kendrick:stage:000330|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          }
+        }
+      ],
+      "finalPlacements": [
+        {
+          "sessionId": "bjork",
+          "roomId": "stage",
+          "start": 270
+        },
+        {
+          "sessionId": "blade-runner",
+          "roomId": "screen",
+          "start": 450
+        },
+        {
+          "sessionId": "daft-punk",
+          "roomId": "stage",
+          "start": 570
+        },
+        {
+          "sessionId": "kendrick",
+          "roomId": "stage",
+          "start": 420
+        },
+        {
+          "sessionId": "moonlight",
+          "roomId": "screen",
+          "start": 150
+        },
+        {
+          "sessionId": "radiohead",
+          "roomId": "stage",
+          "start": 30
+        },
+        {
+          "sessionId": "spirited-away",
+          "roomId": "screen",
+          "start": 0
+        },
+        {
+          "sessionId": "whiplash",
+          "roomId": "screen",
+          "start": 300
+        }
+      ]
+    },
+    {
+      "selector": "Metadata-only",
+      "stopReason": "question_budget_exhausted",
+      "protectedPairs": [
+        {
+          "musicId": "kendrick",
+          "filmId": "whiplash"
+        },
+        {
+          "musicId": "bjork",
+          "filmId": "moonlight"
+        }
+      ],
+      "remainingActionablePairsAcrossAll16": [],
+      "remainingActionableCount": 0,
+      "questionsAsked": 2,
+      "actionableQuestions": 2,
+      "differentFeasibleBranchOutcomes": 2,
+      "validRepairs": 2,
+      "distinctSessionsMoved": 3,
+      "totalFinalDisplacementMinutes": 270,
+      "cumulativeMoved": 3,
+      "cumulativeDisplacementMinutes": 270,
+      "replayRuntimeMs": 7,
+      "preparationQlooCalls": 0,
+      "modelInvocations": 0,
+      "questions": [
+        {
+          "pair": {
+            "musicId": "kendrick",
+            "filmId": "whiplash"
+          },
+          "choice": "protect",
+          "protect": {
+            "movedSessions": 2,
+            "displacementMinutes": 180,
+            "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000570|kendrick:stage:000420|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          },
+          "allow": {
+            "movedSessions": 0,
+            "displacementMinutes": 0,
+            "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000480|kendrick:stage:000330|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          }
+        },
+        {
+          "pair": {
+            "musicId": "bjork",
+            "filmId": "moonlight"
+          },
+          "choice": "protect",
+          "protect": {
+            "movedSessions": 1,
+            "displacementMinutes": 90,
+            "canonical": "bjork:stage:000270|blade-runner:screen:000450|daft-punk:stage:000570|kendrick:stage:000420|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          },
+          "allow": {
+            "movedSessions": 0,
+            "displacementMinutes": 0,
+            "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000570|kendrick:stage:000420|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          }
+        }
+      ],
+      "finalPlacements": [
+        {
+          "sessionId": "bjork",
+          "roomId": "stage",
+          "start": 270
+        },
+        {
+          "sessionId": "blade-runner",
+          "roomId": "screen",
+          "start": 450
+        },
+        {
+          "sessionId": "daft-punk",
+          "roomId": "stage",
+          "start": 570
+        },
+        {
+          "sessionId": "kendrick",
+          "roomId": "stage",
+          "start": 420
+        },
+        {
+          "sessionId": "moonlight",
+          "roomId": "screen",
+          "start": 150
+        },
+        {
+          "sessionId": "radiohead",
+          "roomId": "stage",
+          "start": 30
+        },
+        {
+          "sessionId": "spirited-away",
+          "roomId": "screen",
+          "start": 0
+        },
+        {
+          "sessionId": "whiplash",
+          "roomId": "screen",
+          "start": 300
+        }
+      ]
+    },
+    {
+      "selector": "Blind LLM-only",
+      "stopReason": "question_budget_exhausted",
+      "protectedPairs": [
+        {
+          "musicId": "daft-punk",
+          "filmId": "blade-runner"
+        },
+        {
+          "musicId": "kendrick",
+          "filmId": "whiplash"
+        }
+      ],
+      "remainingActionablePairsAcrossAll16": [
+        {
+          "musicId": "bjork",
+          "filmId": "moonlight"
+        }
+      ],
+      "remainingActionableCount": 1,
+      "questionsAsked": 2,
+      "actionableQuestions": 2,
+      "differentFeasibleBranchOutcomes": 2,
+      "validRepairs": 2,
+      "distinctSessionsMoved": 2,
+      "totalFinalDisplacementMinutes": 180,
+      "cumulativeMoved": 2,
+      "cumulativeDisplacementMinutes": 180,
+      "replayRuntimeMs": 6.46,
+      "preparationQlooCalls": 0,
+      "modelInvocations": 1,
+      "questions": [
+        {
+          "pair": {
+            "musicId": "daft-punk",
+            "filmId": "blade-runner"
+          },
+          "choice": "protect",
+          "protect": {
+            "movedSessions": 1,
+            "displacementMinutes": 90,
+            "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000570|kendrick:stage:000330|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          },
+          "allow": {
+            "movedSessions": 0,
+            "displacementMinutes": 0,
+            "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000480|kendrick:stage:000330|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          }
+        },
+        {
+          "pair": {
+            "musicId": "kendrick",
+            "filmId": "whiplash"
+          },
+          "choice": "protect",
+          "protect": {
+            "movedSessions": 1,
+            "displacementMinutes": 90,
+            "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000570|kendrick:stage:000420|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          },
+          "allow": {
+            "movedSessions": 0,
+            "displacementMinutes": 0,
+            "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000570|kendrick:stage:000330|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          }
+        }
+      ],
+      "finalPlacements": [
+        {
+          "sessionId": "bjork",
+          "roomId": "stage",
+          "start": 180
+        },
+        {
+          "sessionId": "blade-runner",
+          "roomId": "screen",
+          "start": 450
+        },
+        {
+          "sessionId": "daft-punk",
+          "roomId": "stage",
+          "start": 570
+        },
+        {
+          "sessionId": "kendrick",
+          "roomId": "stage",
+          "start": 420
+        },
+        {
+          "sessionId": "moonlight",
+          "roomId": "screen",
+          "start": 150
+        },
+        {
+          "sessionId": "radiohead",
+          "roomId": "stage",
+          "start": 30
+        },
+        {
+          "sessionId": "spirited-away",
+          "roomId": "screen",
+          "start": 0
+        },
+        {
+          "sessionId": "whiplash",
+          "roomId": "screen",
+          "start": 300
+        }
+      ]
+    }
+  ],
+  "consequenceFilterAblation": {
+    "kind": "secondary-mechanism-ablation",
+    "changedVariable": "Ask the top two Qloo-ranked pairs before consequence filtering versus the existing consequence-filtered workflow.",
+    "shared": "Same captured Qloo ordering, initial programme, solver, two-question cap, always-Protect policy and independent validator.",
+    "unfiltered": {
+      "questionsAsked": 2,
+      "actionableQuestions": 0,
+      "inconsequentialQuestions": 2,
+      "validAppliedDecisions": 2,
+      "distinctSessionsMoved": 0,
+      "totalFinalDisplacementMinutes": 0,
+      "questions": [
+        {
+          "pair": {
+            "musicId": "kendrick",
+            "filmId": "moonlight"
+          },
+          "choice": "protect",
+          "actionable": false,
+          "reason": "same_schedule",
+          "bothBranchesFeasible": true,
+          "applied": true,
+          "protect": {
+            "movedSessions": 0,
+            "displacementMinutes": 0,
+            "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000480|kendrick:stage:000330|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          },
+          "allow": {
+            "movedSessions": 0,
+            "displacementMinutes": 0,
+            "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000480|kendrick:stage:000330|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          }
+        },
+        {
+          "pair": {
+            "musicId": "radiohead",
+            "filmId": "blade-runner"
+          },
+          "choice": "protect",
+          "actionable": false,
+          "reason": "same_schedule",
+          "bothBranchesFeasible": true,
+          "applied": true,
+          "protect": {
+            "movedSessions": 0,
+            "displacementMinutes": 0,
+            "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000480|kendrick:stage:000330|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          },
+          "allow": {
+            "movedSessions": 0,
+            "displacementMinutes": 0,
+            "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000480|kendrick:stage:000330|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+          }
+        }
+      ]
+    },
+    "filtered": {
+      "questionsAsked": 1,
+      "actionableQuestions": 1,
+      "inconsequentialQuestions": 0,
+      "distinctSessionsMoved": 3,
+      "totalFinalDisplacementMinutes": 270
+    },
+    "interpretation": "Tests the value of consequence filtering, not Qloo versus another cultural selector. More schedule movement is not evidence of better attendee outcomes."
+  },
+  "metadataSelectorScores": [
+    {
+      "id": "kendrick::whiplash",
+      "similarity": 0.1111111111111111
+    },
+    {
+      "id": "bjork::blade-runner",
+      "similarity": 0
+    },
+    {
+      "id": "bjork::moonlight",
+      "similarity": 0
+    },
+    {
+      "id": "bjork::spirited-away",
+      "similarity": 0
+    },
+    {
+      "id": "bjork::whiplash",
+      "similarity": 0
+    },
+    {
+      "id": "daft-punk::blade-runner",
+      "similarity": 0
+    },
+    {
+      "id": "daft-punk::moonlight",
+      "similarity": 0
+    },
+    {
+      "id": "daft-punk::spirited-away",
+      "similarity": 0
+    },
+    {
+      "id": "daft-punk::whiplash",
+      "similarity": 0
+    },
+    {
+      "id": "kendrick::blade-runner",
+      "similarity": 0
+    },
+    {
+      "id": "kendrick::moonlight",
+      "similarity": 0
+    },
+    {
+      "id": "kendrick::spirited-away",
+      "similarity": 0
+    },
+    {
+      "id": "radiohead::blade-runner",
+      "similarity": 0
+    },
+    {
+      "id": "radiohead::moonlight",
+      "similarity": 0
+    },
+    {
+      "id": "radiohead::spirited-away",
+      "similarity": 0
+    },
+    {
+      "id": "radiohead::whiplash",
+      "similarity": 0
+    }
+  ],
+  "metadataZeroScoreTies": 15,
+  "limitations": [
+    "No ground-truth audience labels; not a taste-quality or attendance evaluation.",
+    "One actual blind model generation; provider model ID/inference latency not exposed.",
+    "The sparse metadata baseline has 15 of 16 zero-similarity ties, so its result is substantially driven by canonical tie-breaking.",
+    "Replay times exclude acquisition; no provider speed superiority claim.",
+    "All repairs exact only within declared domains; simulated always-Protect policy.",
+    "Residual actionable pairs are an operational diagnostic across all 16 pairs, not evidence that an organizer should protect those pairs."
+  ]
+}

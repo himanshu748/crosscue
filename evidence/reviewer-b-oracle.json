@@ -1,0 +1,13 @@
+{
+  "kind": "synthetic-independent-oracle",
+  "seed": 7139,
+  "randomDomains": 250,
+  "result": "PASS",
+  "structuralMismatchRejected": true,
+  "sourceHashes": {
+    "src/core/solver.ts": "65c18ec9a5fc8a3de7e3a0cfd620ad0cdadd7e0a3c1059183bab0f77e621e602",
+    "src/core/validator.ts": "24d694b06978baae46e88e2a232539de046e662ef68dd5d764422d66b9bbeab5",
+    "src/core/analysis.ts": "a9c7bfffdf78fde4943f81845567c5eead2d9330a02813109029410900859239",
+    "tests/scheduler.test.ts": "4942e2173b3382d80b9990b0eee866e7051230bbb7276c7fecb2d622cfb7a545"
+  }
+}

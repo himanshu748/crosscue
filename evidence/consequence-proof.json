@@ -1,0 +1,369 @@
+{
+  "capturedAt": "2026-10-30T09:30:27.029Z",
+  "kind": "real-Qloo-evidence-plus-deterministic-consequence",
+  "liveSource": "evidence/qloo-live.json",
+  "questionId": "bjork::moonlight",
+  "ranks": {
+    "artist": {
+      "id": "01381184-b533-4e3c-b9db-43a2fe326744",
+      "name": "Björk",
+      "type": "artist"
+    },
+    "film": {
+      "id": "2955f3c4-36ab-49f3-a818-3597f35ef46c",
+      "name": "Moonlight",
+      "type": "movie",
+      "year": 2016
+    },
+    "artistToFilmRank": 1,
+    "filmToArtistRank": 2,
+    "artistQuery": {
+      "source": "qloo-live",
+      "endpoint": "https://hackathon.api.qloo.com/v2/insights",
+      "parameters": {
+        "filter.type": "urn:entity:movie",
+        "signal.interests.entities": "01381184-b533-4e3c-b9db-43a2fe326744",
+        "filter.results.entities": "9b33a620-68ca-49b3-bfcf-f09ccf8ad595,2955f3c4-36ab-49f3-a818-3597f35ef46c,65745a20-2fe5-44ec-8349-bda0c8522ceb,a74a74bb-ce73-4a76-807b-8bd1714bc463",
+        "take": "4",
+        "sort_by": "affinity"
+      },
+      "fetchedAt": "2026-10-30T09:25:05.170Z",
+      "responseHash": "5bccebb73fbdc5c91edce1cae1e390871c8253e076d6c16446134c69c6ae6490",
+      "requestedIds": [
+        "9b33a620-68ca-49b3-bfcf-f09ccf8ad595",
+        "2955f3c4-36ab-49f3-a818-3597f35ef46c",
+        "65745a20-2fe5-44ec-8349-bda0c8522ceb",
+        "a74a74bb-ce73-4a76-807b-8bd1714bc463"
+      ],
+      "returnedIds": [
+        "2955f3c4-36ab-49f3-a818-3597f35ef46c",
+        "a74a74bb-ce73-4a76-807b-8bd1714bc463",
+        "65745a20-2fe5-44ec-8349-bda0c8522ceb",
+        "9b33a620-68ca-49b3-bfcf-f09ccf8ad595"
+      ],
+      "missingIds": [],
+      "results": [
+        {
+          "id": "2955f3c4-36ab-49f3-a818-3597f35ef46c",
+          "name": "Moonlight",
+          "type": "movie",
+          "year": 2016,
+          "rank": 1,
+          "affinity": 0.846161564772162
+        },
+        {
+          "id": "a74a74bb-ce73-4a76-807b-8bd1714bc463",
+          "name": "Blade Runner",
+          "type": "movie",
+          "year": 1982,
+          "rank": 2,
+          "affinity": 0.8272170312704812
+        },
+        {
+          "id": "65745a20-2fe5-44ec-8349-bda0c8522ceb",
+          "name": "Whiplash",
+          "type": "movie",
+          "year": 2014,
+          "rank": 3,
+          "affinity": 0.816545566339725
+        },
+        {
+          "id": "9b33a620-68ca-49b3-bfcf-f09ccf8ad595",
+          "name": "Spirited Away",
+          "type": "movie",
+          "year": 2001,
+          "rank": 4,
+          "affinity": 0.8162005219400532
+        }
+      ]
+    },
+    "filmQuery": {
+      "source": "qloo-live",
+      "endpoint": "https://hackathon.api.qloo.com/v2/insights",
+      "parameters": {
+        "filter.type": "urn:entity:artist",
+        "signal.interests.entities": "2955f3c4-36ab-49f3-a818-3597f35ef46c",
+        "filter.results.entities": "70cae5bf-2f4c-445c-a3e5-4edacfc3591c,01381184-b533-4e3c-b9db-43a2fe326744,c915a918-39c5-47a3-a101-d9fa1decbd9c,012ef80c-b187-4ecb-9c3d-9ca5228b503c",
+        "take": "4",
+        "sort_by": "affinity"
+      },
+      "fetchedAt": "2026-10-30T09:25:09.892Z",
+      "responseHash": "33b06a7679206f23987cea1ebdcfd74c8e0af7ca8cd731a1ff79525bce7f475d",
+      "requestedIds": [
+        "70cae5bf-2f4c-445c-a3e5-4edacfc3591c",
+        "01381184-b533-4e3c-b9db-43a2fe326744",
+        "c915a918-39c5-47a3-a101-d9fa1decbd9c",
+        "012ef80c-b187-4ecb-9c3d-9ca5228b503c"
+      ],
+      "returnedIds": [
+        "c915a918-39c5-47a3-a101-d9fa1decbd9c",
+        "01381184-b533-4e3c-b9db-43a2fe326744",
+        "012ef80c-b187-4ecb-9c3d-9ca5228b503c",
+        "70cae5bf-2f4c-445c-a3e5-4edacfc3591c"
+      ],
+      "missingIds": [],
+      "results": [
+        {
+          "id": "c915a918-39c5-47a3-a101-d9fa1decbd9c",
+          "name": "Kendrick Lamar",
+          "type": "artist",
+          "rank": 1,
+          "affinity": 0.9479937461130383
+        },
+        {
+          "id": "01381184-b533-4e3c-b9db-43a2fe326744",
+          "name": "Björk",
+          "type": "artist",
+          "rank": 2,
+          "affinity": 0.8355970293244234
+        },
+        {
+          "id": "012ef80c-b187-4ecb-9c3d-9ca5228b503c",
+          "name": "Daft Punk",
+          "type": "artist",
+          "rank": 3,
+          "affinity": 0.8061426549231193
+        },
+        {
+          "id": "70cae5bf-2f4c-445c-a3e5-4edacfc3591c",
+          "name": "Radiohead",
+          "type": "artist",
+          "rank": 4,
+          "affinity": 0.7878898121102502
+        }
+      ]
+    },
+    "priority": "Mutual top-two ranks first; then lower worst rank, lower best rank, canonical pair ID. Ordinal policy only; not audience overlap."
+  },
+  "protect": {
+    "feasible": true,
+    "placements": [
+      {
+        "sessionId": "bjork",
+        "roomId": "stage",
+        "start": 270
+      },
+      {
+        "sessionId": "blade-runner",
+        "roomId": "screen",
+        "start": 450
+      },
+      {
+        "sessionId": "daft-punk",
+        "roomId": "stage",
+        "start": 570
+      },
+      {
+        "sessionId": "kendrick",
+        "roomId": "stage",
+        "start": 420
+      },
+      {
+        "sessionId": "moonlight",
+        "roomId": "screen",
+        "start": 150
+      },
+      {
+        "sessionId": "radiohead",
+        "roomId": "stage",
+        "start": 30
+      },
+      {
+        "sessionId": "spirited-away",
+        "roomId": "screen",
+        "start": 0
+      },
+      {
+        "sessionId": "whiplash",
+        "roomId": "screen",
+        "start": 300
+      }
+    ],
+    "objective": {
+      "movedSessions": 3,
+      "displacementMinutes": 270,
+      "canonical": "bjork:stage:000270|blade-runner:screen:000450|daft-punk:stage:000570|kendrick:stage:000420|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+    },
+    "changes": [
+      {
+        "sessionId": "bjork",
+        "title": "Björk",
+        "from": {
+          "sessionId": "bjork",
+          "roomId": "stage",
+          "start": 180
+        },
+        "to": {
+          "sessionId": "bjork",
+          "roomId": "stage",
+          "start": 270
+        },
+        "displacementMinutes": 90
+      },
+      {
+        "sessionId": "daft-punk",
+        "title": "Daft Punk",
+        "from": {
+          "sessionId": "daft-punk",
+          "roomId": "stage",
+          "start": 480
+        },
+        "to": {
+          "sessionId": "daft-punk",
+          "roomId": "stage",
+          "start": 570
+        },
+        "displacementMinutes": 90
+      },
+      {
+        "sessionId": "kendrick",
+        "title": "Kendrick Lamar",
+        "from": {
+          "sessionId": "kendrick",
+          "roomId": "stage",
+          "start": 330
+        },
+        "to": {
+          "sessionId": "kendrick",
+          "roomId": "stage",
+          "start": 420
+        },
+        "displacementMinutes": 90
+      }
+    ],
+    "proof": {
+      "method": "exhaustive-finite-domain",
+      "domainSize": 256,
+      "examined": 256,
+      "feasibleCount": 8
+    }
+  },
+  "allow": {
+    "feasible": true,
+    "placements": [
+      {
+        "sessionId": "bjork",
+        "roomId": "stage",
+        "start": 180
+      },
+      {
+        "sessionId": "blade-runner",
+        "roomId": "screen",
+        "start": 450
+      },
+      {
+        "sessionId": "daft-punk",
+        "roomId": "stage",
+        "start": 480
+      },
+      {
+        "sessionId": "kendrick",
+        "roomId": "stage",
+        "start": 330
+      },
+      {
+        "sessionId": "moonlight",
+        "roomId": "screen",
+        "start": 150
+      },
+      {
+        "sessionId": "radiohead",
+        "roomId": "stage",
+        "start": 30
+      },
+      {
+        "sessionId": "spirited-away",
+        "roomId": "screen",
+        "start": 0
+      },
+      {
+        "sessionId": "whiplash",
+        "roomId": "screen",
+        "start": 300
+      }
+    ],
+    "objective": {
+      "movedSessions": 0,
+      "displacementMinutes": 0,
+      "canonical": "bjork:stage:000180|blade-runner:screen:000450|daft-punk:stage:000480|kendrick:stage:000330|moonlight:screen:000150|radiohead:stage:000030|spirited-away:screen:000000|whiplash:screen:000300"
+    },
+    "changes": [],
+    "proof": {
+      "method": "exhaustive-finite-domain",
+      "domainSize": 256,
+      "examined": 256,
+      "feasibleCount": 60
+    }
+  },
+  "discarded": [
+    {
+      "id": "kendrick::moonlight",
+      "reason": "same_schedule"
+    },
+    {
+      "id": "radiohead::blade-runner",
+      "reason": "same_schedule"
+    },
+    {
+      "id": "bjork::blade-runner",
+      "reason": "same_schedule"
+    },
+    {
+      "id": "radiohead::whiplash",
+      "reason": "same_schedule"
+    },
+    {
+      "id": "bjork::whiplash",
+      "reason": "same_schedule"
+    },
+    {
+      "id": "bjork::spirited-away",
+      "reason": "same_schedule"
+    },
+    {
+      "id": "daft-punk::whiplash",
+      "reason": "same_schedule"
+    },
+    {
+      "id": "radiohead::spirited-away",
+      "reason": "protect_infeasible"
+    }
+  ],
+  "unsupported": [
+    {
+      "pair": {
+        "musicId": "radiohead",
+        "filmId": "moonlight"
+      },
+      "reason": "Neither direction ranks in the top two of its four-entity shortlist."
+    },
+    {
+      "pair": {
+        "musicId": "kendrick",
+        "filmId": "spirited-away"
+      },
+      "reason": "Neither direction ranks in the top two of its four-entity shortlist."
+    },
+    {
+      "pair": {
+        "musicId": "kendrick",
+        "filmId": "blade-runner"
+      },
+      "reason": "Neither direction ranks in the top two of its four-entity shortlist."
+    },
+    {
+      "pair": {
+        "musicId": "daft-punk",
+        "filmId": "spirited-away"
+      },
+      "reason": "Neither direction ranks in the top two of its four-entity shortlist."
+    },
+    {
+      "pair": {
+        "musicId": "daft-punk",
+        "filmId": "moonlight"
+      },
+      "reason": "Neither direction ranks in the top two of its four-entity shortlist."
+    }
+  ]
+}

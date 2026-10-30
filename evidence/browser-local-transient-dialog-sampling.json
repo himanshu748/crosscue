@@ -1,0 +1,240 @@
+{
+  "pass": false,
+  "error": "AssertionError [ERR_ASSERTION]: All tested states have no axe WCAG A/AA violations\n    at check (/Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/scripts/browser-journey.ts:17:50)\n    at <anonymous> (/Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/scripts/browser-journey.ts:77:2)",
+  "testedAt": "2026-10-30T10:14:24.612Z",
+  "url": "http://localhost:3008",
+  "browser": "Playwright Chromium",
+  "browserRouting": "Browser plugin/browser skill not available; regular Playwright with existing installed Chromium",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "sourceHashes": {
+    "src/App.tsx": "5d88c46875ead70cd3faa05e0965b647be024d06720549cba9808f940aeec197",
+    "src/styles.css": "48cfcfe7d27586beb48ba7b48178b9033246d2db98ef968a510c1952ea258db3",
+    "src/core/analysis.ts": "a9c7bfffdf78fde4943f81845567c5eead2d9330a02813109029410900859239",
+    "src/core/solver.ts": "65c18ec9a5fc8a3de7e3a0cfd620ad0cdadd7e0a3c1059183bab0f77e621e602",
+    "src/core/validator.ts": "24d694b06978baae46e88e2a232539de046e662ef68dd5d764422d66b9bbeab5",
+    "server/app.ts": "da52eaf6a6dc704f6a5dbd41b25114c63626d451fdff3c3e9bff06eb34dd55ea",
+    "server/qloo.ts": "6fd082fef315210ab7f69b3aee4cc4a192d630dbc635a6109e73da21162b9bac"
+  },
+  "assertions": [
+    "Page title identifies CrossCue",
+    "No framework error overlay",
+    "desktop initial: no axe WCAG A/AA violations",
+    "Complete eight-session two-room programme loaded",
+    "Keyboard starts at visible skip link",
+    "Scheduling constraints dialog opens and Escape closes",
+    "Real provider provenance has eight resolved identities and eight directional queries",
+    "Captured Qloo evidence selects consequential Björk / Moonlight question",
+    "Both decision branches are feasible",
+    "Allow keeps baseline; Protect moves three sessions",
+    "desktop question: no axe WCAG A/AA violations",
+    "Keyboard tab navigation exposes real Qloo query provenance",
+    "Preview transfers keyboard focus to its review heading",
+    "Protect preview does not mutate saved placements or version",
+    "Before and After timetable controls switch preview state",
+    "desktop preview: no axe WCAG A/AA violations",
+    "Explicit confirmation saves three-move repair and organizer decision",
+    "Applied repair passes independent validator",
+    "Reload preserves full organizer state",
+    "Actual downloaded JSON contains validated eight-session repair, changes and protections",
+    "Downloaded schedule matches the applied saved state",
+    "Main journey naturally stops after one useful question",
+    "desktop saved: no axe WCAG A/AA violations",
+    "Completely locked programme stops with zero questions",
+    "Page title identifies CrossCue",
+    "No framework error overlay",
+    "390px mobile layout has no horizontal overflow",
+    "Mobile browser honors reduced-motion preference",
+    "mobile initial: no axe WCAG A/AA violations",
+    "Fresh browser context has isolated original state",
+    "mobile question: no axe WCAG A/AA violations",
+    "Allow preview is nonmutating and permits unchanged baseline",
+    "Explicit Allow confirmation records decision without forcing overlap or changes",
+    "Defer records decision without modifying placements",
+    "Allow plus Defer stops at the two-question budget",
+    "Mobile final state has no horizontal overflow",
+    "mobile budget: no axe WCAG A/AA violations"
+  ],
+  "violations": [
+    {
+      "stage": "desktop initial",
+      "violations": []
+    },
+    {
+      "stage": "desktop constraints dialog",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "dialog > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #9aa48d, background color: #fbfaf4, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "li:nth-child(1) > b"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.26 (foreground color: #a7ae9a, background color: #fffef9, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "li:nth-child(1) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.46 (foreground color: #9aa98b, background color: #fffef9, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "li:nth-child(2) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.46 (foreground color: #9aa98b, background color: #fffef9, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "desktop session dialog",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".session-kind-music"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.77 (foreground color: #d9bcad, background color: #fffef9, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#dialog-heading"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.09 (foreground color: #b1b3ae, background color: #fffef9, font size: 24.0pt (32px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".dialog-subtitle"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.63 (foreground color: #c7cbbd, background color: #fffef9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "dt:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.64 (foreground color: #c3c8b9, background color: #fafbf5, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "dd:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.61 (foreground color: #c1cbb6, background color: #fafbf5, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "dt:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.63 (foreground color: #c7cbbd, background color: #fffef9, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "dd:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.6 (foreground color: #c6ceba, background color: #fffef9, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "dt:nth-child(5)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.63 (foreground color: #c7cbbd, background color: #fffef9, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "desktop question",
+      "violations": []
+    },
+    {
+      "stage": "desktop preview",
+      "violations": []
+    },
+    {
+      "stage": "desktop saved",
+      "violations": []
+    },
+    {
+      "stage": "desktop reset dialog",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "dialog > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.73 (foreground color: #bbc1b1, background color: #f9f8f2, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#dialog-heading"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.12 (foreground color: #abada7, background color: #f9f8f2, font size: 24.0pt (32px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".button-quiet"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.02 (foreground color: #abada7, background color: #f3f2ec, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".button-primary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.94 (foreground color: #acafa3, background color: #ecf4c8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "mobile initial",
+      "violations": []
+    },
+    {
+      "stage": "mobile question",
+      "violations": []
+    },
+    {
+      "stage": "mobile budget",
+      "violations": []
+    }
+  ],
+  "consoleErrors": [],
+  "responses": [],
+  "screenshots": [
+    "evidence/screenshots/local-initial.png",
+    "evidence/screenshots/local-question.png",
+    "evidence/screenshots/local-preview.png",
+    "evidence/screenshots/local-saved.png",
+    "evidence/screenshots/local-locked.png",
+    "evidence/screenshots/local-mobile-initial.png",
+    "evidence/screenshots/local-mobile-question.png",
+    "evidence/screenshots/local-mobile-budget.png"
+  ]
+}

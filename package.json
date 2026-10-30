@@ -1,0 +1,40 @@
+{
+  "name": "crosscue",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "dev": "vite --host 127.0.0.1",
+    "test:live": "tsx scripts/live-feasibility.ts",
+    "start": "tsx server/http.ts",
+    "test:consequence": "tsx scripts/prove-consequence.ts",
+    "benchmark": "tsx scripts/benchmark.ts",
+    "verify": "python3 scripts/verify_completion.py",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "lucide-react": "^1.61.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "@playwright/test": "^1.64.1",
+    "@axe-core/playwright": "^4.14.0",
+    "wrangler": "^4.0.0"
+  }
+}

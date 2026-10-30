@@ -1,0 +1,129 @@
+{
+  "pass": true,
+  "sourceRevision": "working-tree",
+  "evidenceCapturedAt": "2026-10-30T09:56:35.825Z",
+  "provenanceQueries": 16,
+  "exportPath": "evidence/browser-local-export.json",
+  "testedAt": "2026-10-30T10:14:51.918Z",
+  "url": "http://localhost:3008",
+  "browser": "Playwright Chromium",
+  "browserRouting": "Browser plugin/browser skill not available; regular Playwright with existing installed Chromium",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "sourceHashes": {
+    "src/App.tsx": "5d88c46875ead70cd3faa05e0965b647be024d06720549cba9808f940aeec197",
+    "src/styles.css": "48cfcfe7d27586beb48ba7b48178b9033246d2db98ef968a510c1952ea258db3",
+    "src/core/analysis.ts": "a9c7bfffdf78fde4943f81845567c5eead2d9330a02813109029410900859239",
+    "src/core/solver.ts": "65c18ec9a5fc8a3de7e3a0cfd620ad0cdadd7e0a3c1059183bab0f77e621e602",
+    "src/core/validator.ts": "24d694b06978baae46e88e2a232539de046e662ef68dd5d764422d66b9bbeab5",
+    "server/app.ts": "da52eaf6a6dc704f6a5dbd41b25114c63626d451fdff3c3e9bff06eb34dd55ea",
+    "server/qloo.ts": "6fd082fef315210ab7f69b3aee4cc4a192d630dbc635a6109e73da21162b9bac"
+  },
+  "assertions": [
+    "Page title identifies CrossCue",
+    "No framework error overlay",
+    "desktop initial: no axe WCAG A/AA violations",
+    "Complete eight-session two-room programme loaded",
+    "Keyboard starts at visible skip link",
+    "desktop constraints dialog: no axe WCAG A/AA violations",
+    "Scheduling constraints dialog opens and Escape closes",
+    "desktop session dialog: no axe WCAG A/AA violations",
+    "Real provider provenance has eight resolved identities and eight directional queries",
+    "Captured Qloo evidence selects consequential Björk / Moonlight question",
+    "Both decision branches are feasible",
+    "Allow keeps baseline; Protect moves three sessions",
+    "desktop question: no axe WCAG A/AA violations",
+    "Keyboard tab navigation exposes real Qloo query provenance",
+    "Preview transfers keyboard focus to its review heading",
+    "Protect preview does not mutate saved placements or version",
+    "Before and After timetable controls switch preview state",
+    "desktop preview: no axe WCAG A/AA violations",
+    "Explicit confirmation saves three-move repair and organizer decision",
+    "Applied repair passes independent validator",
+    "Reload preserves full organizer state",
+    "Actual downloaded JSON contains validated eight-session repair, changes and protections",
+    "Downloaded schedule matches the applied saved state",
+    "Main journey naturally stops after one useful question",
+    "desktop saved: no axe WCAG A/AA violations",
+    "desktop reset dialog: no axe WCAG A/AA violations",
+    "Completely locked programme stops with zero questions",
+    "Page title identifies CrossCue",
+    "No framework error overlay",
+    "390px mobile layout has no horizontal overflow",
+    "Mobile browser honors reduced-motion preference",
+    "mobile initial: no axe WCAG A/AA violations",
+    "Fresh browser context has isolated original state",
+    "mobile question: no axe WCAG A/AA violations",
+    "Allow preview is nonmutating and permits unchanged baseline",
+    "Explicit Allow confirmation records decision without forcing overlap or changes",
+    "Defer records decision without modifying placements",
+    "Allow plus Defer stops at the two-question budget",
+    "Mobile final state has no horizontal overflow",
+    "mobile budget: no axe WCAG A/AA violations",
+    "All tested states have no axe WCAG A/AA violations",
+    "No browser console or page errors",
+    "No failed application HTTP responses"
+  ],
+  "violations": [
+    {
+      "stage": "desktop initial",
+      "violations": []
+    },
+    {
+      "stage": "desktop constraints dialog",
+      "violations": []
+    },
+    {
+      "stage": "desktop session dialog",
+      "violations": []
+    },
+    {
+      "stage": "desktop question",
+      "violations": []
+    },
+    {
+      "stage": "desktop preview",
+      "violations": []
+    },
+    {
+      "stage": "desktop saved",
+      "violations": []
+    },
+    {
+      "stage": "desktop reset dialog",
+      "violations": []
+    },
+    {
+      "stage": "mobile initial",
+      "violations": []
+    },
+    {
+      "stage": "mobile question",
+      "violations": []
+    },
+    {
+      "stage": "mobile budget",
+      "violations": []
+    }
+  ],
+  "consoleErrors": [],
+  "responses": [],
+  "screenshots": [
+    "evidence/screenshots/local-initial.png",
+    "evidence/screenshots/local-question.png",
+    "evidence/screenshots/local-preview.png",
+    "evidence/screenshots/local-saved.png",
+    "evidence/screenshots/local-locked.png",
+    "evidence/screenshots/local-mobile-initial.png",
+    "evidence/screenshots/local-mobile-question.png",
+    "evidence/screenshots/local-mobile-budget.png"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "blind-LLM-only-selection",
+  "provenance": {"runDate":"2026-10-30","execution":"One actual Codex subagent inference with fork_turns=none; no tools, web, files, timetable or Qloo-derived context","agent":"blind_baseline","modelIdentifier":"Not exposed by the agent runtime; not guessed","trials":1},
+  "limitations": ["Hypotheses, not measured audience overlap","One subjective inference trial, not statistical validation","Metadata describes works and artists, not their audiences"],
+  "ranking": [
+    {"musicId":"kendrick","filmId":"moonlight","reason":"Intimate explorations of Black American experience, identity, vulnerability and social environment."},
+    {"musicId":"radiohead","filmId":"blade-runner","reason":"Technological unease, alienation and questions about modern life."},
+    {"musicId":"daft-punk","filmId":"blade-runner","reason":"Electronic sound, robotic imagery and futuristic aesthetics."},
+    {"musicId":"bjork","filmId":"spirited-away","reason":"Fantastical imagery, transformation and relationships between humans and nature."},
+    {"musicId":"kendrick","filmId":"whiplash","reason":"Jazz elements alongside ambition and artistic pressure."},
+    {"musicId":"bjork","filmId":"blade-runner","reason":"Experimental electronic textures and organic life contrasted with technology."},
+    {"musicId":"radiohead","filmId":"whiplash","reason":"Musical experimentation and emotionally tense performance."},
+    {"musicId":"radiohead","filmId":"moonlight","reason":"Introspection, isolation and emotional vulnerability."},
+    {"musicId":"bjork","filmId":"moonlight","reason":"Intimacy, vulnerability and personal identity."},
+    {"musicId":"daft-punk","filmId":"whiplash","reason":"Rhythm, instrumental precision and musical performance."},
+    {"musicId":"radiohead","filmId":"spirited-away","reason":"Unease about modern society and immersive, uncanny worlds."},
+    {"musicId":"bjork","filmId":"whiplash","reason":"Musical expression and artistic commitment, with less direct thematic alignment."},
+    {"musicId":"daft-punk","filmId":"spirited-away","reason":"Inventive visual identities and transformative fantasy."},
+    {"musicId":"kendrick","filmId":"blade-runner","reason":"Identity, power and social hierarchy despite different settings."},
+    {"musicId":"kendrick","filmId":"spirited-away","reason":"Personal growth and difficult social environments."},
+    {"musicId":"daft-punk","filmId":"moonlight","reason":"General emotional expression, with less direct genre or thematic alignment."}
+  ],
+  "metadata": {
+    "music":[{"id":"radiohead","tags":["alternative rock","art rock","experimental rock","electronic"]},{"id":"bjork","tags":["art pop","experimental pop","electronic","avant-garde"]},{"id":"kendrick","tags":["hip-hop","conscious rap","jazz rap","storytelling"]},{"id":"daft-punk","tags":["electronic","house","disco","funk"]}],
+    "films":[{"id":"spirited-away","tags":["animation","fantasy","coming-of-age","transformation"]},{"id":"moonlight","tags":["drama","coming-of-age","identity","sexuality"]},{"id":"whiplash","tags":["drama","jazz","ambition","perfectionism"]},{"id":"blade-runner","tags":["science fiction","neo-noir","dystopia","artificial intelligence","identity"]}]
+  }
+}

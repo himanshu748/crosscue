@@ -1,0 +1,532 @@
+{
+  "status": "failed",
+  "capturedAt": "2026-10-30T09:23:40.650Z",
+  "calls": 9,
+  "identities": [
+    {
+      "id": "70cae5bf-2f4c-445c-a3e5-4edacfc3591c",
+      "name": "Radiohead",
+      "type": "artist"
+    },
+    {
+      "id": "01381184-b533-4e3c-b9db-43a2fe326744",
+      "name": "Björk",
+      "type": "artist"
+    },
+    {
+      "id": "c915a918-39c5-47a3-a101-d9fa1decbd9c",
+      "name": "Kendrick Lamar",
+      "type": "artist"
+    },
+    {
+      "id": "012ef80c-b187-4ecb-9c3d-9ca5228b503c",
+      "name": "Daft Punk",
+      "type": "artist"
+    },
+    {
+      "id": "9b33a620-68ca-49b3-bfcf-f09ccf8ad595",
+      "name": "Spirited Away",
+      "type": "movie",
+      "year": 2001
+    },
+    {
+      "id": "2955f3c4-36ab-49f3-a818-3597f35ef46c",
+      "name": "Moonlight",
+      "type": "movie",
+      "year": 2016
+    },
+    {
+      "id": "65745a20-2fe5-44ec-8349-bda0c8522ceb",
+      "name": "Whiplash",
+      "type": "movie",
+      "year": 2014
+    },
+    {
+      "id": "a74a74bb-ce73-4a76-807b-8bd1714bc463",
+      "name": "Blade Runner",
+      "type": "movie",
+      "year": 1982
+    }
+  ],
+  "evidence": [
+    {
+      "source": "qloo-live",
+      "endpoint": "https://hackathon.api.qloo.com/search",
+      "parameters": {
+        "query": "Radiohead",
+        "types": "urn:entity:artist",
+        "take": "5",
+        "sort_by": "match"
+      },
+      "fetchedAt": "2026-10-30T09:23:29.924Z",
+      "responseHash": "2f936d6fdeed093611cb6bdd4061b3e9e8175a9e3fe5a6deb814cd4cb4a510ae",
+      "requestedIds": [],
+      "returnedIds": [
+        "70cae5bf-2f4c-445c-a3e5-4edacfc3591c",
+        "99ecefed-b982-40c2-a2ed-eb042e9545fa",
+        "bf711411-5659-4cef-bc46-adeaaceb52ea",
+        "a754373e-0d89-4fd7-85b4-6f22f413d1d1",
+        "93d30f68-da61-4cb3-a672-1c7983c79086"
+      ],
+      "missingIds": [],
+      "results": [
+        {
+          "id": "70cae5bf-2f4c-445c-a3e5-4edacfc3591c",
+          "name": "Radiohead",
+          "type": "artist",
+          "rank": 1,
+          "affinity": null
+        },
+        {
+          "id": "99ecefed-b982-40c2-a2ed-eb042e9545fa",
+          "name": "Radiohead Tribute",
+          "type": "artist",
+          "rank": 2,
+          "affinity": null
+        },
+        {
+          "id": "bf711411-5659-4cef-bc46-adeaaceb52ea",
+          "name": "Dub Tribute To Radiohead",
+          "type": "artist",
+          "rank": 3,
+          "affinity": null
+        },
+        {
+          "id": "a754373e-0d89-4fd7-85b4-6f22f413d1d1",
+          "name": "The Bluegrass Tribute to Radiohead",
+          "type": "artist",
+          "rank": 4,
+          "affinity": null
+        },
+        {
+          "id": "93d30f68-da61-4cb3-a672-1c7983c79086",
+          "name": "Thom Yorke and Johnny Greenwood (Radiohead)",
+          "type": "artist",
+          "rank": 5,
+          "affinity": null
+        }
+      ]
+    },
+    {
+      "source": "qloo-live",
+      "endpoint": "https://hackathon.api.qloo.com/search",
+      "parameters": {
+        "query": "Björk",
+        "types": "urn:entity:artist",
+        "take": "5",
+        "sort_by": "match"
+      },
+      "fetchedAt": "2026-10-30T09:23:31.258Z",
+      "responseHash": "89446bba11507a6fa71bf09d894a1195c945ca27296cfa1d92c2873b5a980bc7",
+      "requestedIds": [],
+      "returnedIds": [
+        "01381184-b533-4e3c-b9db-43a2fe326744",
+        "f65f1dce-6af7-4db6-82da-e2820608c208",
+        "4aedcce5-efa1-4088-a88e-d94376c71ff0",
+        "0ffa23ee-1e82-4fe2-910c-c7ccccfc10e2",
+        "a7ebbb32-933a-4452-8ef3-f780fb600d6b"
+      ],
+      "missingIds": [],
+      "results": [
+        {
+          "id": "01381184-b533-4e3c-b9db-43a2fe326744",
+          "name": "Björk",
+          "type": "artist",
+          "rank": 1,
+          "affinity": null
+        },
+        {
+          "id": "f65f1dce-6af7-4db6-82da-e2820608c208",
+          "name": "Björk and The Brodsky Quartet",
+          "type": "artist",
+          "rank": 2,
+          "affinity": null
+        },
+        {
+          "id": "4aedcce5-efa1-4088-a88e-d94376c71ff0",
+          "name": "Bjork & Skunk Anansie",
+          "type": "artist",
+          "rank": 3,
+          "affinity": null
+        },
+        {
+          "id": "0ffa23ee-1e82-4fe2-910c-c7ccccfc10e2",
+          "name": "Bjork Guomundsdottir & Trio Guomundar In",
+          "type": "artist",
+          "rank": 4,
+          "affinity": null
+        },
+        {
+          "id": "a7ebbb32-933a-4452-8ef3-f780fb600d6b",
+          "name": "Björk Gu›mundóttir",
+          "type": "artist",
+          "rank": 5,
+          "affinity": null
+        }
+      ]
+    },
+    {
+      "source": "qloo-live",
+      "endpoint": "https://hackathon.api.qloo.com/search",
+      "parameters": {
+        "query": "Kendrick Lamar",
+        "types": "urn:entity:artist",
+        "take": "5",
+        "sort_by": "match"
+      },
+      "fetchedAt": "2026-10-30T09:23:32.501Z",
+      "responseHash": "a960b31ed0627ddf3e2f1488226484d80ca53fc0770fc8463e9735840eb0d42f",
+      "requestedIds": [],
+      "returnedIds": [
+        "c915a918-39c5-47a3-a101-d9fa1decbd9c",
+        "b8874d35-b38e-4932-ae48-baa86948c8b8",
+        "2b4a9d52-242d-440d-898e-1a7adb5de79a",
+        "b16bcd64-a57e-4496-9419-368b0f3d63ff",
+        "83052d30-913b-4546-aeb6-1c4ec966e95d"
+      ],
+      "missingIds": [],
+      "results": [
+        {
+          "id": "c915a918-39c5-47a3-a101-d9fa1decbd9c",
+          "name": "Kendrick Lamar",
+          "type": "artist",
+          "rank": 1,
+          "affinity": null
+        },
+        {
+          "id": "b8874d35-b38e-4932-ae48-baa86948c8b8",
+          "name": "Kendrick Lamar, SZA",
+          "type": "artist",
+          "rank": 2,
+          "affinity": null
+        },
+        {
+          "id": "2b4a9d52-242d-440d-898e-1a7adb5de79a",
+          "name": "Kendrick Lamar, Travis Scott",
+          "type": "artist",
+          "rank": 3,
+          "affinity": null
+        },
+        {
+          "id": "b16bcd64-a57e-4496-9419-368b0f3d63ff",
+          "name": "Kendrick Lamar, Zacari",
+          "type": "artist",
+          "rank": 4,
+          "affinity": null
+        },
+        {
+          "id": "83052d30-913b-4546-aeb6-1c4ec966e95d",
+          "name": "Kendrick Lamar, U2",
+          "type": "artist",
+          "rank": 5,
+          "affinity": null
+        }
+      ]
+    },
+    {
+      "source": "qloo-live",
+      "endpoint": "https://hackathon.api.qloo.com/search",
+      "parameters": {
+        "query": "Daft Punk",
+        "types": "urn:entity:artist",
+        "take": "5",
+        "sort_by": "match"
+      },
+      "fetchedAt": "2026-10-30T09:23:33.786Z",
+      "responseHash": "503a0a88a0f4b8732dca9db2166ac20fababfb55a996947d142fb20eda86073e",
+      "requestedIds": [],
+      "returnedIds": [
+        "012ef80c-b187-4ecb-9c3d-9ca5228b503c",
+        "f9bdc748-b027-430c-bebf-b74cf2255cc3",
+        "3dc6bf48-76d3-49d4-9af2-b313cc6fa44d",
+        "cadfcca2-d14d-4e07-b2c2-26117cf7fd99",
+        "acc979d5-e7ac-4264-a1f9-890debcb5ac3"
+      ],
+      "missingIds": [],
+      "results": [
+        {
+          "id": "012ef80c-b187-4ecb-9c3d-9ca5228b503c",
+          "name": "Daft Punk",
+          "type": "artist",
+          "rank": 1,
+          "affinity": null
+        },
+        {
+          "id": "f9bdc748-b027-430c-bebf-b74cf2255cc3",
+          "name": "Daft Punk & Pharrell Williams",
+          "type": "artist",
+          "rank": 2,
+          "affinity": null
+        },
+        {
+          "id": "3dc6bf48-76d3-49d4-9af2-b313cc6fa44d",
+          "name": "Daft Punk, Julian Casablancas",
+          "type": "artist",
+          "rank": 3,
+          "affinity": null
+        },
+        {
+          "id": "cadfcca2-d14d-4e07-b2c2-26117cf7fd99",
+          "name": "Adele vs. Daft Punk",
+          "type": "artist",
+          "rank": 4,
+          "affinity": null
+        },
+        {
+          "id": "acc979d5-e7ac-4264-a1f9-890debcb5ac3",
+          "name": "The Weeknd, Daft Punk",
+          "type": "artist",
+          "rank": 5,
+          "affinity": null
+        }
+      ]
+    },
+    {
+      "source": "qloo-live",
+      "endpoint": "https://hackathon.api.qloo.com/search",
+      "parameters": {
+        "query": "Spirited Away",
+        "types": "urn:entity:movie",
+        "take": "5",
+        "sort_by": "match"
+      },
+      "fetchedAt": "2026-10-30T09:23:35.448Z",
+      "responseHash": "dfb2d21c79acc518bd0e4d5fdaa3ebe356aa7640ef8fbb277617af982debc942",
+      "requestedIds": [],
+      "returnedIds": [
+        "9b33a620-68ca-49b3-bfcf-f09ccf8ad595",
+        "ed7b0574-b6fe-4a0a-8b56-e3db046aef98",
+        "4da2e9cf-ebbe-40f8-bb91-f80b90ec0098",
+        "a4d4f730-c2d0-4a97-821f-06e1b90091fa",
+        "6ae9a87b-17fb-4bd7-adfc-14ce6ef4a3bb"
+      ],
+      "missingIds": [],
+      "results": [
+        {
+          "id": "9b33a620-68ca-49b3-bfcf-f09ccf8ad595",
+          "name": "Spirited Away",
+          "type": "movie",
+          "year": 2001,
+          "rank": 1,
+          "affinity": null
+        },
+        {
+          "id": "ed7b0574-b6fe-4a0a-8b56-e3db046aef98",
+          "name": "Spirited Away: Live on Stage",
+          "type": "movie",
+          "year": 2022,
+          "rank": 2,
+          "affinity": null
+        },
+        {
+          "id": "4da2e9cf-ebbe-40f8-bb91-f80b90ec0098",
+          "name": "Cast Away",
+          "type": "movie",
+          "year": 2000,
+          "rank": 3,
+          "affinity": null
+        },
+        {
+          "id": "a4d4f730-c2d0-4a97-821f-06e1b90091fa",
+          "name": "Drive-Away Dolls",
+          "type": "movie",
+          "year": 2024,
+          "rank": 4,
+          "affinity": null
+        },
+        {
+          "id": "6ae9a87b-17fb-4bd7-adfc-14ce6ef4a3bb",
+          "name": "Flushed Away",
+          "type": "movie",
+          "year": 2006,
+          "rank": 5,
+          "affinity": null
+        }
+      ]
+    },
+    {
+      "source": "qloo-live",
+      "endpoint": "https://hackathon.api.qloo.com/search",
+      "parameters": {
+        "query": "Moonlight",
+        "types": "urn:entity:movie",
+        "take": "5",
+        "sort_by": "match"
+      },
+      "fetchedAt": "2026-10-30T09:23:36.889Z",
+      "responseHash": "50de67c8d834dfa87b4295077ceab5ff1929fe053b401310e76d31fa2d6a986b",
+      "requestedIds": [],
+      "returnedIds": [
+        "2955f3c4-36ab-49f3-a818-3597f35ef46c",
+        "45c63a99-b9c6-4943-a5c6-79dc989bfbdd",
+        "99e2b8ea-f435-4dfe-8b8c-dc0158b33219",
+        "d00e2c7a-e879-4270-9e45-b87dbd68b063",
+        "39d3f936-4f8b-4244-a285-d3dbce400ebe"
+      ],
+      "missingIds": [],
+      "results": [
+        {
+          "id": "2955f3c4-36ab-49f3-a818-3597f35ef46c",
+          "name": "Moonlight",
+          "type": "movie",
+          "year": 2016,
+          "rank": 1,
+          "affinity": null
+        },
+        {
+          "id": "45c63a99-b9c6-4943-a5c6-79dc989bfbdd",
+          "name": "Moonlight Soul",
+          "type": "movie",
+          "year": 2021,
+          "rank": 2,
+          "affinity": null
+        },
+        {
+          "id": "99e2b8ea-f435-4dfe-8b8c-dc0158b33219",
+          "name": "Moonlight Sonata: Deafness in Three Movements",
+          "type": "movie",
+          "year": 2019,
+          "rank": 3,
+          "affinity": null
+        },
+        {
+          "id": "d00e2c7a-e879-4270-9e45-b87dbd68b063",
+          "name": "Moonlight Mile",
+          "type": "movie",
+          "year": 2002,
+          "rank": 4,
+          "affinity": null
+        },
+        {
+          "id": "39d3f936-4f8b-4244-a285-d3dbce400ebe",
+          "name": "Moonlighting",
+          "type": "movie",
+          "year": 1982,
+          "rank": 5,
+          "affinity": null
+        }
+      ]
+    },
+    {
+      "source": "qloo-live",
+      "endpoint": "https://hackathon.api.qloo.com/search",
+      "parameters": {
+        "query": "Whiplash",
+        "types": "urn:entity:movie",
+        "take": "5",
+        "sort_by": "match"
+      },
+      "fetchedAt": "2026-10-30T09:23:38.243Z",
+      "responseHash": "47bacfde9062db192b7f8f3fb0f8a18c0140854b223164762d1d7abafafa9486",
+      "requestedIds": [],
+      "returnedIds": [
+        "65745a20-2fe5-44ec-8349-bda0c8522ceb",
+        "ff6377bc-8d16-402f-82c9-18d0e7299f3a",
+        "08ec7f29-59f5-4414-938c-f48a9d4ffe9a",
+        "8b5d8778-9a03-400e-be64-ecd8c8341db9"
+      ],
+      "missingIds": [],
+      "results": [
+        {
+          "id": "65745a20-2fe5-44ec-8349-bda0c8522ceb",
+          "name": "Whiplash",
+          "type": "movie",
+          "year": 2014,
+          "rank": 1,
+          "affinity": null
+        },
+        {
+          "id": "ff6377bc-8d16-402f-82c9-18d0e7299f3a",
+          "name": "The Fortune Cookie",
+          "type": "movie",
+          "year": 1966,
+          "rank": 2,
+          "affinity": null
+        },
+        {
+          "id": "08ec7f29-59f5-4414-938c-f48a9d4ffe9a",
+          "name": "Whiplash",
+          "type": "movie",
+          "year": 1948,
+          "rank": 3,
+          "affinity": null
+        },
+        {
+          "id": "8b5d8778-9a03-400e-be64-ecd8c8341db9",
+          "name": "Whiplash",
+          "type": "movie",
+          "year": 2002,
+          "rank": 4,
+          "affinity": null
+        }
+      ]
+    },
+    {
+      "source": "qloo-live",
+      "endpoint": "https://hackathon.api.qloo.com/search",
+      "parameters": {
+        "query": "Blade Runner",
+        "types": "urn:entity:movie",
+        "take": "5",
+        "sort_by": "match"
+      },
+      "fetchedAt": "2026-10-30T09:23:39.505Z",
+      "responseHash": "78c0a030fe33ca9beeb0df5483168e73bbfd67d864b13386ee5137554d70cc2a",
+      "requestedIds": [],
+      "returnedIds": [
+        "a74a74bb-ce73-4a76-807b-8bd1714bc463",
+        "3a02361c-987b-4f7e-9aad-071c3853ad92",
+        "3ca63a83-a8e3-484a-af4a-ea9d00f4b25d",
+        "cdb72059-0866-479d-900a-f5df770f049c",
+        "cfa7f4a3-987b-4162-b0aa-c210ec62d303"
+      ],
+      "missingIds": [],
+      "results": [
+        {
+          "id": "a74a74bb-ce73-4a76-807b-8bd1714bc463",
+          "name": "Blade Runner",
+          "type": "movie",
+          "year": 1982,
+          "rank": 1,
+          "affinity": null
+        },
+        {
+          "id": "3a02361c-987b-4f7e-9aad-071c3853ad92",
+          "name": "Blade Runner 2049",
+          "type": "movie",
+          "year": 2017,
+          "rank": 2,
+          "affinity": null
+        },
+        {
+          "id": "3ca63a83-a8e3-484a-af4a-ea9d00f4b25d",
+          "name": "Phenomenon Blade Runner",
+          "type": "movie",
+          "year": 2021,
+          "rank": 3,
+          "affinity": null
+        },
+        {
+          "id": "cdb72059-0866-479d-900a-f5df770f049c",
+          "name": "The Maze Runner",
+          "type": "movie",
+          "year": 2014,
+          "rank": 4,
+          "affinity": null
+        },
+        {
+          "id": "cfa7f4a3-987b-4162-b0aa-c210ec62d303",
+          "name": "Maze Runner: The Scorch Trials",
+          "type": "movie",
+          "year": 2015,
+          "rank": 5,
+          "affinity": null
+        }
+      ]
+    }
+  ],
+  "failure": {
+    "code": "invalid_response",
+    "message": "Qloo returned a duplicate, malformed or wrong-type entity."
+  }
+}

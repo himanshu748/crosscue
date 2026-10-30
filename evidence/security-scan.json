@@ -1,0 +1,16 @@
+{
+  "patternScan": {
+    "findings": 0,
+    "omittedBinaryScreenshots": 9,
+    "limitation": "Known patterns only; binary screenshots omitted by scanner."
+  },
+  "exactQlooCredentialBytes": {
+    "trackedFiles": 74,
+    "bundleFiles": 3,
+    "matches": 0,
+    "includesBinary": true
+  },
+  "privateCredentialOutsideRepository": true,
+  "serverOnlyBindings": true,
+  "scope": "First source commit has no prior Git history; final history scan follows publication. No credential values recorded."
+}

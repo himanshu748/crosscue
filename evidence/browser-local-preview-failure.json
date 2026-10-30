@@ -1,0 +1,102 @@
+{
+  "pass": false,
+  "error": "AssertionError [ERR_ASSERTION]: desktop preview: no axe WCAG A/AA violations\n    at check (/Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/scripts/browser-journey.ts:17:50)\n    at axe (/Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/scripts/browser-journey.ts:34:339)\n    at async <anonymous> (/Users/himanshujha/Documents/Codex/2026-10-30/you-are-the-principal-engineer-product/outputs/crosscue/scripts/browser-journey.ts:55:29)",
+  "testedAt": "2026-10-30T10:12:09.951Z",
+  "url": "http://localhost:3008",
+  "browser": "Playwright Chromium",
+  "browserRouting": "Browser plugin/browser skill not available; regular Playwright with existing installed Chromium",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "sourceHashes": {
+    "src/App.tsx": "1f39be5fc9659680502f8596a29ff4d6aa235884d6b2623f8e837318f4559329",
+    "src/styles.css": "444ad4b215ad6f7c447c7fd3af11f4203f0e6638a10d0c5e3c5f7b94f5d1e6f2",
+    "src/core/analysis.ts": "a9c7bfffdf78fde4943f81845567c5eead2d9330a02813109029410900859239",
+    "src/core/solver.ts": "65c18ec9a5fc8a3de7e3a0cfd620ad0cdadd7e0a3c1059183bab0f77e621e602",
+    "src/core/validator.ts": "24d694b06978baae46e88e2a232539de046e662ef68dd5d764422d66b9bbeab5",
+    "server/app.ts": "da52eaf6a6dc704f6a5dbd41b25114c63626d451fdff3c3e9bff06eb34dd55ea",
+    "server/qloo.ts": "6fd082fef315210ab7f69b3aee4cc4a192d630dbc635a6109e73da21162b9bac"
+  },
+  "assertions": [
+    "Page title identifies CrossCue",
+    "No framework error overlay",
+    "desktop initial: no axe WCAG A/AA violations",
+    "Complete eight-session two-room programme loaded",
+    "Keyboard starts at visible skip link",
+    "Scheduling constraints dialog opens and Escape closes",
+    "Real provider provenance has eight resolved identities and eight directional queries",
+    "Captured Qloo evidence selects consequential Björk / Moonlight question",
+    "Both decision branches are feasible",
+    "Allow keeps baseline; Protect moves three sessions",
+    "desktop question: no axe WCAG A/AA violations",
+    "Keyboard tab navigation exposes real Qloo query provenance",
+    "Protect preview does not mutate saved placements or version",
+    "Before and After timetable controls switch preview state"
+  ],
+  "violations": [
+    {
+      "stage": "desktop initial",
+      "violations": []
+    },
+    {
+      "stage": "desktop question",
+      "violations": []
+    },
+    {
+      "stage": "desktop preview",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".preview-totals > div:nth-child(1) > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #748266, background color: #fffef9, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".preview-totals > div:nth-child(2) > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #748266, background color: #fffef9, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".preview-totals > div:nth-child(3) > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #748266, background color: #fffef9, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".validation-note > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #758364, background color: #fffef9, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".evidence-source > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.46 (foreground color: #667e4c, background color: #fffef9, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "consoleErrors": [],
+  "responses": [],
+  "screenshots": [
+    "evidence/screenshots/local-initial.png",
+    "evidence/screenshots/local-question.png",
+    "evidence/screenshots/local-preview.png"
+  ]
+}
